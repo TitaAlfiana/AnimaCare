@@ -1,7 +1,6 @@
 /* eslint-disable import/extensions */
 import 'regenerator-runtime';
 import '../styles/style.css';
-import '../styles/responsive.css';
 import './components/appbar/app-bar';
 import './components/footer/footer-content';
 import 'bootstrap/dist/css/bootstrap.min.css';

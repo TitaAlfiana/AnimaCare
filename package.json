@@ -1,5 +1,5 @@
 {
-  "name": "restaurant-apps",
+  "name": "AnimaCare",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,10 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint ./src",
-    "fix": "eslint ./src --fix",
-    "test": "karma start"
+    "fix": "eslint ./src --fix"
   },
   "keywords": [],
-  "author": "Ibnu_Choldun ibnucholdun023@gmail.com",
+  "author": "CPSG-15 animaCare15@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.5",
