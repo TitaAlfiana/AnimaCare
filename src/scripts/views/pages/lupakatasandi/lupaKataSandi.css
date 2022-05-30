@@ -1,0 +1,80 @@
+.up {
+    background-color: #699BF7;
+    height: 50vh;
+}
+
+.down {
+    background-color: #fff;
+    height: 50vh;
+}
+
+.layer-up {
+    right: 10%;
+    left: 10%;
+    top: 30%;
+    bottom: 10%;
+    width: 60%;
+    height: 50%;
+    z-index: 1;
+    background-color: #fff;
+    position: relative;
+}
+
+.button-forget-password {
+    background-color: #699BF7;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.container_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_content p {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 450px) {
+    .image6 {
+        position: absolute;
+        top: -40px;
+        width: 100px;
+    }
+
+    .container_content {
+        margin-top: 50px;
+    }
+
+    .up h1 {
+        font-size: 2rem;
+    }
+
+    .container_content p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    .image6 {
+        position: absolute;
+        top: -60px;
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .container_content {
+        margin-top: 50px;
+    }
+}

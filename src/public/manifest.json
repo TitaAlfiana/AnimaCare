@@ -1,0 +1,12 @@
+{
+  "name": "Restaurants Catalogue Lite",
+  "short_name": "Restaurant Lite",
+  "description": "List of restaurant recommendations for you",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#E42A4F",
+  "icons": [
+    {}
+  ]
+}
