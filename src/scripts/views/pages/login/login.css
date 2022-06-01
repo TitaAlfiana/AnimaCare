@@ -1,0 +1,95 @@
+.container-login {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* left */
+.login-left {
+    background-color: #fff;
+    padding: 0 7%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #699BF7;
+    margin-top: 3%
+}
+
+.login-left p {
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin: 0;
+}
+
+.login-left img {
+    width: 79%;
+}
+
+/* right */
+.login-right {
+    background-color: #699BF7;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-right h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.forget {
+    text-align: right;
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login-right p {
+    text-align: left;
+    padding: 0 8%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.login-right p a {
+    color: #fff;
+}
+
+.button-login {
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    outline: #fff;
+    cursor: pointer;
+    color: #699BF7;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.label {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 900px) {
+    .container-login {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
