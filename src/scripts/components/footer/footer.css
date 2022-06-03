@@ -1,7 +1,19 @@
 .footer {
     background-color: #699BF7;
-    padding: 8px;
     text-align: center;
     font-size: 17px;
+    color: #fff;
+}
+
+.row ul li {
+    list-style: none;
+}
+
+.col h3 {
     font-weight: bold;
+    font-size: 20px;
+}
+
+.footer p {
+    margin: 0;
 }

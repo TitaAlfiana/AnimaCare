@@ -4,7 +4,7 @@ const Belanja = {
     nav.style.display = 'flex';
     const footer = document.querySelector('.footer');
     footer.style.display = 'block';
-    
+
     return `
     <div class="container">
       <h1>Belanja</h1>

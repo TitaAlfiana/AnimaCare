@@ -14,7 +14,7 @@ const Artikel = {
 
   async afterRender() {
 
-  }
+  },
 };
 
 export default Artikel;

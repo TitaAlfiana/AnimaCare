@@ -21,7 +21,6 @@ class appBar extends HTMLElement {
             <li class="nav-item"><a href="#/artikel" class="nav-link">Artikel</a></li>
             <li class="nav-item"><a href="#/forum" class="nav-link">Forum</a></li>
             <li class="nav-item"><a href="#/belanja" class="nav-link">Belanja</a></li>
-            <li class="nav-item"><a href="#/login" class="nav-link button">Login</a></li>
         </ul>
     </div>
 </nav>`;
