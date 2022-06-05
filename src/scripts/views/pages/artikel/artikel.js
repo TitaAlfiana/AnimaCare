@@ -6,15 +6,14 @@ const Artikel = {
     footer.style.display = 'block';
 
     return `
-    <div class="container">
-      <h1>Artikel</h1>
-    </div>
+   
     `;
   },
 
+  // eslint-disable-next-line no-empty-function
   async afterRender() {
 
-  }
+  },
 };
 
 export default Artikel;
