@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: '',
+  BASE_URL: 'http://localhost:5000/v1',
   BASE_IMAGE_URL: '',
   BASE_IMAGE_URL_SM: '',
   CACHE_NAME: 'AnimaCare',

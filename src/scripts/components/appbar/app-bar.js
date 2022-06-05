@@ -8,6 +8,7 @@ class appBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
+    <div class="border">
     <nav class="nav container" id="nav">
     <div class="logo-apps">
         <a href="#/home" style="padding: 0;"> <img src=${Logo} alt="Logo" class="logo"></a>
@@ -21,10 +22,10 @@ class appBar extends HTMLElement {
             <li class="nav-item"><a href="#/artikel" class="nav-link">Artikel</a></li>
             <li class="nav-item"><a href="#/forum" class="nav-link">Forum</a></li>
             <li class="nav-item"><a href="#/belanja" class="nav-link">Belanja</a></li>
-            <li class="nav-item"><a href="#/login" class="nav-link button">Login</a></li>
         </ul>
     </div>
-</nav>`;
+</nav>
+</div>`;
   }
 }
 

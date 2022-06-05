@@ -1,12 +1,9 @@
-.search-bar {
-    border-radius: 5px;
-}
-
 .search-bar input {
     padding: 10px;
     outline: none;
-    border: none;
     width: 100%;
+    border: 2px solid #699BF7;
+    border-radius: 20px;
 }
 
 .search-bar button {
@@ -16,4 +13,63 @@
     outline: none;
     cursor: pointer;
     margin-right: 5px;
+}
+
+.list-forum {
+    max-width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+.list-forum-item {
+    margin-bottom: 1.5em;
+    padding: 1em 1em;
+    border-radius: 2em;
+}
+
+.list-forum-item:last-child {
+    margin-bottom: 0;
+}
+
+.header-list-forum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    color: #000;
+}
+
+.name-list-forum {
+    font-weight: bold;
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    align-items: center;
+}
+
+.date-list-forum {
+    font-size: 1em;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.title-list-forum {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.title-list-forum a {
+    color: #000;
+    text-decoration: none;
+}
+
+.body-list-forum {
+    padding: 1.37em;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    border: 2px solid #699BF7;
+    background-color: #AFCAFB;
+    border-radius: 2em;
 }
