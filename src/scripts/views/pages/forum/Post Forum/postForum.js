@@ -1,13 +1,10 @@
 import PostForum from '../../../../utils/postForum';
-<<<<<<< HEAD
 // eslint-disable-next-line no-unused-vars
 import UrlParser from '../../../../routes/url-parser';
 // eslint-disable-next-line no-unused-vars
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 // eslint-disable-next-line no-unused-vars
 import { createForumItemTemplate } from '../../../templates/template-creator';
-=======
->>>>>>> a88e3164da0f3c3f8c797a04fa0bb7247a86800b
 
 const Forum = {
   async render() {
