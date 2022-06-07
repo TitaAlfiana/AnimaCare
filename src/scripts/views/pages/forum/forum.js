@@ -5,14 +5,11 @@ import './forum.css';
 
 const Forum = {
   async render() {
-<<<<<<< HEAD
     const nav = document.getElementById('nav');
     nav.style.display = 'flex';
     const footer = document.querySelector('.footer');
     footer.style.display = 'block';
 
-=======
->>>>>>> 8c5fe1ea107a74dcf4ca0b922f5aa787c6244fc1
     return `
     <div class="container">
       <div class="container d-flex justify-content-between my-4">

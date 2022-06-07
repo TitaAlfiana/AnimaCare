@@ -5,6 +5,10 @@
     margin-bottom: 100px;
 }
 
+.content-4 {
+    margin-top: 20vh;
+}
+
 .vector1 {
     position: absolute;
     top: 200px;
@@ -63,6 +67,18 @@
     width: 80%;
 }
 
+.container-btn-detail {
+    display: flex;
+    justify-content: right;
+    width: 74vw;
+    margin-top: 25px;
+
+}
+
+.text-center {
+    font-weight: bold;
+}
+
 .button-detail {
     background-color: #699BF7;
     color: #fff;
@@ -73,6 +89,7 @@
     text-align: center;
     cursor: pointer;
     text-decoration: no;
+    font-weight: bold;
 }
 
 .list-artikel {
@@ -132,6 +149,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 2em;
+        grid-column-gap: 0.5em;
     }
 }
 

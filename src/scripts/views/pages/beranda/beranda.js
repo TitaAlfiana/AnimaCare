@@ -14,7 +14,7 @@ import iconKandang from '../../../../public/icons/iconKandang.png';
 import iconSusu from '../../../../public/icons/iconSusu.png';
 import iconObat from '../../../../public/icons/iconObat.png';
 import iconBoxPasir from '../../../../public/icons/iconBoxPasir.png';
-
+import arrow from '../../../../public/icons/arrow.png';
 // import AnimaCareDbSource from '../../../data/animaCaredb-source';
 import './beranda.css';
 
@@ -31,8 +31,8 @@ const Beranda = {
         <img class="hero-image" src=${image5} alt='hero image'/>
       </div>
       <div class="hero-right">
-        <h3><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h3>
-        <p>Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya !</p>
+        <h3 style="font-weight: bold;"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h3>
+        <p style="font-size: 17px;">Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya ! Konsultasikan kesehatan hewan secara gratis hanya disini</p>
         <button class="btn button-detail mt-4"><a href="#content-2" class="button-detail">Lebih lengkap</a></button>
       </div>
     </div>
@@ -48,7 +48,7 @@ const Beranda = {
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center ">
           <h3 class=" font-weight-bold mb-4">Apa sih AnimaCare?</h3>
-          <p class="container">Layanan online yang menyediakan semua kebutuhan hewan kesayanganmu. Mulai dari konsultasi kesehatan, belanja perlengkapan dan obat-obatan hewan, serta temukan artikel menarik tentang hewan peliharaan agar kamu semakin tahu apa yang dibutuhkan peliharaan kesayangan</p>
+          <p class="container" style="font-size: 17px;">Layanan online yang menyediakan semua kebutuhan hewan kesayanganmu. Mulai dari konsultasi kesehatan, belanja perlengkapan dan obat-obatan hewan, serta temukan artikel menarik tentang hewan peliharaan agar kamu semakin tahu apa yang dibutuhkan peliharaan kesayangan</p>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ const Beranda = {
           <h3 class=" font-weight-bold mb-4">Tambah Pengetahuan Seputar Hewan </h3>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
-          <a href="#/artikel" class="">Lebih banyak</a>
+          <a href="#/artikel" class="" style="font-size: 20px;">Lebih banyak</a>
         </div>
       </div>
       <div class="list-artikel d-flex">
@@ -138,7 +138,8 @@ const Beranda = {
           </button>
         </div>
       </div>
-      <button class="btn button-detail mt-4">Belanja → </button>
+      <div class="container-btn-detail">
+      <button class="btn button-detail mt-4">Belanja  <img src="${arrow}" alt=""></button></div>
     </div>
   </section>
     `;
