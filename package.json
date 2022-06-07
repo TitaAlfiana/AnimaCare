@@ -41,6 +41,7 @@
   "dependencies": {
     "bootstrap": "4.5",
     "idb": "^7.0.1",
+    "jquery": "^3.6.0",
     "regenerator-runtime": "^0.13.5",
     "serviceworker-webpack-plugin": "^1.0.1"
   }

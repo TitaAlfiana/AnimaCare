@@ -8,38 +8,46 @@ const createForumItemTemplate = (forum) => {
   });
 
   return `
-<div tabindex="0" class="list-forum">
-    <div class="list-forum-item">
-        <div class="header-list-forum">
-            <p class="name-list-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${forum.name}</p>
-            <p class="date-list-forum">${date}</p>
-        </div>
-        <div class="body-list-forum">
-            <p class="title-list-forum"><a href="${`#/forum/${forum._id}`}">${forum.title}</a></p>
-            <p class="content-list-forum">${forum.descript}</p>
-        </div>
-    </div>
-</div>
+  <div tabindex="0" class="list-forum">
+      <div class="list-forum-item">
+          <div class="header-list-forum">
+              <p class="name-list-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${forum.nama}</p>
+              <p class="date-list-forum">${date}</p>
+          </div>
+          <div class="body-list-forum">
+              <p class="title-list-forum"><a href="${`#/forum/${forum._id}`}">${forum.title}</a></p>
+              <p class="content-list-forum">${forum.descript}</p>
+          </div>
+      </div>
+  </div>
     `;
 };
 
 const createForumItem = (forum) => `
-<section id="list-forum">
-${forum.forums.map(createForumItemTemplate).join('')}
-</section>
+  <div id="list-forum">
+    ${forum.forums.map(createForumItemTemplate).join('')}
+  </div>
 `;
 
-const createPostKomentarTemplate = (komentar) => `
-<div class="komentar-item shadow p-3 mb-5 bg-white rounded">
-    <div class="header-komentar">
-        <p class="name-komentar">${komentar.nama}</p>
-        <p class="date-komentar">${komentar.date}</p>
-    </div>
-    <div class="body-komentar">
-        <p class="content-forum">${komentar.comment}</p>
-    </div>
-</div>
+const createPostKomentarTemplate = (komentar) => {
+  const date = new Date(komentar.date).toLocaleDateString('id-ID', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  return `
+  <div class="komentar-item shadow p-3 mb-5 bg-white rounded">
+      <div class="header-komentar">
+          <p class="name-komentar">${komentar.nama}</p>
+          <p class="date-komentar">${date}</p>
+      </div>
+      <div class="body-komentar">
+          <p class="content-forum">${komentar.comment}</p>
+      </div>
+  </div>
     `;
+};
 
 const createForumDetailTemplate = (forums) => {
   const date = new Date(forums.date).toLocaleDateString('id-ID', {
@@ -51,7 +59,7 @@ const createForumDetailTemplate = (forums) => {
   return `
   <div class="detail-forum-item">
     <div class="header-forum my-4">
-      <p class="name-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${forums.name}</p>
+      <p class="name-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${forums.nama}</p>
       <p class="date-forum">${date}</p>
     </div>
     <div class="body-forum">
