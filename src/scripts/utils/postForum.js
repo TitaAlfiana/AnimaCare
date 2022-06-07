@@ -11,7 +11,7 @@ const PostForum = async () => {
 
   const dataInput = {
     id: url.id,
-    name: inputNama.value,
+    nama: inputNama.value,
     title: inputJudul.value,
     descript: inputDeskripsiForum.value,
   };
@@ -26,11 +26,11 @@ const PostForum = async () => {
         <div tabindex="0" class="list-forum">
             <div class="list-forum-item">
                 <div class="header-list-forum">
-                    <p class="name-list-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${dataInput.name}</p>
+                    <p class="name-list-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${dataInput.nama}</p>
                     <p class="date-list-forum">${date}</p>
                 </div>
                 <div class="body-list-forum">
-                    <p class="title-list-forum">${dataInput.title}</a></p>
+                    <p class="title-list-forum">${dataInput.title}</p>
                     <p class="content-list-forum">${dataInput.descript}</p>
                 </div>
             </div>

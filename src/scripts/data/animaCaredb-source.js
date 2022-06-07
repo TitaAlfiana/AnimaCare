@@ -14,7 +14,7 @@ class AnimaCareDbSource {
   }
 
   static async postComment(data) {
-    const response = await fetch(API_ENDPOINT.POST_COMMENT, {
+    const response = await fetch(API_ENDPOINT.POST_COMMENT(data.id), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,6 +33,12 @@ class AnimaCareDbSource {
       body: JSON.stringify(data),
     });
     return response.json();
+  }
+
+  static async searchForum(searchText) {
+    const response = await fetch(API_ENDPOINT.SEARCH_FORUM + searchText);
+    const data = await response.json();
+    return data.forums;
   }
 }
 

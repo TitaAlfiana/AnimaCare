@@ -1,7 +1,4 @@
 import PostForum from '../../../../utils/postForum';
-import UrlParser from '../../../../routes/url-parser';
-import AnimaCareDbSource from '../../../../data/animaCaredb-source';
-import { createForumItemTemplate } from '../../../templates/template-creator';
 
 const Forum = {
   async render() {
@@ -26,10 +23,17 @@ const Forum = {
   },
 
   async afterRender() {
+    const inputNamaPostForum = document.querySelector('#inputNamaPostForum');
+    const inputJudul = document.querySelector('#inputJudul');
+    const inputDeskripsiForum = document.querySelector('#inputDeskripsiForum');
     const submitForum = document.getElementById('submit-forum');
-    submitForum.addEventListener('click', (e) => {
-      e.preventDefault();
+
+    submitForum.addEventListener('click', () => {
       PostForum();
+      alert('Forum berhasil diunggah');
+      inputNamaPostForum.value = '';
+      inputJudul.value = '';
+      inputDeskripsiForum.value = '';
     });
   },
 };
