@@ -13,9 +13,9 @@ const Forum = {
     return `
     <div class="container">
       <div class="container d-flex justify-content-between my-4">
-        <a class="navbar-brand" href="#/post-forum" style="font-weight: bold;"> + <span style="color: #000;">Bagi Pengalaman</span></a>
+        <a class="navbar-brand" href="#/post-forum" style="font-weight: bold;"> + <span style="color: #000;">Bagikan pengalaman hewan peliharaanmu disini!</span></a>
         <form class="form-inline search-bar">
-          <input class="form-control mr-sm-2" type="search" placeholder="Cari Pengalaman" aria-label="Search" id="search-input">
+          <input class="form-control mr-sm-2" type="search" placeholder="Cari judul topik..." aria-label="Search" id="search-input">
           <button class="btn my-2 my-sm-0" type="submit" id="search-button"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
         </form>
       </div>
