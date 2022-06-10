@@ -40,6 +40,16 @@ class AnimaCareDbSource {
     const data = await response.json();
     return data.forums;
   }
+
+  static async listArticle() {
+    const response = await fetch(API_ENDPOINT.LIST_ARTICLE);
+    return response.json();
+  }
+
+  // static async detailArticle(id) {
+  //   const response = await fetch(API_ENDPOINT.DETAIL(id));
+  //   return response.json();
+  // }
 }
 
 export default AnimaCareDbSource;

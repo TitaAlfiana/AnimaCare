@@ -1,4 +1,5 @@
 import iconAvatar from '../../../public/icons/iconAvatar.png';
+import CONFIG from '../../globals/config';
 
 const createForumItemTemplate = (forum) => {
   const date = new Date(forum.date).toLocaleDateString('id-ID', {
@@ -16,7 +17,7 @@ const createForumItemTemplate = (forum) => {
           </div>
           <div class="body-list-forum">
               <p class="title-list-forum"><a href="${`#/forum/${forum._id}`}">${forum.title}</a></p>
-              <p class="content-list-forum">${forum.descript}</p>
+              <p class="content-list-forum" style= "font-weight: lighter;">${forum.descript}</p>
           </div>
       </div>
   </div>
@@ -74,9 +75,20 @@ const createForumDetailTemplate = (forums) => {
   </div>
     `;
 };
+
+const creatArticleItemTemplate = (article) => `
+<div class="card">
+  <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+  <div class="card-body">
+    <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>
+    <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
+  </div>
+</div>`;
+
 export {
   createForumItem,
   createForumItemTemplate,
   createPostKomentarTemplate,
   createForumDetailTemplate,
+  creatArticleItemTemplate,
 };

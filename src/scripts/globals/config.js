@@ -1,7 +1,6 @@
 const CONFIG = {
   BASE_URL: 'https://animacare.herokuapp.com/v1',
-  BASE_IMAGE_URL: '',
-  BASE_IMAGE_URL_SM: '',
+  BASE_IMAGE_URL: 'https://animacare.herokuapp.com/images/',
   CACHE_NAME: 'AnimaCare',
   DATABASE_NAME: 'AnimaCare-database',
   DATABASE_VERSION: 1,

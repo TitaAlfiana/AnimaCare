@@ -6,6 +6,7 @@ const API_ENDPOINT = {
   POST_COMMENT: (id) => `${CONFIG.BASE_URL}/forum/${id}/comment`,
   SEARCH_FORUM: `${CONFIG.BASE_URL}/forum/search/`,
   SEARCH_ARTICLE: `${CONFIG.BASE_URL}/article/search/`,
+  LIST_ARTICLE: `${CONFIG.BASE_URL}/article`,
 };
 
 export default API_ENDPOINT;

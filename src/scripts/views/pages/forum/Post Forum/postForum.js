@@ -34,12 +34,14 @@ const Forum = {
     const inputDeskripsiForum = document.querySelector('#inputDeskripsiForum');
     const submitForum = document.getElementById('submit-forum');
 
-    submitForum.addEventListener('click', () => {
+    submitForum.addEventListener('click', (e) => {
+      e.preventDefault();
       PostForum();
       alert('Forum berhasil diunggah');
       inputNamaPostForum.value = '';
       inputJudul.value = '';
       inputDeskripsiForum.value = '';
+      window.location.href = '#/forum';
     });
   },
 };

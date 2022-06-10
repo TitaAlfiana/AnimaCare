@@ -1,6 +1,6 @@
 import image5 from '../../../../public/images/image5.png';
 import image4 from '../../../../public/images/image4.png';
-import image3 from '../../../../public/images/image3.png';
+// import image3 from '../../../../public/images/image3.png';
 import vector1 from '../../../../public/vector/Vector1.png';
 import vector2 from '../../../../public/vector/Vector2.png';
 import vector3 from '../../../../public/vector/Vector3.png';
@@ -15,7 +15,8 @@ import iconSusu from '../../../../public/icons/iconSusu.png';
 import iconObat from '../../../../public/icons/iconObat.png';
 import iconBoxPasir from '../../../../public/icons/iconBoxPasir.png';
 import arrow from '../../../../public/icons/arrow.png';
-// import AnimaCareDbSource from '../../../data/animaCaredb-source';
+import AnimaCareDbSource from '../../../data/animaCaredb-source';
+import { creatArticleItemTemplate } from '../../templates/template-creator';
 import './beranda.css';
 
 const Beranda = {
@@ -33,7 +34,7 @@ const Beranda = {
       <div class="hero-right">
         <h3 style="font-weight: bold;"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h3>
         <p style="font-size: 17px;">Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya ! Konsultasikan kesehatan hewan secara gratis hanya disini</p>
-        <button class="btn button-detail mt-4"><a href="#content-2" class="button-detail">Lebih lengkap</a></button>
+        <button class="button1"><a href="#content-2">Lebih lengkap</a></button>
       </div>
     </div>
   </section>
@@ -64,36 +65,12 @@ const Beranda = {
           <a href="#/artikel" class="" style="font-size: 20px;">Lebih banyak</a>
         </div>
       </div>
-      <div class="list-artikel d-flex">
+      <div class="list">
         <img class="vector5 img-fluid" src="${vector5}" alt="vector">
         <img class="vector6 img-fluid" src="${vector3}" alt="vector">
-        <div class="card" style="width: 18rem;">
-          <img src="${image3}" class="card-img-top" alt="image artikel">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="${image3}" class="card-img-top" alt="image artikel">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="${image3}" class="card-img-top" alt="image artikel">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="${image3}" class="card-img-top" alt="image artikel">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
+        <div class="list-article">
+        
+        
         </div>
       </div>
     </div>
@@ -101,7 +78,7 @@ const Beranda = {
 
   <section id="content-4" class="content-4">
     <div class="container mt-5">
-      <h3 class=" font-weight-bold mb-4">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h3>
+      <h3 class=" font-weight-bold" style = "margin-bottom:30px;">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h3>
         <div class="">
         <div class="list-icon-belanja mx-auto">
           <button class="icon-belanja btn">
@@ -139,19 +116,19 @@ const Beranda = {
         </div>
       </div>
       <div class="container-btn-detail">
-      <button class="btn button-detail mt-4">Belanja  <img src="${arrow}" alt=""></button></div>
+      <button class="button2"><a href="#/belanja">Belanja  </a><img src="${arrow}"></button></div>
     </div>
   </section>
     `;
   },
 
   async afterRender() {
-    // const listArtikel = await AnimaCareDbSource.getArtikel();
-    // const listArtikelContainer = document.querySelector('.list-artikel');
-    // listArtikelContainer.innerHTML = '';
-    // listArtikel.forEach(artikel => {
-    //   listArtikelContainer.innerHTML += createArtikelItemTemplate(artikel);
-    // });
+    const listArtikel = await AnimaCareDbSource.listArticle();
+    const articlesResult = listArtikel.articles;
+    const listArtikelContainer = document.querySelector('.list-article');
+    articlesResult.forEach((article) => {
+      listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
+    });
   },
 };
 

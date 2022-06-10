@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+a {
+    cursor: pointer;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.slideses {
+    display: flex;
+}
+
+.img-artikel {
+    width: 45vw;
+}
+
+.kanan1 {
+    background-color: #699BF7;
+    padding: 50px;
+}
+
+.kanan2 {
+    background-color: #EB687F;
+    padding: 50px;
+}
+
+.deskrip {
+    margin-top: 40px;
+    color: white;
+}
+
+.deskrip p {
+    margin-top: 20px;
+}
+
+.all-article,
+.fav-article {
+    width: 100%;
+    height: fit-content;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.search-bar {
+    width: 80%;
+}
+
+.fav-article {
+    border-left: 2px solid rgb(162, 162, 162);
+}
+
+.container-nav {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.container-nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #699BF7;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: #699BF7;
+    transition: 0.3s;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.list-article-inArtikel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 17px;
+    row-gap: 25px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.list-article-inArtikel .card {
+    width: 24rem;
+    height: 30rem;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .deskrip {
+        margin-top: 20px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+
+    .slideses {
+        display: grid;
+    }
+
+    .img-artikel {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .container-nav {
+        padding-left: 80px;
+        width: 100%;
+    }
+
+    .slideses {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .container-nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container-nav {
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .kiri {
+        display: none;
+    }
+}

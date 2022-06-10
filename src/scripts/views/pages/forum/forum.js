@@ -29,7 +29,8 @@ const Forum = {
     const listForum = await AnimaCareDbSource.getAllForums();
     const forumContainer = document.querySelector('#list-forum-container');
     forumContainer.innerHTML = '';
-    listForum.forEach((forum) => {
+
+    listForum.reverse().forEach((forum) => {
       forumContainer.innerHTML += createForumItemTemplate(forum);
     });
 
