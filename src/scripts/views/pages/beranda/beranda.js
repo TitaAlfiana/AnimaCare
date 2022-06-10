@@ -8,8 +8,9 @@ import vector4 from '../../../../public/vector/Vector4.png';
 import vector5 from '../../../../public/vector/Vector5.png';
 import iconMakananKucing from '../../../../public/icons/iconMakananKucing.png';
 import iconMakananAnjing from '../../../../public/icons/iconMakananAnjing.png';
-import iconParfum from '../../../../public/icons/iconParfum.png';
-import iconVitamin from '../../../../public/icons/iconVitamin.png';
+import iconAksesoris from '../../../../public/icons/iconAksesoris.png';
+import iconPasir from '../../../../public/icons/iconPasir.png';
+import iconSampo from '../../../../public/icons/iconSampo.png';
 import iconKandang from '../../../../public/icons/iconKandang.png';
 import iconSusu from '../../../../public/icons/iconSusu.png';
 import iconObat from '../../../../public/icons/iconObat.png';
@@ -31,9 +32,9 @@ const Beranda = {
         <img class="hero-image" src=${image5} alt='hero image'/>
       </div>
       <div class="hero-right">
-        <h3><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h3>
-        <p>Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya !</p>
-        <button class="btn button-detail mt-4"><a href="#content-2" class="button-detail">Lebih lengkap</a></button>
+        <h3><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan Peliharaanmu  </span> Tersayang</h3>
+        <p>Kami hadir untuk membantu anda para pecinta hewan peliharaan berkonsultasi dengan dokter hewan handal & terpercaya!. Live chat konsultasi dokter, artikel hewan peliharaan, forum diskusi pecinta hewan peliharaan, dan belanja kebutuhan & keperluan hewan peliharaan, semuanya ada di AnimaCare, kami siap membantu Anda!.</p>
+        <button class="btn button-detail mt-4"><a href="#content-2" class="button-detail">Tentang Kami</a></button>
       </div>
     </div>
   </section>
@@ -47,8 +48,8 @@ const Beranda = {
           </figure>
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center ">
-          <h3 class=" font-weight-bold mb-4">Apa sih AnimaCare?</h3>
-          <p class="container">Layanan online yang menyediakan semua kebutuhan hewan kesayanganmu. Mulai dari konsultasi kesehatan, belanja perlengkapan dan obat-obatan hewan, serta temukan artikel menarik tentang hewan peliharaan agar kamu semakin tahu apa yang dibutuhkan peliharaan kesayangan</p>
+          <h3 class=" font-weight-bold mb-4">Apa sih itu AnimaCare?</h3>
+          <p class="container">AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan Anda. Mulai dari konsultasi kesehatan hewan peliharaan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman para pencinta hewan peliharaan tentang hewan peliharaannya, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda.</p>
         </div>
       </div>
     </div>
@@ -58,7 +59,7 @@ const Beranda = {
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 ">
-          <h3 class=" font-weight-bold mb-4">Tambah Pengetahuan Seputar Hewan </h3>
+          <h3 class=" font-weight-bold mb-4">Dalami Pengetahuanmu Seputar Dunia Hewan Peliharaan</h3>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
           <a href="#/artikel" class="">Lebih banyak</a>
@@ -101,40 +102,56 @@ const Beranda = {
 
   <section id="content-4" class="content-4">
     <div class="container mt-5">
-      <h3 class=" font-weight-bold mb-4">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h3>
+      <h3 class=" font-weight-bold mb-4">Belanja Kebutuhan & Keperluan <span style="color: #699BF7;">Hewan Peliharaan Kesayanganmu Disini!</span></h3>
         <div class="">
         <div class="list-icon-belanja mx-auto">
           <button class="icon-belanja btn">
-            <img src="${iconMakananKucing}" alt="Icon Makanan Kucing" width="100px" class=" mx-auto d-block"/>
-            <p class="mt-2 text-center icon-belanja-title">Makanan Kucing</p>
+          <img src="${iconAksesoris}" alt="Icon Gunting Kuku Hewan" width="100px" class=" mx-auto d-block"/>
+          <p class="mt-2 text-center icon-belanja-title">Gunting Kuku Hewan</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconMakananAnjing}" alt="Icon Makanan Anjing" width="100px" class=" mx-auto d-block"/>
-            <p class="mt-2 text-center">Makanan Anjing</p>
+            <img src="${iconAksesoris}" alt="Icon Kalung Hewan" width="100px" class=" mx-auto d-block"/>
+            <p class="mt-2 text-center">Kalung Hewan</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconParfum}" alt="Icon Parfum" width="100px" class=" mx-auto d-block"/>
-            <p class="mt-2 text-center">Parfum</p>
+            <img src="${iconKandang}" alt="Icon Kandang Hewan" width="100px" class=" mx-auto d-block"/>
+            <p class="mt-2 text-center">Kandang Hewan</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconVitamin}" alt="Icon Vitamin" width="100px" class=" mx-auto d-block"/>
-            <p class="mt-2 text-center">Vitamin</p>
+            <img src="${iconPasir}" alt="Icon Mainan Hewan" width="100px" class=" mx-auto d-block"/>
+            <p class="mt-2 text-center">Mainan Hewan</p>
           </button>
           <button class="icon-belanja btn">
-              <img src="${iconKandang}" alt="Icon Kandang" width="100px" class=" mx-auto d-block"/>
-              <p class="mt-2 text-center">Kandang</p>
+            <img src="${iconMakananKucing}" alt="Icon Makanan Hewan" width="100px" class=" mx-auto d-block"/>
+            <p class="mt-2 text-center">Makanan Hewan</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconSusu}" alt="Icon Susu" height="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Susu</p>
+            <img src="${iconObat}" alt="Icon Obat & Vitamin Hewan" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Obat & Vitamin Hewan</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconObat}" alt="Icon Obat" width="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Obat</p>
+            <img src="${iconBoxPasir}" alt="Icon Pasir Kucing" width="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Pasir Kucing</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconBoxPasir}" alt="Icon Box Pasir" width="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Box Pasir</p>
+            <img src="${iconSampo}" alt="Icon Shampoo Hewan" width="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Shampoo Hewan</p>
+          </button>
+          <button class="icon-belanja btn">
+            <img src="${iconAksesoris}" alt="Icon Sikat Gigi Hewan" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Sikat Gigi Hewan</p>
+          </button>
+          <button class="icon-belanja btn">
+            <img src="${iconAksesoris}" alt="Icon Sisir Bulu Hewan" width="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Sisir Bulu Hewan</p>
+          </button>
+          <button class="icon-belanja btn">
+            <img src="${iconSusu}" alt="Icon Susu Hewan" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Susu Hewan</p>
+          </button>
+          <button class="icon-belanja btn">
+            <img src="${iconMakananAnjing}" alt="Icon Tali Tuntun Anjing" width="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Tali Tuntun Anjing</p>
           </button>
         </div>
       </div>

@@ -6,16 +6,16 @@ const Forum = {
     <div class="container mt-5">
     <form>
       <div class="mb-3">
-        <input name="inputNamaPostForum" placeholder="Masukkan Nama" type="text" class="form-control" id="inputNamaPostForum">
+        <input name="inputNamaPostForum" placeholder="Ketikkan nama anda disini..." type="text" class="form-control" id="inputNamaPostForum">
       </div>
       <div class="mb-3">
-        <input name="inputJudul" placeholder="Masukkan Judul" type="text" class="form-control" id="inputJudul">
+        <input name="inputJudul" placeholder="Ketikkan judul topik pengalaman anda disini..." type="text" class="form-control" id="inputJudul">
       </div>
       <div class="mb-3">
-        <textarea class="form-control" id="inputDeskripsiForum" rows="7" placeholder="Ceritakkan Pengalamanmu..."></textarea>
+        <textarea class="form-control" id="inputDeskripsiForum" rows="7" placeholder="Ceritakan pengalamanmu disini..."></textarea>
       </div>
       <div class="d-flex justify-content-end">
-        <button id="submit-forum" type="submit" class="btn submit-komentar">Unggah</button>
+        <button id="submit-forum" type="submit" class="btn submit-komentar">Kirim</button>
       </div>
     </form>
   </div>
