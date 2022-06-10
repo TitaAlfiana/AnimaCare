@@ -15,7 +15,7 @@ import iconKandang from '../../../../public/icons/iconKandang.png';
 import iconSusu from '../../../../public/icons/iconSusu.png';
 import iconObat from '../../../../public/icons/iconObat.png';
 import iconBoxPasir from '../../../../public/icons/iconBoxPasir.png';
-
+import arrow from '../../../../public/icons/arrow.png';
 // import AnimaCareDbSource from '../../../data/animaCaredb-source';
 import './beranda.css';
 
@@ -32,9 +32,15 @@ const Beranda = {
         <img class="hero-image" src=${image5} alt='hero image'/>
       </div>
       <div class="hero-right">
+<<<<<<< HEAD
         <h3><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan Peliharaanmu  </span> Tersayang</h3>
         <p>Kami hadir untuk membantu anda para pecinta hewan peliharaan berkonsultasi dengan dokter hewan handal & terpercaya!. Live chat konsultasi dokter, artikel hewan peliharaan, forum diskusi pecinta hewan peliharaan, dan belanja kebutuhan & keperluan hewan peliharaan, semuanya ada di AnimaCare, kami siap membantu Anda!.</p>
         <button class="btn button-detail mt-4"><a href="#content-2" class="button-detail">Tentang Kami</a></button>
+=======
+        <h3 style="font-weight: bold;"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h3>
+        <p style="font-size: 17px;">Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya ! Konsultasikan kesehatan hewan secara gratis hanya disini</p>
+        <button class="btn button-detail mt-4"><a href="#content-2" class="button-detail">Lebih lengkap</a></button>
+>>>>>>> d0885c9033ce82e773cb05270ff70ce7e0d9f78f
       </div>
     </div>
   </section>
@@ -48,8 +54,13 @@ const Beranda = {
           </figure>
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center ">
+<<<<<<< HEAD
           <h3 class=" font-weight-bold mb-4">Apa sih itu AnimaCare?</h3>
           <p class="container">AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan Anda. Mulai dari konsultasi kesehatan hewan peliharaan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman para pencinta hewan peliharaan tentang hewan peliharaannya, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda.</p>
+=======
+          <h3 class=" font-weight-bold mb-4">Apa sih AnimaCare?</h3>
+          <p class="container" style="font-size: 17px;">Layanan online yang menyediakan semua kebutuhan hewan kesayanganmu. Mulai dari konsultasi kesehatan, belanja perlengkapan dan obat-obatan hewan, serta temukan artikel menarik tentang hewan peliharaan agar kamu semakin tahu apa yang dibutuhkan peliharaan kesayangan</p>
+>>>>>>> d0885c9033ce82e773cb05270ff70ce7e0d9f78f
         </div>
       </div>
     </div>
@@ -62,7 +73,7 @@ const Beranda = {
           <h3 class=" font-weight-bold mb-4">Dalami Pengetahuanmu Seputar Dunia Hewan Peliharaan</h3>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
-          <a href="#/artikel" class="">Lebih banyak</a>
+          <a href="#/artikel" class="" style="font-size: 20px;">Lebih banyak</a>
         </div>
       </div>
       <div class="list-artikel d-flex">
@@ -155,7 +166,8 @@ const Beranda = {
           </button>
         </div>
       </div>
-      <button class="btn button-detail mt-4">Belanja → </button>
+      <div class="container-btn-detail">
+      <button class="btn button-detail mt-4">Belanja  <img src="${arrow}" alt=""></button></div>
     </div>
   </section>
     `;
