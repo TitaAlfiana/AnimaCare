@@ -50,7 +50,7 @@ const Artikel = {
     <div class="cont">
         <div class="container-nav">
             <div class="all-article">
-                <li><a href="#" class="nav-link">Semua</a></li>
+                <li><a href="#list-article-inArtikel" class="nav-link">Semua</a></li>
             </div>
             <div class="fav-article">
                 <li><a href="#" class="nav-link">Favorit</a></li>
@@ -65,7 +65,7 @@ const Artikel = {
         </form>
     </div>
 
-    <div class="list-article-inArtikel"></div>
+    <div class="list-article-inArtikel" id="list-article-inArtikel"></div>
 
     `;
   },

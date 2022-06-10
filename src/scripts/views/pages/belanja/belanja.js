@@ -6,9 +6,10 @@ import iconObat from '../../../../public/icons/iconObat.png';
 import iconBoxPasir from '../../../../public/icons/iconBoxPasir.png';
 import iconPasir from '../../../../public/icons/iconPasir.png';
 import iconAksesoris from '../../../../public/icons/iconAksesoris.png';
-import iconSampo from '../../../../public/icons/iconSampo.png';
 import logoTroli from '../../../../public/images/logo-troli.png';
 import logoToko from '../../../../public/images/logo-toko.png';
+// eslint-disable-next-line import/no-unresolved
+import iconSampo from '../../../../public/icons/iconSampo.png';
 import logoTas from '../../../../public/images/logo-tas.png';
 
 const Belanja = {
@@ -19,7 +20,8 @@ const Belanja = {
     footer.style.display = 'block';
 
     return `
-    <div class="container">
+  <div class="container">
+    <div class="container-belanja">
       <h2 class="title__header">Temukan produk yang dibutuhkan untuk <span style="color: #699BF7">Hewan Kesayanganmu!</span></h2>
 
       <section id="content-1" class="content-1>
@@ -99,6 +101,7 @@ const Belanja = {
         </div>
       </section>
     </div>
+  </div>
     `;
   },
 };
