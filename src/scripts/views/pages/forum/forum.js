@@ -26,9 +26,9 @@ const Forum = {
       <div class="container d-flex justify-content-between">
         
       </div>
-
       <section id="list-forum-container"></section>
     </div>
+
     `;
   },
 

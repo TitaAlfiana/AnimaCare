@@ -4,6 +4,7 @@ import Forum from '../views/pages/forum/forum';
 import Belanja from '../views/pages/belanja/belanja';
 import PostForum from '../views/pages/forum/Post Forum/postForum';
 import DetailForum from '../views/pages/forum/detail forum/detailForum';
+import DetailArticle from '../views/pages/artikel/detail artikel/detailArtikel';
 
 const routes = {
   '/': Beranda,
@@ -12,6 +13,7 @@ const routes = {
   '/belanja': Belanja,
   '/post-forum': PostForum,
   '/forum/:id': DetailForum,
+  '/artikel/:id': DetailArticle,
 };
 
 export default routes;

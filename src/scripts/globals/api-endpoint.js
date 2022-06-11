@@ -7,6 +7,7 @@ const API_ENDPOINT = {
   SEARCH_FORUM: `${CONFIG.BASE_URL}/forum/search/`,
   SEARCH_ARTICLE: `${CONFIG.BASE_URL}/article/search/`,
   LIST_ARTICLE: `${CONFIG.BASE_URL}/article`,
+  DETAIL_ARTICLE: (id) => `${CONFIG.BASE_URL}/article/${id}`,
 };
 
 export default API_ENDPOINT;

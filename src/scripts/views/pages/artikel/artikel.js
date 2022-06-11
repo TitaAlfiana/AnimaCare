@@ -50,10 +50,10 @@ const Artikel = {
     <div class="cont">
         <div class="container-nav">
             <div class="all-article">
-                <li><a href="#list-article-inArtikel" class="nav-link">Semua</a></li>
+                <li data-tab-target="#list-article-inArtikel"><a class="nav-link">Semua</a></li>
             </div>
             <div class="fav-article">
-                <li><a href="#" class="nav-link">Favorit</a></li>
+                <li data-tab-target="#favorite-article"><a class="nav-link">Favorit</a></li>
             </div>
         </div>
     </div>
@@ -64,9 +64,17 @@ const Artikel = {
           <button class="btn my-2 my-sm-0" type="submit" id="search-button"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
         </form>
     </div>
-
-    <div class="list-article-inArtikel" id="list-article-inArtikel"></div>
-
+  
+    <div class="tab-content">
+        <div data-tab-content id="list-article-inArtikel" class="active">
+            <div class="artcl-update"><h1>Artikel terbaru</h1></div>
+            <div class="list-article-inArtikel"></div>
+        </div>
+        <div data-tab-content  id="favorite-article">
+            <div class="artcl-fav"><h1>Artikel favorite</h1></div>
+            <div class="list-article-fav"></div>
+        </div>
+    </div>
     `;
   },
 
@@ -94,8 +102,23 @@ const Artikel = {
     const listArtikel = await AnimaCareDbSource.listArticle();
     const articlesResult = listArtikel.articles;
     const listArtikelContainer = document.querySelector('.list-article-inArtikel');
-    articlesResult.forEach((article) => {
+    articlesResult.reverse().forEach((article) => {
       listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
+    });
+
+    // making tabs nav
+    const tabs = document.querySelectorAll('[data-tab-target]');
+    const tabContents = document.querySelectorAll('[data-tab-content]');
+    // eslint-disable-next-line arrow-parens
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        // eslint-disable-next-line arrow-parens
+        tabContents.forEach(tabContent => {
+          tabContent.classList.remove('active');
+        });
+        target.classList.add('active');
+      });
     });
   },
 };
