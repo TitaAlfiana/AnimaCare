@@ -82,36 +82,36 @@ const Beranda = {
         <div class="">
         <div class="list-icon-belanja mx-auto">
           <button class="icon-belanja btn">
-            <img src="${iconMakananKucing}" alt="Icon Makanan Hewan" width="100px" class=" mx-auto d-block"/>
-            <p class="mt-2 text-center">Makanan Hewan</p>
+            <img src="${iconMakananKucing}" alt="Icon Makanan Kucing" width="100px" height="100px" class=" mx-auto d-block"/>
+            <p class="mt-2 text-center">Makanan Kucing</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconMakananAnjing}" alt="Icon Obat & Vitamin Hewan" height="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Obat & Vitamin Hewan</p>
+            <img src="${iconMakananAnjing}" alt="Icon Makanan Anjing" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Makanan Anjing</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconParfum}" alt="Icon Pasir Kucing" width="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Pasir Kucing</p>
+            <img src="${iconParfum}" alt="Icon Parfum" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Parfum</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconVitamin}" alt="Icon Shampoo Hewan" width="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Shampoo Hewan</p>
+            <img src="${iconVitamin}" alt="Icon Vitamin" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Vitamin</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconKandang}" alt="Icon Sikat Gigi Hewan" height="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Sikat Gigi Hewan</p>
+            <img src="${iconKandang}" alt="Icon Kandang" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Kandang</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconSusu}" alt="Icon Sisir Bulu Hewan" width="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Sisir Bulu Hewan</p>
+            <img src="${iconSusu}" alt="Icon Susu" width="70px" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Susu</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconObat}" alt="Icon Susu Hewan" height="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Susu Hewan</p>
+            <img src="${iconObat}" alt="Icon Obat" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Obat</p>
           </button>
           <button class="icon-belanja btn">
-            <img src="${iconBoxPasir}" alt="Icon Tali Tuntun Anjing" width="100px" class=" mx-auto d-block mt-2"/>
-            <p class="mt-2 text-center">Tali Tuntun Anjing</p>
+            <img src="${iconBoxPasir}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
+            <p class="mt-2 text-center">Box Pasir</p>
           </button>
         </div>
       </div>

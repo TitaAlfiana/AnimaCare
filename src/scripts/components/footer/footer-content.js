@@ -24,7 +24,7 @@ class FooterContent extends HTMLElement {
     <div class="col footer-email">
       <h3>Email</h3>
       <ul>
-        <li><img src="${iconEmail}" alt="iconEmail" /> help@animacare.com</li>
+        <li><img src="${iconEmail}" alt="iconEmail" /> animacare15@gmail.com</li>
       </ul>
     </div>
     <div class="col footer-alamat">

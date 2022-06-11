@@ -1,12 +1,12 @@
-.search-bar input {
+.search-bar-forum input {
     padding: 10px;
     outline: none;
-    width: 100%;
+    width: 400px;
     border: 2px solid #699BF7;
     border-radius: 20px;
 }
 
-.search-bar button {
+.search-bar-forum button {
     background-color: #fff;
     padding: 5px;
     border: none;
