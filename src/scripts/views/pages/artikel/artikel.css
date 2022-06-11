@@ -16,6 +16,11 @@ h1 {
     font-weight: bold;
 }
 
+#anchor {
+    text-decoration: none;
+    color: black;
+}
+
 .slideses {
     display: flex;
 }
@@ -106,12 +111,28 @@ li {
     column-gap: 17px;
     row-gap: 25px;
     padding: 40px;
+    color: black;
     justify-content: center;
 }
 
 .list-article-inArtikel .card {
     width: 24rem;
     height: 30rem;
+}
+
+.artcl-update,
+.artcl-fav {
+    padding-left: 45px;
+    padding-top: 35px;
+    color: black;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
 }
 
 

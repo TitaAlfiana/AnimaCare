@@ -1,4 +1,6 @@
 import iconAvatar from '../../../public/icons/iconAvatar.png';
+import iconLike from '../../../public/icons/like.png';
+import iconLiked from '../../../public/icons/liked.png';
 import CONFIG from '../../globals/config';
 
 const createForumItemTemplate = (forum) => {
@@ -17,7 +19,7 @@ const createForumItemTemplate = (forum) => {
           </div>
           <div class="body-list-forum">
               <p class="title-list-forum"><a href="${`#/forum/${forum._id}`}">${forum.title}</a></p>
-              <p class="content-list-forum" style= "font-weight: lighter;">${forum.descript}</p>
+              <p class="content-list-forum" style= "font-weight: lighter;">${forum.descript.slice(0, 170) + (forum.descript.length > 130 ? ' . . .' : '')}</p>
           </div>
       </div>
   </div>
@@ -77,13 +79,43 @@ const createForumDetailTemplate = (forums) => {
 };
 
 const creatArticleItemTemplate = (article) => `
+<a href="#/artikel/${article._id}" id="anchor">
 <div class="card">
   <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
   <div class="card-body">
     <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>
     <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
   </div>
-</div>`;
+</div>
+</a>`;
+
+const creatArticleDetailTemplate = (DetailArticle) => `
+<div class="artikel-detail">
+        <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
+        <div class="img-artcl mt-5"><img src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="Responsive image"></div>
+        <div class="deskripsi">
+            <p class="paragraf">${DetailArticle.descript}</p>
+        </div>
+        
+        <div class="deskrip-chill">
+            <h2 class="title-artcle-subjudul mb-3" style="font-weight:bold; font-size: 20px">${DetailArticle.subFirstTitle}</h2>
+                <p class="paragraf">${DetailArticle.descriptSubFirstTitle}</p>
+                <h2 class="title-artcle-subjudul mb-3 mt-5" style="font-weight:bold; font-size: 20px">${DetailArticle.subSecondTitle}</h2>
+                    <p class="paragraf">${DetailArticle.descriptSubSecondTitle}</p>
+        </div>
+    </div>`;
+
+const createLikeButtonTemplate = () => `
+  <button aria-label="like this article;" id="likeButton" class="like">
+  <img src="${iconLike}" class="img-like" alt="image artikel">
+  </button>
+`;
+
+const createLikedButtonTemplate = () => `
+  <button aria-label="unlike this article" id="likeButton" class="like">
+  <img src="${iconLiked}" class="img-like" alt="image artikel">
+  </button>
+`;
 
 export {
   createForumItem,
@@ -91,4 +123,7 @@ export {
   createPostKomentarTemplate,
   createForumDetailTemplate,
   creatArticleItemTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
+  creatArticleDetailTemplate,
 };

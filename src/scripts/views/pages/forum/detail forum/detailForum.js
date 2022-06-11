@@ -2,7 +2,7 @@ import UrlParser from '../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import { createForumDetailTemplate } from '../../../templates/template-creator';
 import PostComment from '../../../../utils/postComment';
-import API_ENDPOINT from '../../../../globals/api-endpoint';
+// import API_ENDPOINT from '../../../../globals/api-endpoint';
 import './detailForum.css';
 
 const DetailForum = {

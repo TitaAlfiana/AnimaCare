@@ -18,7 +18,7 @@ class appBar extends HTMLElement {
     </div>
     <div class="nav-list-container">
         <ul class="nav-list nav_list">
-            <li class="nav-item"><a href="/" class="active nav-link" id="active">Beranda</a></li>
+            <li class="nav-item"><a href="/" class="nav-link" id="active">Beranda</a></li>
             <li class="nav-item"><a href="#/artikel" class="nav-link">Artikel</a></li>
             <li class="nav-item"><a href="#/forum" class="nav-link">Forum Diskusi</a></li>
             <li class="nav-item"><a href="#/belanja" class="nav-link">Belanja</a></li>

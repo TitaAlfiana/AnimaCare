@@ -19,9 +19,9 @@ const Forum = {
           <button class="btn my-2 my-sm-0" type="submit" id="search-button"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
         </form>
       </div>
-
       <section id="list-forum-container"></section>
     </div>
+
     `;
   },
 

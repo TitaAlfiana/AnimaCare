@@ -28,6 +28,11 @@ nav ul li a {
 
 }
 
+.active {
+    color: #699BF7;
+}
+
+
 .logo {
     width: 200px;
     padding: 8px;

@@ -46,6 +46,12 @@ class AnimaCareDbSource {
     return response.json();
   }
 
+  static async detailArticle(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL_ARTICLE(id));
+    const data = await response.json();
+    return data.article;
+  }
+
   // static async detailArticle(id) {
   //   const response = await fetch(API_ENDPOINT.DETAIL(id));
   //   return response.json();
