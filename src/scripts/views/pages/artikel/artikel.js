@@ -3,7 +3,9 @@ import iconSearch from '../../../../public/icons/iconSearch.png';
 import pet1 from '../../../../public/images/pet1.png';
 import pet2 from '../../../../public/images/pet2.jpg';
 import AnimaCareDbSource from '../../../data/animaCaredb-source';
-import { creatArticleItemTemplate } from '../../templates/template-creator';
+import FavoriteArticleIdb from '../../../data/animaCare-favArticleIDB';
+import { creatArticleItemTemplate, creatArticleItemTemplateInFavorite } from '../../templates/template-creator';
+import UrlParser from '../../../routes/url-parser';
 
 const Artikel = {
   async render() {
@@ -57,18 +59,17 @@ const Artikel = {
             </div>
         </div>
     </div>
-
-    <div class="search">
-    <form class="search-bar d-flex">
-          <input class="form-control" type="search" placeholder="Cari Pengalaman" aria-label="Search" id="search-input">
-          <button class="btn my-2 my-sm-0" type="submit" id="search-button"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
-        </form>
-    </div>
   
-    <div class="tab-content">
+    <div class="tab-content container-article">
         <div data-tab-content id="list-article-inArtikel" class="active">
+          <div class="search">
+            <form class="search-bar d-flex">
+                  <input class="form-control" type="search" placeholder="Cari Artikel..." aria-label="Search" id="search-input-article">
+                  <button class="btn my-2 my-sm-0" type="submit" id="search-button-article"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
+            </form>
+          </div>
             <div class="artcl-update"><h1>Artikel terbaru</h1></div>
-            <div class="list-article-inArtikel"></div>
+            <div class="list-article-inArtikel "></div>
         </div>
         <div data-tab-content  id="favorite-article">
             <div class="artcl-fav"><h1>Artikel favorite</h1></div>
@@ -99,10 +100,10 @@ const Artikel = {
     }
 
     // get data article
-    const listArtikel = await AnimaCareDbSource.listArticle();
-    const articlesResult = listArtikel.articles;
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const listArtikel = await AnimaCareDbSource.listArticle(url.id);
     const listArtikelContainer = document.querySelector('.list-article-inArtikel');
-    articlesResult.reverse().forEach((article) => {
+    listArtikel.reverse().forEach((article) => {
       listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
     });
 
@@ -119,6 +120,45 @@ const Artikel = {
         });
         target.classList.add('active');
       });
+    });
+
+    // search article
+    const searchInput = document.querySelector('#search-input-article');
+    const searchButton = document.querySelector('#search-button-article');
+    searchButton.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const searchText = searchInput.value;
+      const listArticleSearch = await AnimaCareDbSource.searchArticle(searchText);
+      listArtikelContainer.innerHTML = '';
+      if (listArticleSearch.length === 0) {
+        listArtikelContainer.innerHTML = `<h3 class="text-center mt-5">Tidak ada hasil pencarian "<span class="font-weight-bold">${searchText}</span>"</h3>`;
+      } else {
+        listArticleSearch.forEach((article) => {
+          listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
+        });
+      }
+      searchInput.value = '';
+    });
+
+    // get data favorite article
+    const articles = await FavoriteArticleIdb.getAllArticle();
+    const articleFavoriteContainer = document.querySelector('.list-article-fav');
+    if (articles.length === 0) {
+      articleFavoriteContainer.style.display = 'block';
+      articleFavoriteContainer.innerHTML = `
+      <h2 class="text-center mt-5">Tidak ada favorite artikel yang ditampilkan</h2>
+      `;
+    }
+
+    articles.forEach((article) => {
+      articleFavoriteContainer.innerHTML += creatArticleItemTemplateInFavorite(article);
+    });
+
+    // skip link
+    const skipLinkElem = document.querySelector('.skip-link');
+    skipLinkElem.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.querySelector('#main-content').focus();
     });
   },
 };

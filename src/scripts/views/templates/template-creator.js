@@ -79,7 +79,18 @@ const createForumDetailTemplate = (forums) => {
 };
 
 const creatArticleItemTemplate = (article) => `
-<a href="#/artikel/${article._id}" id="anchor">
+<a href="${`#/artikel/${article._id}`}" id="anchor">
+<div class="card">
+  <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+  <div class="card-body">
+    <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>
+    <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
+  </div>
+</div>
+</a>`;
+
+const creatArticleItemTemplateInFavorite = (article) => `
+<a href="${`#/artikel/${article.id}`}" id="anchor">
 <div class="card">
   <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
   <div class="card-body">
@@ -126,4 +137,5 @@ export {
   createLikeButtonTemplate,
   createLikedButtonTemplate,
   creatArticleDetailTemplate,
+  creatArticleItemTemplateInFavorite,
 };

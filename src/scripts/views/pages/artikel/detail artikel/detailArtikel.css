@@ -2,7 +2,7 @@
    Like
 */
 
-.like {
+/* .like {
     width: 55px;
     height: 55px;
     display: flex;
@@ -18,7 +18,26 @@
     font-size: 18px;
     color: white;
     cursor: pointer;
+} */
+
+.like {
+    font-size: 18px;
+    background-color: #699BF7;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 10;
 }
+
 
 * {
     margin: 0;

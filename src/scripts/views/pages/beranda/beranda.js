@@ -18,6 +18,7 @@ import arrow from '../../../../public/icons/arrow.png';
 import AnimaCareDbSource from '../../../data/animaCaredb-source';
 import { creatArticleItemTemplate } from '../../templates/template-creator';
 import './beranda.css';
+import UrlParser from '../../../routes/url-parser';
 
 const Beranda = {
   async render() {
@@ -123,10 +124,10 @@ const Beranda = {
   },
 
   async afterRender() {
-    const listArtikel = await AnimaCareDbSource.listArticle();
-    const articlesResult = listArtikel.articles;
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const listArtikel = await AnimaCareDbSource.listArticle(url.id);
     const listArtikelContainer = document.querySelector('.list-article');
-    articlesResult.forEach((article) => {
+    listArtikel.forEach((article) => {
       listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
     });
   },

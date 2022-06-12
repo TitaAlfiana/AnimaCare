@@ -43,7 +43,8 @@ class AnimaCareDbSource {
 
   static async listArticle() {
     const response = await fetch(API_ENDPOINT.LIST_ARTICLE);
-    return response.json();
+    const data = await response.json();
+    return data.articles;
   }
 
   static async detailArticle(id) {
@@ -52,6 +53,11 @@ class AnimaCareDbSource {
     return data.article;
   }
 
+  static async searchArticle(searchText) {
+    const response = await fetch(API_ENDPOINT.SEARCH_ARTICLE + searchText);
+    const data = await response.json();
+    return data.articles;
+  }
   // static async detailArticle(id) {
   //   const response = await fetch(API_ENDPOINT.DETAIL(id));
   //   return response.json();

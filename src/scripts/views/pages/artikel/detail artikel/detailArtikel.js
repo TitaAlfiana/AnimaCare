@@ -1,6 +1,7 @@
 import UrlParser from '../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
-import { creatArticleDetailTemplate, createLikeButtonTemplate } from '../../../templates/template-creator';
+import { creatArticleDetailTemplate } from '../../../templates/template-creator';
+import LikeButtonInitiator from '../../../../utils/favoriteArticle-initiator';
 import './detailArtikel.css';
 
 const DetailArticle = {
@@ -15,12 +16,19 @@ const DetailArticle = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const detailArticle = await AnimaCareDbSource.detailArticle(url.id);
-    console.log(detailArticle);
     const articleDetailContainer = document.querySelector('#detail-article');
     articleDetailContainer.innerHTML = creatArticleDetailTemplate(detailArticle);
 
-    const likeButtonContainer = document.querySelector('#favButtonContainer');
-    likeButtonContainer.innerHTML = createLikeButtonTemplate();
+    // like button
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.getElementById('favButtonContainer'),
+      article: {
+        id: detailArticle._id,
+        image: detailArticle.image,
+        title: detailArticle.title,
+        descript: detailArticle.descript,
+      },
+    });
   },
 };
 
