@@ -1,6 +1,5 @@
 import image5 from '../../../../public/images/image5.png';
 import image4 from '../../../../public/images/image4.png';
-// import image3 from '../../../../public/images/image3.png';
 import vector1 from '../../../../public/vector/Vector1.png';
 import vector2 from '../../../../public/vector/Vector2.png';
 import vector3 from '../../../../public/vector/Vector3.png';
