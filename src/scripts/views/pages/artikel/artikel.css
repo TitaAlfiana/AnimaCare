@@ -64,6 +64,14 @@ h1 {
     width: 80%;
 }
 
+.search-input-article {
+    border-radius: 20px;
+    border: 3px solid #699BF7;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
 .fav-article {
     border-left: 2px solid rgb(162, 162, 162);
 }

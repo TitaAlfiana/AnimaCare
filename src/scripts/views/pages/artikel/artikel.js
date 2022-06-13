@@ -64,7 +64,7 @@ const Artikel = {
         <div data-tab-content id="list-article-inArtikel" class="active">
           <div class="search">
             <form class="search-bar d-flex">
-                  <input class="form-control" type="search" placeholder="Cari Artikel..." aria-label="Search" id="search-input-article">
+                  <input class="search-input-article form-control" type="search" placeholder="Cari Artikel..." aria-label="Search" id="search-input-article">
                   <button class="btn my-2 my-sm-0" type="submit" id="search-button-article"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
             </form>
           </div>
