@@ -146,7 +146,7 @@ const Artikel = {
     if (articles.length === 0) {
       articleFavoriteContainer.style.display = 'block';
       articleFavoriteContainer.innerHTML = `
-      <h2 class="text-center mt-5">Tidak ada favorite artikel yang ditampilkan</h2>
+      <h4 class="text-center mt-5">Tidak ada favorite artikel yang ditampilkan</h4>
       `;
     }
 
