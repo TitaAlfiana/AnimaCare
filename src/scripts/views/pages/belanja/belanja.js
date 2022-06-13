@@ -8,11 +8,10 @@ import iconObat from '../../../../public/icons/iconObat.png';
 import iconBoxPasir from '../../../../public/icons/iconBoxPasir.png';
 import iconPasir from '../../../../public/icons/iconPasir.png';
 import iconAksesoris from '../../../../public/icons/iconAksesoris.png';
+import iconSampo from '../../../../public/icons/iconSampo.png';
 import iconTasHewan from '../../../../public/icons/iconTasHewan.png';
 import logoTroli from '../../../../public/images/logo-troli.png';
 import logoToko from '../../../../public/images/logo-toko.png';
-// eslint-disable-next-line import/no-unresolved
-import iconSampo from '../../../../public/icons/iconSampo.png';
 import logoTas from '../../../../public/images/logo-tas.png';
 
 const Belanja = {
