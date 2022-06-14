@@ -104,7 +104,55 @@ const Belanja = {
   },
 
   async afterRender() {
-    
+    const makananKucing = document.getElementById('iconMakananKucing');
+    const makananAnjing = document.getElementById('iconMakananAnjing');
+    const parfum = document.getElementById('iconParfum');
+    const vitamin = document.getElementById('iconVitamin');
+    const kandang = document.getElementById('iconKandang');
+    const susu = document.getElementById('iconSusu');
+    const obat = document.getElementById('iconObat');
+    const boxPasir = document.getElementById('iconBoxPasir');
+    const pasir = document.getElementById('iconPasir');
+    const aksesoris = document.getElementById('iconAksesoris');
+    const sampo = document.getElementById('iconSampo');
+    const tasHewan = document.getElementById('iconTasHewan');
+
+    makananKucing.addEventListener('click', () => {
+      window.location.href = '#/makanan-kucing';
+    });
+    makananAnjing.addEventListener('click', () => {
+      window.location.href = '#/makanan-anjing';
+    });
+    parfum.addEventListener('click', () => {
+      window.location.href = '#/parfum';
+    });
+    vitamin.addEventListener('click', () => {
+      window.location.href = '#/vitamin';
+    });
+    kandang.addEventListener('click', () => {
+      window.location.href = '#/kandang';
+    });
+    susu.addEventListener('click', () => {
+      window.location.href = '#/susu';
+    });
+    obat.addEventListener('click', () => {
+      window.location.href = '#/obat';
+    });
+    boxPasir.addEventListener('click', () => {
+      window.location.href = '#/box-pasir';
+    });
+    pasir.addEventListener('click', () => {
+      window.location.href = '#/pasir';
+    });
+    aksesoris.addEventListener('click', () => {
+      window.location.href = '#/aksesoris';
+    });
+    sampo.addEventListener('click', () => {
+      window.location.href = '#/sampo';
+    });
+    tasHewan.addEventListener('click', () => {
+      window.location.href = '#/tas-hewan';
+    });
   },
 };
 

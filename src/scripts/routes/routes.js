@@ -5,15 +5,28 @@ import Belanja from '../views/pages/belanja/belanja';
 import PostForum from '../views/pages/forum/Post Forum/postForum';
 import DetailForum from '../views/pages/forum/detail forum/detailForum';
 import DetailArticle from '../views/pages/artikel/detail artikel/detailArtikel';
+import DetailKategori from '../views/pages/belanja/detail kategori/detailKategori';
 
 const routes = {
   '/': Beranda,
   '/artikel': Artikel,
-  '/forum': Forum,
-  '/belanja': Belanja,
-  '/post-forum': PostForum,
-  '/forum/:id': DetailForum,
   '/artikel/:id': DetailArticle,
+  '/forum': Forum,
+  '/forum/:id': DetailForum,
+  '/post-forum': PostForum,
+  '/belanja': Belanja,
+  '/makanan-kucing': DetailKategori,
+  '/makanan-anjing': DetailKategori,
+  '/parfum': DetailKategori,
+  '/vitamin': DetailKategori,
+  '/kandang': DetailKategori,
+  '/susu': DetailKategori,
+  '/obat': DetailKategori,
+  '/box-pasir': DetailKategori,
+  '/pasir': DetailKategori,
+  '/aksesoris': DetailKategori,
+  '/sampo': DetailKategori,
+  '/tas-hewan': DetailKategori,
 };
 
 export default routes;

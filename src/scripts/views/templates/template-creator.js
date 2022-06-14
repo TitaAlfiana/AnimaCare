@@ -1,6 +1,7 @@
 import iconAvatar from '../../../public/icons/iconAvatar.png';
 import iconLike from '../../../public/icons/like.png';
 import iconLiked from '../../../public/icons/liked.png';
+import iconParfum from '../../../public/icons/iconParfum.png';
 import CONFIG from '../../globals/config';
 
 const createForumItemTemplate = (forum) => {
@@ -128,6 +129,15 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
+const createCardProductTemplate = () => `
+<a href="${'https://www.tokopedia.com/search?st=product&q=whiskas&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource='}" id="anchor">
+<button class="icon-belanja btn" id="iconParfum">
+<img src="${iconParfum}" alt="Icon Parfum" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+<p class="mt-2 text-center">Parfum</p>
+</button>
+</a>
+`;
+
 export {
   createForumItem,
   createForumItemTemplate,
@@ -138,4 +148,5 @@ export {
   createLikedButtonTemplate,
   creatArticleDetailTemplate,
   creatArticleItemTemplateInFavorite,
+  createCardProductTemplate,
 };

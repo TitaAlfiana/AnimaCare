@@ -3,14 +3,6 @@
     padding: 0;
 }
 
-button,
-input,
-a {
-    cursor: pointer;
-    min-height: 44px;
-    min-width: 44px;
-}
-
 h1 {
     font-size: 25px;
     font-weight: bold;
@@ -62,6 +54,11 @@ h1 {
 
 .search-bar {
     width: 80%;
+}
+
+.search-bar input {
+    height: 44px;
+    border-radius: 5px;
 }
 
 .fav-article {

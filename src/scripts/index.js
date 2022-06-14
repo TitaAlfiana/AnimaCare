@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery';
 import App from './views/app';
-import swRegister from './utils/sw-register';
+// import swRegister from './utils/sw-register';
 
 const app = new App({
   button: document.querySelector('#menu'),
@@ -21,7 +21,7 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
-  swRegister();
+  // swRegister();
 });
 
 // eslint-disable-next-line func-names
