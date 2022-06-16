@@ -129,12 +129,12 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
-const createCardProductTemplate = () => `
-<a href="${'https://www.tokopedia.com/search?st=product&q=whiskas&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource='}" id="anchor">
-<button class="icon-belanja btn" id="iconParfum">
-<img src="${iconParfum}" alt="Icon Parfum" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
-<p class="mt-2 text-center">Parfum</p>
-</button>
+const createCardProductTemplate = (product) => `
+<a href="${`https://www.tokopedia.com/search?st=product&q=${product.name}&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource=`}" id="anchor" target="_blank" rel="noopener">
+  <button class="icon-belanja btn" id="iconParfum">
+    <img src="${CONFIG.BASE_IMAGE_URL + product.image}" alt="${product.name}" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+    <p class="mt-2 text-center">${product.name}</p>
+  </button>
 </a>
 `;
 

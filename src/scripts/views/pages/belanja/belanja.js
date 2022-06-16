@@ -82,19 +82,19 @@ const Belanja = {
               </button>
               <button class="icon-belanja btn" id="iconPasir">
                 <img src="${iconPasir}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
-                <p class="mt-2 text-center">Box Pasir</p>
+                <p class="mt-2 text-center">Pasir</p>
               </button>
               <button class="icon-belanja btn" id="iconAksesoris">
                 <img src="${iconAksesoris}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
-                <p class="mt-2 text-center">Box Pasir</p>
+                <p class="mt-2 text-center">Aksesoris</p>
               </button>
               <button class="icon-belanja btn" id="iconSampo">
                 <img src="${iconSampo}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
-                <p class="mt-2 text-center">Box Pasir</p>
+                <p class="mt-2 text-center">Shampo</p>
               </button>
               <button class="icon-belanja btn" id="iconTasHewan">
                 <img src="${iconTasHewan}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
-                <p class="mt-2 text-center">Box Pasir</p>
+                <p class="mt-2 text-center">Tas Hewan</p>
               </button>
             </div>
         </div>

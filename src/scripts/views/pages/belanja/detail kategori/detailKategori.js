@@ -90,92 +90,160 @@ const DetailKategori = {
   },
 
   async afterRender() {
-
+    const getMakananKucing = await AnimaCareDbSource.getMakananKucing();
+    const getMakananAnjing = await AnimaCareDbSource.getMakananAnjing();
+    const getParfum = await AnimaCareDbSource.getParfum();
+    const getVitamin = await AnimaCareDbSource.getVitamin();
+    const getKandang = await AnimaCareDbSource.getKandang();
+    const getSusu = await AnimaCareDbSource.getSusu();
+    const getObat = await AnimaCareDbSource.getObat();
+    const getBoxPasir = await AnimaCareDbSource.getBoxPasir();
+    const getPasir = await AnimaCareDbSource.getPasir();
+    const getAksesoris = await AnimaCareDbSource.getAksesoris();
+    const getSampo = await AnimaCareDbSource.getShampo();
+    const getTasHewan = await AnimaCareDbSource.getTasHewan();
+    const containerListProduct = document.querySelector('#list-produk');
+    
     // list produk
     if (window.location.href.includes('makanan-kucing')) {
       document.querySelector('#radio1').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Makanan Kucing</h1>';
-      // const listProduct = await AnimaCareDbSource.getListProduct('makanan-kucing');
-      // listProduct.forEach(product => {
-      //   containerListProduct.innerHTML += createCardProductTemplate(product);
-      // })
+      getMakananKucing.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('makanan-anjing')) {
       document.querySelector('#radio2').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Makanan Anjing</h1>';
+      getMakananAnjing.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('parfum')) {
       document.querySelector('#radio3').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Parfum</h1>';
+      getParfum.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('vitamin')) {
       document.querySelector('#radio4').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Vitamin</h1>';
+      getVitamin.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('kandang')) {
       document.querySelector('#radio5').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Kandang</h1>';
+      getKandang.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('susu')) {
       document.querySelector('#radio6').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Susu</h1>';
+      getSusu.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('obat')) {
       document.querySelector('#radio7').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Obat</h1>';
+      getObat.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('box-pasir')) {
       document.querySelector('#radio8').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Box Pasir</h1>';
+      getBoxPasir.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('pasir')) {
       document.querySelector('#radio9').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Pasir</h1>';
+      getPasir.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('aksesoris')) {
       document.querySelector('#radio10').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Aksesoris</h1>';
+      getAksesoris.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('sampo')) {
       document.querySelector('#radio11').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Sampo</h1>';
+      getSampo.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     } else if (window.location.href.includes('tas-hewan')) {
       document.querySelector('#radio12').checked = true;
-      const containerListProduct = document.querySelector('#list-produk');
       containerListProduct.innerHTML = '<h1>Tas Hewan</h1>';
+      getTasHewan.forEach((product) => {
+        containerListProduct.innerHTML += (createCardProductTemplate(product));
+      });
     }
 
     // kategori klik
     const radio = document.querySelectorAll('input[type="radio"]');
-    const containerListProduct = document.querySelector('#list-produk');
     radio.forEach((item) => {
       item.addEventListener('click', () => {
         const { value } = item;
         if (value === 'option1') {
           containerListProduct.innerHTML = '<h1>Makanan Kucing</h1>';
+          getMakananKucing.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option2') {
           containerListProduct.innerHTML = '<h1>Makanan Anjing</h1>';
+          getMakananAnjing.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option3') {
           containerListProduct.innerHTML = '<h1>Parfum</h1>';
+          getParfum.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option4') {
           containerListProduct.innerHTML = '<h1>Vitamin</h1>';
+          getVitamin.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option5') {
           containerListProduct.innerHTML = '<h1>Kandang</h1>';
+          getKandang.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option6') {
           containerListProduct.innerHTML = '<h1>Susu</h1>';
+          getSusu.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option7') {
           containerListProduct.innerHTML = '<h1>Obat</h1>';
+          getObat.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option8') {
           containerListProduct.innerHTML = '<h1>Box Pasir</h1>';
+          getBoxPasir.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option9') {
           containerListProduct.innerHTML = '<h1>Pasir</h1>';
+          getPasir.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option10') {
           containerListProduct.innerHTML = '<h1>Aksesoris</h1>';
+          getAksesoris.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option11') {
           containerListProduct.innerHTML = '<h1>Sampo</h1>';
+          getSampo.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         } else if (value === 'option12') {
           containerListProduct.innerHTML = '<h1>Tas Hewan</h1>';
+          getTasHewan.forEach((product) => {
+            containerListProduct.innerHTML += (createCardProductTemplate(product));
+          });
         }
       });
     });
