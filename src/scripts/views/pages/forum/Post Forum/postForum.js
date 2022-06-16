@@ -12,7 +12,7 @@ import { createForumItemTemplate } from '../../../templates/template-creator';
 const Forum = {
   async render() {
     return `
-    <div class="container mt-5">
+    <div class="container my-5">
       <div class="sharing">
         <div class="form-post-sharing">
           <form class="form-sharing">
