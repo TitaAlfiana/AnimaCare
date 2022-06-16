@@ -1,7 +1,7 @@
 import iconAvatar from '../../../public/icons/iconAvatar.png';
 import iconLike from '../../../public/icons/like.png';
 import iconLiked from '../../../public/icons/liked.png';
-import iconParfum from '../../../public/icons/iconParfum.png';
+// import iconParfum from '../../../public/icons/iconParfum.png';
 import CONFIG from '../../globals/config';
 
 const createForumItemTemplate = (forum) => {
@@ -108,7 +108,7 @@ const creatArticleDetailTemplate = (DetailArticle) => `
         <div class="deskripsi">
             <p class="paragraf">${DetailArticle.descript}</p>
         </div>
-        
+        <div class="sharethis-sticky-share-buttons"></div>
         <div class="deskrip-chill">
             <h2 class="title-artcle-subjudul mb-3" style="font-weight:bold; font-size: 20px">${DetailArticle.subFirstTitle}</h2>
                 <p class="paragraf">${DetailArticle.descriptSubFirstTitle}</p>
