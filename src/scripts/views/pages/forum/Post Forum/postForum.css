@@ -1,0 +1,39 @@
+.sharing {
+    display: flex;
+    width: 100%;
+}
+
+.image2 {
+    position: absolute;
+    width: 440px;
+    top: 95px;
+    right: 70px;
+    z-index: -1;
+
+}
+
+.form-sharing {
+    width: 300%;
+}
+
+@media screen and (max-width: 700px) {
+    .image2 {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .image2 {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .image2 {
+        display: none;
+
+    }
+}
