@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+#list-forum-container {
+    margin-top: 30px;
+}
+
 .list-forum-item {
     margin-bottom: 1.5em;
     padding: 1em 1em;
