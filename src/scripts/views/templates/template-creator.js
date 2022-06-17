@@ -81,7 +81,7 @@ const createForumDetailTemplate = (forums) => {
 
 const creatArticleItemTemplate = (article) => `
 <a href="${`#/artikel/${article._id}`}" id="anchor">
-<div class="card" data-aos="zoom-in" data-aos-duration="2000">
+<div class="card" data-aos="zoom-in" data-aos-duration="1000">
   <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
   <div class="card-body">
     <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>
