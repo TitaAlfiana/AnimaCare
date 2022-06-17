@@ -12,7 +12,7 @@ const createForumItemTemplate = (forum) => {
   });
 
   return `
-  <div tabindex="0" class="list-forum">
+  <div tabindex="0" class="list-forum" data-aos="fade-up" data-aos-duration="1000">
       <div class="list-forum-item">
           <div class="header-list-forum">
               <p class="name-list-forum"><img src="${iconAvatar}" style="width: 50px; padding-right:10px;">${forum.nama}</p>
@@ -81,7 +81,7 @@ const createForumDetailTemplate = (forums) => {
 
 const creatArticleItemTemplate = (article) => `
 <a href="${`#/artikel/${article._id}`}" id="anchor">
-<div class="card">
+<div class="card" data-aos="flip-left" data-aos-duration="2000">
   <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
   <div class="card-body">
     <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>

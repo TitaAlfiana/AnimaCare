@@ -1,13 +1,13 @@
 .content-1,
 .content-2,
-.content-3,
-.content-4 {
-    margin-bottom: 100px;
+.content-3 {
+    margin-bottom: 250px;
 }
 
 .content-4 {
-    margin-top: 20vh;
+    margin-bottom: 140px;
 }
+
 
 .vector1 {
     position: absolute;
@@ -40,14 +40,14 @@
 .vector5 {
     position: absolute;
     width: 500px;
-    top: 1180px;
+    top: 1500px;
     left: 30px;
     z-index: -1;
 }
 
 .vector6 {
     position: absolute;
-    top: 1720px;
+    top: 2130px;
     right: 100px;
     z-index: -1;
 }
@@ -75,7 +75,7 @@
     display: flex;
     justify-content: right;
     width: 74vw;
-    margin-top: 25px;
+    margin-top: 55px;
 
 }
 
