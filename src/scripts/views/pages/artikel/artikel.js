@@ -16,7 +16,7 @@ const Artikel = {
 
     return `
     <article>
-        <div class="slideshow-container topping-slide">
+        <div class="slideshow-container">
             <div class="slideses" id="slideses">
                 <div class="kanan1">
                     <div class="deskrip">

@@ -108,8 +108,8 @@ const creatArticleDetailTemplate = (DetailArticle) => `
         <div class="deskripsi">
             <p class="paragraf">${DetailArticle.descript}</p>
         </div>
-        <div class="sharethis-sticky-share-buttons"></div>
-        <div class="deskrip-chill">
+        
+        <div class="deskrip-child">
             <h2 class="title-artcle-subjudul mb-3" style="font-weight:bold; font-size: 20px">${DetailArticle.subFirstTitle}</h2>
                 <p class="paragraf">${DetailArticle.descriptSubFirstTitle}</p>
                 <h2 class="title-artcle-subjudul mb-3 mt-5" style="font-weight:bold; font-size: 20px">${DetailArticle.subSecondTitle}</h2>
@@ -131,8 +131,8 @@ const createLikedButtonTemplate = () => `
 
 const createCardProductTemplate = (product) => `
 <a href="${`https://www.tokopedia.com/search?st=product&q=${product.name}&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource=`}" id="anchor" target="_blank" rel="noopener">
-  <button class="icon-belanja btn" id="iconParfum">
-    <img src="${CONFIG.BASE_IMAGE_URL + product.image}" alt="${product.name}" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+  <button class="product btn shadow-sm" id="iconParfum">
+    <img src="${CONFIG.BASE_IMAGE_URL + product.image}" alt="${product.name}" width="120px" height="150px" class=" mx-auto d-block mt-2"/>
     <p class="mt-2 text-center">${product.name}</p>
   </button>
 </a>

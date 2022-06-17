@@ -15,6 +15,13 @@ main {
     flex: 1;
 }
 
+a,
+button {
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
 .skip-link {
     position: absolute;
     top: -60px;
