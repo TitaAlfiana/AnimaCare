@@ -71,3 +71,17 @@
     padding-top: 40px;
     padding-right: 40px;
 }
+
+@media screen and (max-width: 400px) {
+    .paragraf {
+        text-align: justify;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .paragraf {
+        text-align: justify;
+    }
+}

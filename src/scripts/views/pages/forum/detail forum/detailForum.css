@@ -12,6 +12,14 @@
     margin-bottom: 0;
 }
 
+.cont-comment {
+    margin-top: 140px;
+}
+
+.form-komentar {
+    margin-bottom: 140px;
+}
+
 .header-forum {
     display: flex;
     justify-content: space-between;

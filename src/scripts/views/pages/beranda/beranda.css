@@ -40,7 +40,7 @@
 .vector5 {
     position: absolute;
     width: 500px;
-    top: 1500px;
+    top: 1510px;
     left: 30px;
     z-index: -1;
 }
@@ -49,6 +49,13 @@
     position: absolute;
     top: 2130px;
     right: 100px;
+    z-index: -1;
+}
+
+.vector7 {
+    position: absolute;
+    top: 2020px;
+    left: 70px;
     z-index: -1;
 }
 
@@ -209,7 +216,8 @@
     .vector3,
     .vector4,
     .vector5,
-    .vector6 {
+    .vector6,
+    .vector7 {
         display: none;
     }
 }

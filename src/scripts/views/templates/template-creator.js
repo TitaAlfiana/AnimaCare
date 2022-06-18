@@ -71,10 +71,13 @@ const createForumDetailTemplate = (forums) => {
       <p class="content-forum">${forums.descript}</p>
     </div>
   </div>
-  <h3 tabindex="0" class="title-komentar">Komentar</h3>
-        
-  <div class="container" id="list-komentar">
-    ${forums.comments.map(createPostKomentarTemplate).join('')}
+
+  <div class="cont-comment">
+    <h3 tabindex="0" class="title-komentar">Komentar</h3>
+          
+    <div class="container" id="list-komentar">
+      ${forums.comments.map(createPostKomentarTemplate).join('')}
+    </div>
   </div>
     `;
 };

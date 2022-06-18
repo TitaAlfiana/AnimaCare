@@ -68,6 +68,7 @@ const Beranda = {
       <div class="list">
         <img class="vector5 img-fluid" src="${vector5}" alt="vector">
         <img class="vector6 img-fluid" src="${vector3}" alt="vector">
+        <img class="vector7 img-fluid" src="${vector2}" alt="vector">
         <div class="list-article">
         
         
@@ -126,7 +127,7 @@ const Beranda = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const listArtikel = await AnimaCareDbSource.listArticle(url.id);
     const listArtikelContainer = document.querySelector('.list-article');
-    listArtikel.forEach((article) => {
+    listArtikel.reverse().forEach((article) => {
       listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
     });
   },

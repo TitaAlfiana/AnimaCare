@@ -175,9 +175,9 @@ li {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .container-nav {
-        padding-left: 80px;
+@media screen and (max-width: 1025px) {
+
+    .img-artikel {
         width: 100%;
     }
 
@@ -186,11 +186,37 @@ li {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .container-nav {
+
+        width: 100%;
+    }
+
+    .slideses {
+        display: grid;
+    }
+
+    .img-artikel {
+        width: 100%;
+    }
+}
+
+.list-article-inArtikel,
+.list-article-fav {
+    margin-bottom: 140px;
+
+}
+
 @media screen and (max-width: 400px) {
 
     .container-nav {
         width: 100%;
     }
+
+    .img-artikel {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 350px) {
