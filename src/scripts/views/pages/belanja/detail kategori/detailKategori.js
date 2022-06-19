@@ -133,14 +133,12 @@ const DetailKategori = {
       containerListProduct.innerHTML = '<h1>Makanan Kucing</h1>';
       getMakananKucing.forEach((product) => {
         containerListProductItem.innerHTML += (createCardProductTemplate(product));
-        containerListProductItem.innerHTML += '';
       });
     } else if (window.location.href.includes('makanan-anjing')) {
       document.querySelector('#radio2').checked = true;
       containerListProduct.innerHTML = '<h1>Makanan Anjing</h1>';
       getMakananAnjing.forEach((product) => {
         containerListProductItem.innerHTML += (createCardProductTemplate(product));
-        containerListProductItem.innerHTML += '';
       });
     } else if (window.location.href.includes('parfum')) {
       document.querySelector('#radio3').checked = true;
@@ -209,77 +207,66 @@ const DetailKategori = {
     radio.forEach((item) => {
       item.addEventListener('click', () => {
         const { value } = item;
+        containerListProductItem.innerHTML = '';
         if (value === 'option1') {
           containerListProduct.innerHTML = '<h1>Makanan Kucing</h1>';
           getMakananKucing.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option2') {
           containerListProduct.innerHTML = '<h1>Makanan Anjing</h1>';
           getMakananAnjing.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option3') {
           containerListProduct.innerHTML = '<h1>Parfum</h1>';
           getParfum.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option4') {
           containerListProduct.innerHTML = '<h1>Vitamin</h1>';
           getVitamin.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option5') {
           containerListProduct.innerHTML = '<h1>Kandang</h1>';
           getKandang.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option6') {
           containerListProduct.innerHTML = '<h1>Susu</h1>';
           getSusu.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option7') {
           containerListProduct.innerHTML = '<h1>Obat</h1>';
           getObat.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option8') {
           containerListProduct.innerHTML = '<h1>Box Pasir</h1>';
           getBoxPasir.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option9') {
           containerListProduct.innerHTML = '<h1>Pasir</h1>';
           getPasir.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option10') {
           containerListProduct.innerHTML = '<h1>Aksesoris</h1>';
           getAksesoris.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option11') {
           containerListProduct.innerHTML = '<h1>Sampo</h1>';
           getSampo.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         } else if (value === 'option12') {
           containerListProduct.innerHTML = '<h1>Tas Hewan</h1>';
           getTasHewan.forEach((product) => {
             containerListProductItem.innerHTML += (createCardProductTemplate(product));
-            containerListProductItem.innerHTML += '';
           });
         }
       });
