@@ -82,42 +82,42 @@ const Beranda = {
       <h3 class=" font-weight-bold" style = "margin-bottom:30px;">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h3>
         <div class="">
         <div class="list-icon-belanja mx-auto">
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
+          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50" id="iconMakananKucing">
             <img src="${iconMakananKucing}" alt="Icon Makanan Kucing" width="100px" height="100px" class=" mx-auto d-block"/>
             <p class="mt-2 text-center">Makanan Kucing</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100" id="iconMakananAnjing">
             <img src="${iconMakananAnjing}" alt="Icon Makanan Anjing" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Makanan Anjing</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
+          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150" id="iconParfum">
             <img src="${iconParfum}" alt="Icon Parfum" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Parfum</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200" id="iconVitamin">
             <img src="${iconVitamin}" alt="Icon Vitamin" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Vitamin</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="50">
+          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="50" id="iconKandang">
             <img src="${iconKandang}" alt="Icon Kandang" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Kandang</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
+          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100" id="iconSusu">
             <img src="${iconSusu}" alt="Icon Susu" width="70px" height="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Susu</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="150">
+          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="150" id="iconObat">
             <img src="${iconObat}" alt="Icon Obat" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Obat</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200">
+          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" id="iconBoxPasir">
             <img src="${iconBoxPasir}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
             <p class="mt-2 text-center">Box Pasir</p>
           </button>
         </div>
       </div>
       <div class="container-btn-detail">
-      <button class="button2"><a href="#/belanja">Belanja  </a><img src="${arrow}"></button></div>
+      <button class="button2"> Belanja <img src="${arrow}"></button></div>
     </div>
   </section>
     `;
@@ -129,6 +129,46 @@ const Beranda = {
     const listArtikelContainer = document.querySelector('.list-article');
     listArtikel.reverse().forEach((article) => {
       listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
+    });
+
+    // button kategori belanja
+    const makananKucing = document.getElementById('iconMakananKucing');
+    const makananAnjing = document.getElementById('iconMakananAnjing');
+    const parfum = document.getElementById('iconParfum');
+    const vitamin = document.getElementById('iconVitamin');
+    const kandang = document.getElementById('iconKandang');
+    const susu = document.getElementById('iconSusu');
+    const obat = document.getElementById('iconObat');
+    const boxPasir = document.getElementById('iconBoxPasir');
+
+    makananKucing.addEventListener('click', () => {
+      window.location.href = '#/makanan-kucing';
+    });
+    makananAnjing.addEventListener('click', () => {
+      window.location.href = '#/makanan-anjing';
+    });
+    parfum.addEventListener('click', () => {
+      window.location.href = '#/parfum';
+    });
+    vitamin.addEventListener('click', () => {
+      window.location.href = '#/vitamin';
+    });
+    kandang.addEventListener('click', () => {
+      window.location.href = '#/kandang';
+    });
+    susu.addEventListener('click', () => {
+      window.location.href = '#/susu';
+    });
+    obat.addEventListener('click', () => {
+      window.location.href = '#/obat';
+    });
+    boxPasir.addEventListener('click', () => {
+      window.location.href = '#/box-pasir';
+    });
+
+    const buttonBelanja = document.querySelector('.container-btn-detail');
+    buttonBelanja.addEventListener('click', () => {
+      window.location.href = '#/belanja';
     });
   },
 };

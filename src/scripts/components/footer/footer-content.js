@@ -11,30 +11,30 @@ class FooterContent extends HTMLElement {
 
   render() {
     this.innerHTML = `
-<footer class="footer">
-  <div class="container py-3">
-  <div class="row grid-footer">
-    <div class="col footer-kontak">
-      <h3>Kontak</h3>
-      <ul>
-        <li><img src="${iconTelepon}" alt="iconTelepon" />+62 867-5340-9873</li>
-        <li><img src="${iconChat}" alt="iconChat" /> +62 867-5340-9873</li>
-      </ul>
+  <footer class="footer pt-3">
+    <div class="container py-3">
+      <div class="row grid-footer">
+        <div class="col footer-kontak">
+          <h3>Kontak</h3>
+          <ul>
+            <li><img src="${iconTelepon}" alt="iconTelepon" width="20px"/>+62 867-5340-9873</li>
+            <li><img src="${iconChat}" alt="iconChat" width="15px"/> +62 867-5340-9873</li>
+          </ul>
+        </div>
+        <div class="col footer-email">
+          <h3>Email</h3>
+          <ul>
+            <li><img src="${iconEmail}" alt="iconEmail" width="17px"/> animacare15@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col footer-alamat">
+          <h3>Alamat</h3>
+          <p><img src="${iconMaps}" alt="iconMaps" width="15px"/>  Jl. Dipati Ukur, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
+        </div>
+      </div>
     </div>
-    <div class="col footer-email">
-      <h3>Email</h3>
-      <ul>
-        <li><img src="${iconEmail}" alt="iconEmail" /> animacare15@gmail.com</li>
-      </ul>
-    </div>
-    <div class="col footer-alamat">
-      <h3>Alamat</h3>
-      <p><img src="${iconMaps}" alt="iconMaps"/>Jl. Dipati Ukur, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
-    </div>
-  </div>
-    <p class="text-center mt-2">©<span style="color: #fff; font-weight: bold;">AnimaCare</span>, 2022. All Rights Reserved</p>
-    <div>
-</footer>
+    <p class="text-center mt-2 pb-2">©<span style="color: #fff; font-weight: bold;">AnimaCare</span>, 2022. All Rights Reserved</p>
+  </footer>
       `;
   }
 }
