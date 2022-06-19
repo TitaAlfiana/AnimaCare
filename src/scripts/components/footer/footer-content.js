@@ -13,7 +13,7 @@ class FooterContent extends HTMLElement {
     this.innerHTML = `
 <footer class="footer">
   <div class="container py-3">
-  <div class="row ">
+  <div class="row grid-footer">
     <div class="col footer-kontak">
       <h3>Kontak</h3>
       <ul>
