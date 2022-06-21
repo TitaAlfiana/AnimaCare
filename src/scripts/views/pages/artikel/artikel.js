@@ -28,7 +28,11 @@ const Artikel = {
                     </div>
                 </div>
                 <div class="kiri">
+                  <picture class="img-artikel">
+                    <source type="image/webp" srcset="./images/pet1.webp">
+                    <source type="image/jpeg" srcset="./images/pet1.jpg">
                     <img src="${pet1}" alt="poster" class="img-artikel">
+                  </picture>
                 </div>
             </div>
 
@@ -43,7 +47,11 @@ const Artikel = {
                     </div>
                 </div>
                 <div class="kiri">
-                    <img src="${pet2}" alt="poster" class="img-artikel">
+                  <picture class="img-artikel">
+                      <source type="image/webp" srcset="./images/pet2.webp">
+                      <source type="image/jpeg" srcset="./images/pet2.jpg">
+                      <img src="${pet2}" alt="poster" class="img-artikel">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -51,12 +59,12 @@ const Artikel = {
 
     <div class="cont">
         <div class="container-nav">
-            <div class="all-article">
-                <li data-tab-target="#list-article-inArtikel"><a class="nav-link">Semua</a></li>
-            </div>
-            <div class="fav-article">
+            <button aria-label="Semua Artikel" class="all-article">
+              <li data-tab-target="#list-article-inArtikel"><a class="nav-link">Semua</a></li>
+            </button>
+            <button aria-label="Artikel Favorit" class="fav-article">
                 <li data-tab-target="#favorite-article"><a class="nav-link">Favorit</a></li>
-            </div>
+            </button>
         </div>
     </div>
   
@@ -131,7 +139,7 @@ const Artikel = {
       const listArticleSearch = await AnimaCareDbSource.searchArticle(searchText);
       listArtikelContainer.innerHTML = '';
       if (listArticleSearch.length === 0) {
-        listArtikelContainer.innerHTML = `<h3 class="text-center mt-5">Tidak ada hasil pencarian "<span class="font-weight-bold">${searchText}</span>"</h3>`;
+        listArtikelContainer.innerHTML = `<h1 class="text-center mt-5" style="font-size:20px; color:#699BF7;">Tidak ada hasil pencarian "<span class="font-weight-bold">${searchText}</span>"</h1>`;
       } else {
         listArticleSearch.forEach((article) => {
           listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
@@ -146,7 +154,7 @@ const Artikel = {
     if (articles.length === 0) {
       articleFavoriteContainer.style.display = 'block';
       articleFavoriteContainer.innerHTML = `
-      <h4 class="text-center mt-5">Tidak ada favorite artikel yang ditampilkan</h4>
+      <h1 class="text-center mt-5" style="font-size:20px; color:#699BF7;">Tidak ada favorite artikel yang ditampilkan</h1>
       `;
     }
 

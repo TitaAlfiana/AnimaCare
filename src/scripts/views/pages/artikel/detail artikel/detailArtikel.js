@@ -7,9 +7,11 @@ import './detailArtikel.css';
 const DetailArticle = {
   async render() {
     return `
-      <div id="detail-article" class="movie">
-      </div>
       <div id="favButtonContainer"></div>
+      <div id="detail-article">
+      </div>
+     
+    
     `;
   },
 

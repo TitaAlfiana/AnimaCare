@@ -10,11 +10,21 @@ const DetailKategori = {
     <section id="hero">
       <div class="slideshow-container">
          <div class="slideses" id="slideses">
-         <img src="${heroimg1}" class="img-fluid hero1" alt="hero">
+         <picture class="img-fluid hero1">
+            <source type="image/webp" srcset="./images/heroimg1.webp">
+            <source type="image/jpeg" srcset="./images/heroimg1.jpg">
+            <img src="${heroimg1}" class="img-fluid hero1" alt="hero">
+          </picture>
+         
          </div>
 
         <div class="slideses" id="slideses">
-        <img src="${heroimg2}" class="img-fluid hero1" alt="hero">
+          <picture class="img-fluid hero1">
+            <source type="image/webp" srcset="./images/heroimg2.webp">
+            <source type="image/jpeg" srcset="./images/heroimg2.jpg">
+            <img src="${heroimg2}" class="img-fluid hero1" alt="hero">
+          </picture>
+        
         </div>
       </div>
 

@@ -19,7 +19,7 @@ const createForumItemTemplate = (forum) => {
               <p class="date-list-forum">${date}</p>
           </div>
           <div class="body-list-forum">
-              <p class="title-list-forum"><a href="${`#/forum/${forum._id}`}">${forum.title}</a></p>
+              <h1 class="title-list-forum"><a href="${`#/forum/${forum._id}`}">${forum.title}</a></h1>
               <p class="content-list-forum" style= "font-weight: lighter;">${forum.descript.slice(0, 170) + (forum.descript.length > 130 ? ' . . .' : '')}</p>
           </div>
       </div>
@@ -67,13 +67,13 @@ const createForumDetailTemplate = (forums) => {
       <p class="date-forum">${date}</p>
     </div>
     <div class="body-forum">
-      <p class="title-forum">${forums.title}</p>
+      <h1 class="title-forum">${forums.title}</h1>
       <p class="content-forum">${forums.descript}</p>
     </div>
   </div>
 
   <div class="cont-comment">
-    <h3 tabindex="0" class="title-komentar">Komentar</h3>
+    <h2 tabindex="0" class="title-komentar">Komentar</h2>
           
     <div class="container" id="list-komentar">
       ${forums.comments.map(createPostKomentarTemplate).join('')}
@@ -83,22 +83,40 @@ const createForumDetailTemplate = (forums) => {
 };
 
 const creatArticleItemTemplate = (article) => `
-<a href="${`#/artikel/${article._id}`}" id="anchor">
+<a href="${`#/artikel/${article._id}`}" id="anc">
 <div class="card" data-aos="zoom-in" data-aos-duration="1000">
-  <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+<picture class="card-img-top">
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (max-width: 300px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 901px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+<img data-src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+</picture>
+  
   <div class="card-body">
-    <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>
+    <h1 class="card-title" style="font-weight:bold; font-size:20px;">${article.title}</h1>
     <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
   </div>
 </div>
 </a>`;
 
 const creatArticleItemTemplateInFavorite = (article) => `
-<a href="${`#/artikel/${article.id}`}" id="anchor">
+<a href="${`#/artikel/${article.id}`}" id="anc">
 <div class="card">
-  <img src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+<picture class="card-img-top">
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (max-width: 300px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 901px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+<img data-src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+</picture>
+  
   <div class="card-body">
-    <h5 class="card-title" style="font-weight:bold;">${article.title}</h5>
+    <h1 class="card-title" style="font-weight:bold; font-size:25px;">${article.title}</h1>
     <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
   </div>
 </div>
@@ -107,7 +125,18 @@ const creatArticleItemTemplateInFavorite = (article) => `
 const creatArticleDetailTemplate = (DetailArticle) => `
 <div class="artikel-detail">
         <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
-        <div class="img-artcl mt-5"><img src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="Responsive image"></div>
+        <div class="img-artcl mt-5">
+        <picture class="img-fluid">
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (max-width: 300px)" />        
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (max-width: 300px)" />
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 901px)" />        
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+        <img data-src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="image of article">
+        </picture>
+        
+        </div>
         <div class="deskripsi">
             <p class="paragraf">${DetailArticle.descript}</p>
         </div>
@@ -121,19 +150,25 @@ const creatArticleDetailTemplate = (DetailArticle) => `
     </div>`;
 
 const createLikeButtonTemplate = () => `
+<div class= "button-fav">
   <button aria-label="like this article;" id="likeButton" class="like">
-  <img src="${iconLike}" class="img-like" alt="image artikel">
+  <h5 style="font-weight:bold;" class="ket-button"> Tandai sebagai favorit</h5>
+  <img src="${iconLike}" class="img-like unlike" alt="icon favorit artikel">
   </button>
+</div>
 `;
 
 const createLikedButtonTemplate = () => `
+<div class= "button-fav">
   <button aria-label="unlike this article" id="likeButton" class="like">
-  <img src="${iconLiked}" class="img-like" alt="image artikel">
+  <h5 style="font-weight:bold;" class="ket-button"> Hapus artikel favorit</h5>
+  <img src="${iconLiked}" class="img-like laik" alt="icon favorit artikel">
   </button>
+</div>
 `;
 
 const createCardProductTemplate = (product) => `
-<a href="${`https://www.tokopedia.com/search?st=product&q=${product.name}&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource=`}" id="anchor" target="_blank" rel="noopener">
+<a href="${`https://www.tokopedia.com/search?st=product&q=${product.name}&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource=`}" id="anc" target="_blank" rel="noopener">
   <button class="product btn shadow-sm" id="iconParfum">
     <img src="${CONFIG.BASE_IMAGE_URL + product.image}" alt="${product.name}" width="120px" height="150px" class=" mx-auto d-block mt-2"/>
     <p class="mt-2 text-center">${product.name}</p>

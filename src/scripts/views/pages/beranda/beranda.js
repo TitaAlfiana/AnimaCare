@@ -23,16 +23,25 @@ const Beranda = {
   async render() {
     return `
   <section id="content-1" class="content-1">
-    <img class="vector1 img-fluid" src="${vector1}" alt="vector">
-    <img class="vector2 img-fluid" src="${vector2}" alt="vector">
-    <img class="vector3 img-fluid" src="${vector3}" alt="vector">
-    <img class="vector4 img-fluid" src="${vector4}" alt="vector">
+    <img class="vector1 img-fluid lazyload" data-src="${vector1}" alt="vector">
+    <img class="vector2 img-fluid lazyload" data-src="${vector2}" alt="vector">
+    <img class="vector3 img-fluid lazyload" data-src="${vector3}" alt="vector">
+    <img class="vector4 img-fluid lazyload" data-src="${vector4}" alt="vector">
     <div class="container mt-5 container-hero">
       <div class="hero-left">
-        <img class="hero-image" src=${image5} alt='hero image' data-aos="fade-up" data-aos-duration="3000"/>
+      <picture class="hero-image" data-aos="fade-up" data-aos-duration="3000">
+      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (max-width: 300px)" />        
+      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (max-width: 300px)" />
+      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (min-width: 901px)" />        
+      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (min-width: 901px)" />
+      <img class="hero-image lazyload" data-src=${image5} alt='hero image'/>
+      </picture>
+        
       </div>
       <div class="hero-right">
-        <h3 style="font-weight: bold;"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h3>
+        <h1 style="font-weight: bold;" class="h1-beranda"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h1>
         <p style="font-size: 17px;">Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya ! Konsultasikan kesehatan hewan secara gratis hanya disini</p>
         <button class="button1"><a href="#content-2">Lebih lengkap</a></button>
       </div>
@@ -44,11 +53,19 @@ const Beranda = {
       <div class="row">
         <div class="col-md-6">
           <figure class="figure" data-aos="fade-up" data-aos-duration="1000">
-            <img src=${image4} class="figure-img img-fluid rounded" alt="Ilustration AnimaCare">
+          <picture class="figure-img img-fluid rounded">
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (max-width: 300px)" />        
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (max-width: 300px)" />
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (min-width: 901px)" />        
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (min-width: 901px)" />
+          <img class="figure-img img-fluid rounded lazyload" data-src=${image4} alt='Ilustration AnimaCare'/>
+          </picture>
           </figure>
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
-          <h3 class=" font-weight-bold mb-4">Apa sih AnimaCare?</h3>
+          <h1 class=" font-weight-bold mb-4 h1-beranda">Apa sih AnimaCare?</h1>
           <p class="container">AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan Anda. Mulai dari konsultasi kesehatan hewan peliharaan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman para pencinta hewan peliharaan tentang hewan peliharaannya, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda.</p>
         </div>
       </div>
@@ -59,16 +76,16 @@ const Beranda = {
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 ">
-          <h3 class=" font-weight-bold mb-4">Dalami Pengetahuanmu Seputar Dunia Hewan Peliharaan</h3>
+          <h1 class=" font-weight-bold mb-4 h1-beranda" >Dalami Pengetahuanmu Seputar Dunia Hewan Peliharaan</h1>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
           <a href="#/artikel" class="" style="font-size: 20px;">Lebih banyak</a>
         </div>
       </div>
       <div class="list">
-        <img class="vector5 img-fluid" src="${vector5}" alt="vector">
-        <img class="vector6 img-fluid" src="${vector3}" alt="vector">
-        <img class="vector7 img-fluid" src="${vector2}" alt="vector">
+        <img class="vector5 img-fluid lazyload" data-src="${vector5}" alt="vector">
+        <img class="vector6 img-fluid lazyload" data-src="${vector3}" alt="vector">
+        <img class="vector7 img-fluid lazyload" data-src="${vector2}" alt="vector">
         <div class="list-article">
         
         
@@ -79,45 +96,45 @@ const Beranda = {
 
   <section id="content-4" class="content-4">
     <div class="container mt-5">
-      <h3 class=" font-weight-bold" style = "margin-bottom:30px;">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h3>
+      <h1 class=" font-weight-bold h1-beranda" style = "margin-bottom:30px;">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h1>
         <div class="">
         <div class="list-icon-belanja mx-auto">
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50" id="iconMakananKucing">
-            <img src="${iconMakananKucing}" alt="Icon Makanan Kucing" width="100px" height="100px" class=" mx-auto d-block"/>
+          <button aria-label="Makanan Kucing" class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50" id="iconMakananKucing">
+            <img data-src="${iconMakananKucing}" alt="Icon Makanan Kucing" width="100px" height="100px" class=" mx-auto d-block lazyload"/>
             <p class="mt-2 text-center">Makanan Kucing</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100" id="iconMakananAnjing">
-            <img src="${iconMakananAnjing}" alt="Icon Makanan Anjing" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Makanan Anjing" class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100" id="iconMakananAnjing">
+            <img data-src="${iconMakananAnjing}" alt="Icon Makanan Anjing" height="100px" width="100px" class=" mx-auto d-block mt-2 lazyload"/>
             <p class="mt-2 text-center">Makanan Anjing</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150" id="iconParfum">
-            <img src="${iconParfum}" alt="Icon Parfum" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Parfum Hewan" class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150" id="iconParfum">
+            <img data-src="${iconParfum}" alt="Icon Parfum" width="100px" height="100px" class=" mx-auto d-block mt-2 lazyload"/>
             <p class="mt-2 text-center">Parfum</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200" id="iconVitamin">
-            <img src="${iconVitamin}" alt="Icon Vitamin" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Vitamin Hewan" class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200" id="iconVitamin">
+            <img data-src="${iconVitamin}" alt="Icon Vitamin" width="100px" height="100px" class=" mx-auto d-block mt-2 lazyload"/>
             <p class="mt-2 text-center">Vitamin</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="50" id="iconKandang">
-            <img src="${iconKandang}" alt="Icon Kandang" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Kandang Hewan" class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="50" id="iconKandang">
+            <img data-src="${iconKandang}" alt="Icon Kandang" width="100px" height="100px" class=" mx-auto d-block mt-2 lazyload" />
             <p class="mt-2 text-center">Kandang</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100" id="iconSusu">
-            <img src="${iconSusu}" alt="Icon Susu" width="70px" height="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Susu Untuk Hewan" class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100" id="iconSusu">
+            <img data-src="${iconSusu}" alt="Icon Susu" width="70px" height="100px" class=" mx-auto d-block mt-2 lazyload"/>
             <p class="mt-2 text-center">Susu</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="150" id="iconObat">
-            <img src="${iconObat}" alt="Icon Obat" width="100px" height="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Obat Hewan" class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="150" id="iconObat">
+            <img data-src="${iconObat}" alt="Icon Obat" width="100px" height="100px" class=" mx-auto d-block mt-2 lazyload"/>
             <p class="mt-2 text-center">Obat</p>
           </button>
-          <button class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" id="iconBoxPasir">
-            <img src="${iconBoxPasir}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2"/>
+          <button aria-label="Pasir Hewan" class="icon-belanja btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" id="iconBoxPasir">
+            <img data-src="${iconBoxPasir}" alt="Icon Box Pasir" height="100px" width="100px" class=" mx-auto d-block mt-2 lazyload"/>
             <p class="mt-2 text-center">Box Pasir</p>
           </button>
         </div>
       </div>
       <div class="container-btn-detail">
-      <button class="button2"> Belanja <img src="${arrow}"></button></div>
+      <button class="button2"> Belanja <img data-src="${arrow}" alt="Icon arrow" class="lazyload"></button></div>
     </div>
   </section>
     `;

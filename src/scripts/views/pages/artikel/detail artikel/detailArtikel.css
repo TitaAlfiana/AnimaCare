@@ -2,25 +2,43 @@
    Like
 */
 
-/* .like {
-    width: 55px;
-    height: 55px;
+.like {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #699BF7;
-
-    bottom: 20px;
-    left: 16px;
-    border-radius: 50%;
-    border: 0;
-
-    font-size: 18px;
-    color: white;
+    background-color: white;
     cursor: pointer;
-} */
+    border: none;
+    text-decoration: none;
+    outline-style: none;
+}
 
-.like {
+.like:focus {
+    outline: none;
+    border: none;
+}
+
+
+.laik,
+.unlike {
+    width: 40px;
+    height: 40px;
+}
+
+.button-fav {
+    display: flex;
+    padding-right: 100px;
+    justify-content: right;
+    margin-top: 40px;
+}
+
+.ket-button {
+    margin-top: 8px;
+    padding-right: 15px;
+    color: #699BF7;
+}
+
+/* .like {
     font-size: 18px;
     background-color: #699BF7;
     color: #fff;
@@ -36,7 +54,7 @@
     bottom: 16px;
     left: 16px;
     z-index: 10;
-}
+} */
 
 
 * {
@@ -72,16 +90,29 @@
     padding-right: 40px;
 }
 
+#detail-article {
+    margin-bottom: 140px;
+}
+
 @media screen and (max-width: 400px) {
     .paragraf {
         text-align: justify;
     }
 
+    .button-fav {
+        padding: 0;
+        justify-content: center;
+    }
 
+    .artikel-detail {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .paragraf {
         text-align: justify;
+
     }
+
 }

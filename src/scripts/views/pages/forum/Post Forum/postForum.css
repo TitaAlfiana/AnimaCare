@@ -11,6 +11,10 @@
     width: 60%;
 }
 
+.sharing {
+    margin-bottom: 140px;
+}
+
 @media screen and (max-width: 1000px) {
     .image2 {
         width: 50%;

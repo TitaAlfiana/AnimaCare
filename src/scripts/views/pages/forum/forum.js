@@ -14,7 +14,7 @@ const Forum = {
     <div class="container  my-4">
       <div class="row">
         <div class="col">
-          <a class="navbar-brand" href="#/post-forum" style="font-weight: bold;"> + <span style="color: #000;">Bagikan pengalamanmu!</span></a>
+          <a aria-label="Bagikan pengalamanmu" class="navbar-brand" href="#/post-forum" style="font-weight: bold;"> + <span style="color: #000;">Bagikan pengalamanmu!</span></a>
         </div>
         <div class="col">
           <form class="d-flex search-bar-forum">

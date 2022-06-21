@@ -11,7 +11,17 @@ class appBar extends HTMLElement {
     <div class="border">
     <nav class="nav container" id="nav">
     <div class="logo-apps">
-        <a href="#/home" style="padding: 0;"> <img src=${Logo} alt="Logo" class="logo"></a>
+        <a href="/" style="padding: 0;">
+        <picture class="logo">
+        <source class="logo lazyload" srcset="./logo/logo-bar.webp" type="image/webp" media="all and (max-width: 300px)" />        
+        <source class="logo lazyload" srcset="./logo/logo-bar.jpg" type="image/jpeg" media="all and (max-width: 300px)" />
+        <source class="logo lazyload" srcset="./logo/logo-bar.webp" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+        <source class="logo lazyload" srcset="./logo/logo-bar.jpg" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+        <source class="logo lazyload" srcset="./logo/logo-bar.webp" type="image/webp" media="all and (min-width: 901px)" />        
+        <source class="logo lazyload" srcset="./logo/logo-bar.jpg" type="image/jpeg" media="all and (min-width: 901px)" />
+        <img class="logo lazyload" data-src=${Logo} alt='Logo'/>
+        </picture> 
+        </a>
     </div>
     <div class="hamburger">
        <button id="menu" class="header__menu" aria-label="see menu">☰</button> 

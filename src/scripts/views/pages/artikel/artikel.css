@@ -8,7 +8,7 @@ h1 {
     font-weight: bold;
 }
 
-#anchor {
+#anc {
     text-decoration: none;
     color: black;
 }
@@ -44,6 +44,19 @@ h1 {
 .fav-article {
     width: 100%;
     height: fit-content;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.fav-article:focus {
+    outline: none;
+    border: none;
+}
+
+.all-article:focus {
+    outline: none;
+    border: none;
 }
 
 .search {

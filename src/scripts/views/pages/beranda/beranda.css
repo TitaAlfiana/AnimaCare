@@ -71,7 +71,8 @@
 }
 
 .hero-image {
-    width: 80%;
+    width: 93%;
+    padding-left: 8px;
 }
 
 .row {
@@ -99,6 +100,12 @@
 .button1 a:hover,
 .button2 a:hover {
     color: #fff;
+}
+
+.button1,
+.button2:focus {
+    outline: none;
+    border: none;
 }
 
 .button1,
@@ -164,6 +171,9 @@
     margin: 0;
 }
 
+.h1-beranda {
+    font-size: 28px;
+}
 
 @media screen and (min-width: 900px) {
     .container-hero {
@@ -198,6 +208,7 @@
         grid-column-gap: 1em;
         grid-row-gap: 2em;
     }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -206,6 +217,10 @@
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 2em;
         grid-column-gap: 0.5em;
+    }
+
+    .hero-image {
+        padding-left: 0;
     }
 }
 

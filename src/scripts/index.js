@@ -9,6 +9,8 @@ import $ from 'jquery';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import App from './views/app';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import swRegister from './utils/sw-register';
 
 const app = new App({

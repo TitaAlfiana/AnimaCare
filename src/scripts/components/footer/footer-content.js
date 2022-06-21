@@ -15,21 +15,21 @@ class FooterContent extends HTMLElement {
     <div class="container py-3">
       <div class="row grid-footer">
         <div class="col footer-kontak">
-          <h3>Kontak</h3>
+          <h2>Kontak</h3>
           <ul>
-            <li><img src="${iconTelepon}" alt="iconTelepon" width="20px"/>+62 867-5340-9873</li>
-            <li><img src="${iconChat}" alt="iconChat" width="15px"/> +62 867-5340-9873</li>
+            <li><img data-src="${iconTelepon}" alt="iconTelepon" width="20px" class="lazyload"/>+62 867-5340-9873</li>
+            <li><img src="${iconChat}" alt="iconChat" width="15px" class="lazyload"/> +62 867-5340-9873</li>
           </ul>
         </div>
         <div class="col footer-email">
-          <h3>Email</h3>
+          <h2>Email</h3>
           <ul>
-            <li><img src="${iconEmail}" alt="iconEmail" width="17px"/> animacare15@gmail.com</li>
+            <li><img data-src="${iconEmail}" alt="iconEmail" width="17px" class="lazyload"/> animacare15@gmail.com</li>
           </ul>
         </div>
         <div class="col footer-alamat">
-          <h3>Alamat</h3>
-          <p><img src="${iconMaps}" alt="iconMaps" width="15px"/>  Jl. Dipati Ukur, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
+          <h2>Alamat</h3>
+          <p><img data-src="${iconMaps}" alt="iconMaps" width="15px" class="lazyload"/>  Jl. Dipati Ukur, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
         </div>
       </div>
     </div>
