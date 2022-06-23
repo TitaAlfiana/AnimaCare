@@ -1,4 +1,6 @@
 import Beranda from '../views/pages/beranda/beranda';
+import Login from '../views/pages/admin/login/login';
+import AdminDashboard from '../views/pages/admin/dashboard';
 import Artikel from '../views/pages/artikel/artikel';
 import Forum from '../views/pages/forum/forum';
 import Belanja from '../views/pages/belanja/belanja';
@@ -9,6 +11,8 @@ import DetailKategori from '../views/pages/belanja/detail kategori/detailKategor
 
 const routes = {
   '/': Beranda,
+  '/login': Login,
+  '/admin': AdminDashboard,
   '/artikel': Artikel,
   '/artikel/:id': DetailArticle,
   '/forum': Forum,
