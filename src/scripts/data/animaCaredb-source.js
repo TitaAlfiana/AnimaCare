@@ -43,6 +43,14 @@ class AnimaCareDbSource {
   }
 
   // artikel
+  static async postArticle(data) {
+    const response = await fetch(API_ENDPOINT.LIST_ARTICLE, {
+      method: 'POST',
+      body: data,
+    });
+    return response.json();
+  }
+
   static async listArticle() {
     const response = await fetch(API_ENDPOINT.LIST_ARTICLE);
     const data = await response.json();

@@ -2,6 +2,7 @@ import './postArticle.css';
 import vector2 from '../../../../../public/vector/Vector2.png';
 import vector3 from '../../../../../public/vector/Vector3.png';
 import vector5 from '../../../../../public/vector/Vector5.png';
+import PostArticles from '../../../../utils/postArtikel';
 
 const PostArticle = {
   async render() {
@@ -23,43 +24,43 @@ const PostArticle = {
         <div class="cont-postArtikel">
         <div class="cont-img d-flex justify-content-center">
         <img class='img-fluid text-center' src="./images/ucinganjing.png" alt='ilustration hewan' width="550px" /></div>
-            <form>
+        <form id="formPost">
             <div class="form-group">
                 <label style="font-weight: bold;" for="exampleFormControlInput1">Judul Artikel</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="inputJudulArtikel">
             </div>
 
             <div class="form-group mt-3">
                 <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskrispi Artikel</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="inputDeskripsiArtikel" rows="3"></textarea>
             </div>
 
             <div class="form-group mt-3">
                 <label style="font-weight: bold;" for="exampleFormControlInput1">Sub Judul Pertama Artikel</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" >
+                <input type="text" class="form-control" id="inputJudulPertamaArtikel" >
             </div>
 
             <div class="form-group mt-3">
-                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskrispi Bahasan Pertama</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Pertama</label>
+                <textarea class="form-control" id="inputDeskripiBahasanPertama" rows="3"></textarea>
             </div>
 
             <div class="form-group mt-3">
                 <label style="font-weight: bold;" for="exampleFormControlInput1">Sub Judul Kedua Artikel</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" >
+                <input type="text" class="form-control" id="inputSubJudulKeduaArtikel" >
             </div>
 
             <div class="form-group mt-3">
-                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskrispi Bahasan Kedua</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Kedua</label>
+                <textarea class="form-control" id="inputDeskripiBahasanKedua" rows="3"></textarea>
             </div>
 
             <div class="form-group mt-3">
-                <label style="font-weight: bold;" for="exampleFormControlFile1">Unggah gambar Artikel</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <label style="font-weight: bold;" for="exampleFormControlFile1">Unggah Gambar Artikel</label>
+                <input type="file" class="form-control-file" id="inputUnggahGambarArtikel">
             </div>
             <div class="button-unggah d-flex justify-content-end">
-            <button class="button2" id="unggah">Unggah</button></div>
+            <button type="submit" class="button2" id="unggah">Unggah</button></div>
             </form>
         </div>
     </div>
@@ -72,8 +73,16 @@ const PostArticle = {
 
   async afterRender() {
     window.$crisp.push(['do', 'chat:hide']);
-  },
 
+    // const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const formPost = document.getElementById('formPost');
+    formPost.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      PostArticles();
+      alert('Artikel berhasil diunggah');
+      window.location.href = '#/admin';
+    });
+  },
 };
 
 export default PostArticle;
