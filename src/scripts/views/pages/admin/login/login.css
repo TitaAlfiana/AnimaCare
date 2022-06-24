@@ -6,6 +6,14 @@
     height: 100vh;
 }
 
+.title-login {
+    font-size: 10px;
+}
+
+.btn-lgn {
+    font-size: 10px;
+}
+
 .login {
     height: 80%;
     width: 80%;

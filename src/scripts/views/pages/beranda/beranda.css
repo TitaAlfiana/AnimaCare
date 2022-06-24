@@ -232,7 +232,10 @@
     .vector4,
     .vector5,
     .vector6,
-    .vector7 {
+    .vector7,
+    .vector5-artikel,
+    .vector6-artikel,
+    .vector7-artikel {
         display: none;
     }
 }

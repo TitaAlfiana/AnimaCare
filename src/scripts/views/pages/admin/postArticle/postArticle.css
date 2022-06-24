@@ -1,0 +1,38 @@
+.button-back {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    color: #699BF7;
+}
+
+.form-postArtikel {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cont-postArtikel {
+    width: 80%;
+}
+
+.vector5-artikel {
+    position: absolute;
+    width: 500px;
+    top: 70px;
+    left: 400px;
+    z-index: -1;
+}
+
+.vector6-artikel {
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    z-index: -1;
+}
+
+.vector7-artikel {
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    z-index: -1;
+}

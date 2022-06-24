@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.button-logout {
+    font-size: 15px;
+    color: #699BF7;
+    font-weight: bold;
+
+}
+
+.img-dashboard {
+    height: 30px;
+}
+
+.header-admin {
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-first {
+    padding: 40px;
+}
+
+.daftar-artikel-admin {
+    margin-top: 100px;
+}
+
+.list-article-adminPage {
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 17px;
+    grid-row-gap: 25px;
+    color: black;
+    justify-content: center;
+}
+
+.list-article-adminPage .card {
+    width: 95%;
+    height: 30rem;
+
+}

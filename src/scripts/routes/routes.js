@@ -8,11 +8,13 @@ import PostForum from '../views/pages/forum/Post Forum/postForum';
 import DetailForum from '../views/pages/forum/detail forum/detailForum';
 import DetailArticle from '../views/pages/artikel/detail artikel/detailArtikel';
 import DetailKategori from '../views/pages/belanja/detail kategori/detailKategori';
+import PostArticle from '../views/pages/admin/postArticle/postArtikel';
 
 const routes = {
   '/': Beranda,
   '/login': Login,
   '/admin': AdminDashboard,
+  '/post-artikel': PostArticle,
   '/artikel': Artikel,
   '/artikel/:id': DetailArticle,
   '/forum': Forum,
