@@ -13,7 +13,7 @@ const PostArticle = {
     border.style.display = 'none';
     return `
     <div class="cont-first">
-    <h1 style="font-size:28px;"> Unggah <span style="color: #699BF7;"> Artikel Baru</span></h1>
+    <h1 style="font-size:28px;"> Unggah <span style="color: #699BF7;"> Artikel </span></h1>
         <img class="vector5-artikel img-fluid lazyload" data-src="${vector5}" alt="vector">
         <img class="vector6-artikel img-fluid lazyload" data-src="${vector3}" alt="vector">
         <img class="vector7-artikel img-fluid lazyload" data-src="${vector2}" alt="vector">

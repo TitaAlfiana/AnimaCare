@@ -45,8 +45,8 @@ const Login = {
     return `
     <div class="header-admin">
       <div class="left-header d-flex">
-        <h1 style="padding-right:20px;">Dashboard</h1>
-        <img src="${logoDashboard}" class="img-fluid img-dashboard" alt="icon Animacare" width="170px"></div>
+        <h1 style="padding-right:20px; margin-top:7px;">Dashboard</h1>
+        <img style="margin-top:7px;" src="${logoDashboard}" class="img-fluid img-dashboard" alt="icon Animacare" width="170px"></div>
 
       <div class="right-header">
         <button class="btn btn-light button-logout" type="submit" title='Login' id="logout">Logout</button></div>
@@ -58,7 +58,7 @@ const Login = {
         <a href="#/post-artikel" id="anc">
           <div class="card-header"><img src="./images/img0.png" class="img-fluid" alt="icon"></div>
             <div class="card-body">
-              <h1 style="font-size:20px; color:#699BF7;" class="card-title text-center">Tambah Artikel Baru</h1>
+              <h1 style="font-size:20px; color:#699BF7;" class="card-title text-center">Unggah Artikel Baru</h1>
             </div></a>
         </div>
 

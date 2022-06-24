@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "9047c9bdd706c199a85a",
-  "time": 57192,
-  "builtAt": 1656051541362,
+  "hash": "98305efbf733acd21150",
+  "time": 60884,
+  "builtAt": 1656054770653,
   "publicPath": "",
   "outputPath": "C:\\Users\\ASUS\\AnimaCare\\dist",
   "assetsByChunkName": {
@@ -640,7 +640,7 @@
     },
     {
       "name": "bundle.js",
-      "size": 2064022,
+      "size": 2065263,
       "chunks": [
         "main"
       ],
@@ -1841,14 +1841,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1762614,
+      "size": 1763739,
       "names": [
         "main"
       ],
       "files": [
         "bundle.js"
       ],
-      "hash": "a4576a5634dad4a31fbe",
+      "hash": "5cf2f051dc8f257c28c5",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -5503,7 +5503,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/dasboard.css",
           "index": 110,
           "index2": 104,
-          "size": 1065,
+          "size": 2154,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10583,9 +10583,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\dashboard.js",
-          "issuerId": "./src/scripts/views/pages/admin/dashboard.js",
-          "issuerName": "./src/scripts/views/pages/admin/dashboard.js",
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
+          "issuerId": "./src/scripts/views/pages/artikel/artikel.js",
+          "issuerName": "./src/scripts/views/pages/artikel/artikel.js",
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -10603,9 +10603,9 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/admin/dashboard.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\dashboard.js",
-              "name": "./src/scripts/views/pages/admin/dashboard.js"
+              "id": "./src/scripts/views/pages/artikel/artikel.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
+              "name": "./src/scripts/views/pages/artikel/artikel.js"
             }
           ],
           "failed": false,
@@ -11989,7 +11989,7 @@
               "moduleName": "./src/scripts/views/pages/admin/dashboard.js",
               "type": "harmony import specifier",
               "userRequest": "../../../../public/logo/logo-transparan.png",
-              "loc": "49:20-33"
+              "loc": "49:44-57"
             }
           ],
           "providedExports": [
@@ -14512,9 +14512,9 @@
           "name": "./src/scripts/views/pages/admin/dashboard.js",
           "index": 106,
           "index2": 106,
-          "size": 4715,
+          "size": 4755,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -14756,9 +14756,9 @@
           "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
           "index": 147,
           "index2": 145,
-          "size": 3484,
+          "size": 3480,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -20061,7 +20061,7 @@
       "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/dasboard.css",
       "index": 110,
       "index2": 104,
-      "size": 1065,
+      "size": 2154,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -25141,9 +25141,9 @@
       "chunks": [
         "main"
       ],
-      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\dashboard.js",
-      "issuerId": "./src/scripts/views/pages/admin/dashboard.js",
-      "issuerName": "./src/scripts/views/pages/admin/dashboard.js",
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
+      "issuerId": "./src/scripts/views/pages/artikel/artikel.js",
+      "issuerName": "./src/scripts/views/pages/artikel/artikel.js",
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -25161,9 +25161,9 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/admin/dashboard.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\dashboard.js",
-          "name": "./src/scripts/views/pages/admin/dashboard.js"
+          "id": "./src/scripts/views/pages/artikel/artikel.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
+          "name": "./src/scripts/views/pages/artikel/artikel.js"
         }
       ],
       "failed": false,
@@ -26547,7 +26547,7 @@
           "moduleName": "./src/scripts/views/pages/admin/dashboard.js",
           "type": "harmony import specifier",
           "userRequest": "../../../../public/logo/logo-transparan.png",
-          "loc": "49:20-33"
+          "loc": "49:44-57"
         }
       ],
       "providedExports": [
@@ -29070,9 +29070,9 @@
       "name": "./src/scripts/views/pages/admin/dashboard.js",
       "index": 106,
       "index2": 106,
-      "size": 4715,
+      "size": 4755,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -29314,9 +29314,9 @@
       "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
       "index": 147,
       "index2": 145,
-      "size": 3484,
+      "size": 3480,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -31898,7 +31898,7 @@
           "name": "sw.js",
           "size": 34918,
           "chunks": [
-            0
+            1
           ],
           "chunkNames": [],
           "info": {},
@@ -31909,7 +31909,7 @@
       "entrypoints": {
         "undefined": {
           "chunks": [
-            0
+            1
           ],
           "assets": [
             "sw.js"
@@ -31921,7 +31921,7 @@
       "namedChunkGroups": {
         "undefined": {
           "chunks": [
-            0
+            1
           ],
           "assets": [
             "sw.js"
@@ -31932,7 +31932,7 @@
       },
       "chunks": [
         {
-          "id": 0,
+          "id": 1,
           "rendered": false,
           "initial": true,
           "entry": true,
@@ -31941,7 +31941,7 @@
           "files": [
             "sw.js"
           ],
-          "hash": "8bc3729053ca9d0c93f2",
+          "hash": "91336dc142abf384f228",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -31959,7 +31959,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
               "issuerId": "./src/scripts/sw.js",
@@ -32002,7 +32002,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
               "issuerId": "./src/scripts/sw.js",
@@ -32045,7 +32045,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\cache-helper.js",
               "issuerId": "./src/scripts/utils/cache-helper.js",
@@ -32113,7 +32113,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": null,
               "issuerId": null,
@@ -32149,7 +32149,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
               "issuerId": "./src/scripts/sw.js",
@@ -32236,7 +32236,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
           "issuerId": "./src/scripts/sw.js",
@@ -32279,7 +32279,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
           "issuerId": "./src/scripts/sw.js",
@@ -32322,7 +32322,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\cache-helper.js",
           "issuerId": "./src/scripts/utils/cache-helper.js",
@@ -32390,7 +32390,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": null,
           "issuerId": null,
@@ -32426,7 +32426,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
           "issuerId": "./src/scripts/sw.js",
