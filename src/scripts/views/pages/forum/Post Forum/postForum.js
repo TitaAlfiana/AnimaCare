@@ -1,16 +1,11 @@
-import PostForum from '../../../../utils/postForum';
+import PostForum from '../../../../utils/postForum-initiator';
 import image2 from '../../../../../public/images/image2.png';
 import './postForum.css';
-
-// eslint-disable-next-line no-unused-vars
-import UrlParser from '../../../../routes/url-parser';
-// eslint-disable-next-line no-unused-vars
-import AnimaCareDbSource from '../../../../data/animaCaredb-source';
-// eslint-disable-next-line no-unused-vars
-import { createForumItemTemplate } from '../../../templates/template-creator';
+import { NavbarAndFooterDisplayBlock } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const Forum = {
   async render() {
+    NavbarAndFooterDisplayBlock();
     return `
     <div class="container my-5">
       <div class="sharing">

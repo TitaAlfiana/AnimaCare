@@ -86,12 +86,8 @@ const creatArticleItemTemplate = (article) => `
 <a href="${`#/artikel/${article._id}`}" id="anc">
 <div class="card" data-aos="zoom-in" data-aos-duration="1000">
 <picture class="card-img-top">
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (max-width: 300px)" />
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 901px)" />        
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 300px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 300px)" />
 <img data-src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
 </picture>
   
@@ -106,12 +102,8 @@ const creatArticleItemTemplateInFavorite = (article) => `
 <a href="${`#/artikel/${article.id}`}" id="anc">
 <div class="card">
 <picture class="card-img-top">
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (max-width: 300px)" />
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 901px)" />        
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 300px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 300px)" />
 <img data-src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
 </picture>
   
@@ -126,12 +118,8 @@ const creatArticleItemTemplateInAdmin = (article) => `
 <a href="${`#/artikel-admin/${article._id}`}" id="anc">
 <div class="card">
 <picture class="card-img-top">
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (max-width: 300px)" />
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 901px)" />        
-<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 300px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 300px)" />
 <img data-src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
 </picture>
   
@@ -147,12 +135,8 @@ const creatArticleDetailTemplate = (DetailArticle) => `
         <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
         <div class="img-artcl mt-5">
         <picture class="img-fluid">
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (max-width: 300px)" />        
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (max-width: 300px)" />
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 901px)" />        
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 300px)" />        
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 300px)" />
         <img data-src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="image of article">
         </picture>
         
@@ -172,34 +156,31 @@ const creatArticleDetailTemplate = (DetailArticle) => `
 const creatArticleDetailTemplateinAdmin = (DetailArticle) => `
       <div class="artikel-detail">
         <div class="button-crud d-flex justify-content-end pr-5">
-        <div class="btn-edt">
-        <button type="submit" class="button-edit mb-4"><a href="${`#/edit-artikel/${DetailArticle._id}`}" id="anc">Edit<img data-src="./icons/iconedit.png" alt="Icon edit" class="lazyload img-fluid"></a></button>
+          <div class="btn-edt">
+            <button type="submit" class="button-edit mb-4">Edit<img data-src="./icons/iconedit.png" alt="Icon edit" class="lazyload img-fluid"></button>
+          </div>
+          <div class="btn-hps">
+            <button type="submit" class="button-hapus">Hapus<img data-src="./icons/iconsampah.png" alt="Icon edit" class="lazyload img-fluid"></button>
+          </div>
         </div>
-        <div class="btn-hps"><button class="button-hapus">Hapus<img data-src="./icons/iconsampah.png" alt="Icon edit" class="lazyload img-fluid"></button></div></div>
         <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
         <div class="img-artcl mt-5">
-        <picture class="img-fluid">
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (max-width: 300px)" />        
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (max-width: 300px)" />
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 901px)" />        
-        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 901px)" />
-        <img data-src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="image of article">
-        </picture>
-        
+          <picture class="img-fluid">
+            <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 300px)" />        
+            <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 300px)" />
+            <img data-src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="image of article">
+          </picture>
         </div>
         <div class="deskripsi">
             <p class="paragraf">${DetailArticle.descript}</p>
         </div>
-        
         <div class="deskrip-child">
             <h2 class="title-artcle-subjudul mb-3" style="font-weight:bold; font-size: 20px">${DetailArticle.subFirstTitle}</h2>
-                <p class="paragraf">${DetailArticle.descriptSubFirstTitle}</p>
-                <h2 class="title-artcle-subjudul mb-3 mt-5" style="font-weight:bold; font-size: 20px">${DetailArticle.subSecondTitle}</h2>
-                    <p class="paragraf">${DetailArticle.descriptSubSecondTitle}</p>
+            <p class="paragraf">${DetailArticle.descriptSubFirstTitle}</p>
+            <h2 class="title-artcle-subjudul mb-3 mt-5" style="font-weight:bold; font-size: 20px">${DetailArticle.subSecondTitle}</h2>
+            <p class="paragraf">${DetailArticle.descriptSubSecondTitle}</p>
         </div>
-    </div>`;
+      </div>`;
 
 const creatformEditArticle = (article) => `
 <form id="formPost-edit">

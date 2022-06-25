@@ -3,9 +3,11 @@ import heroimg1 from '../../../../../public/images/heroimg1.png';
 import heroimg2 from '../../../../../public/images/heroimg2.png';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import './detailKategori.css';
+import { NavbarAndFooterDisplayBlock } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const DetailKategori = {
   async render() {
+    NavbarAndFooterDisplayBlock();
     return `
     <section id="hero">
       <div class="slideshow-container">

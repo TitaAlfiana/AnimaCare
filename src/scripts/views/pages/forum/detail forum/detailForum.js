@@ -1,12 +1,13 @@
 import UrlParser from '../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import { createForumDetailTemplate } from '../../../templates/template-creator';
-import PostComment from '../../../../utils/postComment';
-// import API_ENDPOINT from '../../../../globals/api-endpoint';
+import PostComment from '../../../../utils/postComment-initiator';
 import './detailForum.css';
+import { NavbarAndFooterDisplayBlock } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const DetailForum = {
   async render() {
+    NavbarAndFooterDisplayBlock();
     return `
     <div class="container">
       <div tabindex="0" class="detail-forum">

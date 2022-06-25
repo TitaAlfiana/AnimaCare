@@ -1,14 +1,12 @@
 import iconSearch from '../../../../public/icons/iconSearch.png';
 import AnimaCareDbSource from '../../../data/animaCaredb-source';
+import { NavbarAndFooterDisplayBlock } from '../../../utils/navbarAndFooterDisplay-Initiator';
 import { createForumItemTemplate } from '../../templates/template-creator';
 import './forum.css';
 
 const Forum = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'flex';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'block';
+    NavbarAndFooterDisplayBlock();
 
     return `
     <div class="container  my-4">

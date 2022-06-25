@@ -6,15 +6,17 @@ import UrlParser from '../../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../../data/animaCaredb-source';
 import kelinci from '../../../../../../public/images/kelinci.png';
 import { creatformEditArticle } from '../../../../templates/template-creator';
+import EditArticles from '../../../../../utils/editArtikel-initiator';
+import { PrivateRoutes } from '../../../../../utils/firebase-initiator';
+import { NavbarAndFooterDisplayNone } from '../../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const EditArticle = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'none';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'none';
     const border = document.querySelector('.border');
     border.style.display = 'none';
+    NavbarAndFooterDisplayNone();
+    PrivateRoutes();
+
     return `
     <div class="cont-first">
     <h1 style="font-size:28px;"> Edit <span style="color: #699BF7;"> Artikel </span></h1>
@@ -42,6 +44,13 @@ const EditArticle = {
     const detailArticle = await AnimaCareDbSource.detailArticle(url.id);
     const articleFormEditContainer = document.querySelector('#form-editArtikel');
     articleFormEditContainer.innerHTML = creatformEditArticle(detailArticle);
+    const formEditArticle = document.querySelector('#formPost-edit');
+    formEditArticle.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      EditArticles();
+      alert('Artikel berhasil diubah');
+      window.location.href = `#/artikel-admin/${url.id}`;
+    });
   },
 };
 

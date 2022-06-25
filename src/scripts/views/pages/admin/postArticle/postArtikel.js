@@ -2,16 +2,17 @@ import './postArticle.css';
 import vector2 from '../../../../../public/vector/Vector2.png';
 import vector3 from '../../../../../public/vector/Vector3.png';
 import vector5 from '../../../../../public/vector/Vector5.png';
-import PostArticles from '../../../../utils/postArtikel';
+import PostArticles from '../../../../utils/postArtikel-initiator';
+import { PrivateRoutes } from '../../../../utils/firebase-initiator';
+import { NavbarAndFooterDisplayNone } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const PostArticle = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'none';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'none';
     const border = document.querySelector('.border');
     border.style.display = 'none';
+    NavbarAndFooterDisplayNone();
+    PrivateRoutes();
+
     return `
     <div class="cont-first">
         <h1 style="font-size:28px;"> Unggah <span style="color: #699BF7;"> Artikel </span></h1>
@@ -74,7 +75,6 @@ const PostArticle = {
   async afterRender() {
     window.$crisp.push(['do', 'chat:hide']);
 
-    // const url = UrlParser.parseActiveUrlWithoutCombiner();
     const formPost = document.getElementById('formPost');
     formPost.addEventListener('submit', async (e) => {
       e.preventDefault();

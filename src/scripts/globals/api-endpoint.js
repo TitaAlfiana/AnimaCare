@@ -8,6 +8,8 @@ const API_ENDPOINT = {
   SEARCH_ARTICLE: `${CONFIG.BASE_URL}/article/search/`,
   LIST_ARTICLE: `${CONFIG.BASE_URL}/article`,
   DETAIL_ARTICLE: (id) => `${CONFIG.BASE_URL}/article/${id}`,
+  UPDATE_ARTICLE: (id) => `${CONFIG.BASE_URL}/article/${id}`,
+  DELETE_ARTICLE: (id) => `${CONFIG.BASE_URL}/article/${id}`,
   MAKANAN_KUCING: `${CONFIG.BASE_URL}/category/makanan-kucing`,
   MAKANAN_ANJING: `${CONFIG.BASE_URL}/category/makanan-anjing`,
   MAKANAN_ANIMAL: `${CONFIG.BASE_URL}/category/makanan-animal`,

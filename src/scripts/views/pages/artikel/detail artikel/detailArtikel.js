@@ -3,9 +3,11 @@ import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import { creatArticleDetailTemplate } from '../../../templates/template-creator';
 import LikeButtonInitiator from '../../../../utils/favoriteArticle-initiator';
 import './detailArtikel.css';
+import { NavbarAndFooterDisplayBlock } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const DetailArticle = {
   async render() {
+    NavbarAndFooterDisplayBlock();
     return `
       <div id="favButtonContainer"></div>
       <div id="detail-article">
@@ -18,7 +20,6 @@ const DetailArticle = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const detailArticle = await AnimaCareDbSource.detailArticle(url.id);
-    console.log(detailArticle);
     const articleDetailContainer = document.querySelector('#detail-article');
     articleDetailContainer.innerHTML = creatArticleDetailTemplate(detailArticle);
 

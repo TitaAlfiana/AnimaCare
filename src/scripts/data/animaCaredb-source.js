@@ -1,4 +1,5 @@
 import API_ENDPOINT from '../globals/api-endpoint';
+import UrlParser from '../routes/url-parser';
 
 class AnimaCareDbSource {
   // forum
@@ -61,6 +62,22 @@ class AnimaCareDbSource {
     const response = await fetch(API_ENDPOINT.DETAIL_ARTICLE(id));
     const data = await response.json();
     return data.article;
+  }
+
+  static async editArticle(data) {
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const response = await fetch(API_ENDPOINT.UPDATE_ARTICLE(url.id), {
+      method: 'PATCH',
+      body: data,
+    });
+    return response.json();
+  }
+
+  static async deleteArticle(id) {
+    const response = await fetch(API_ENDPOINT.DELETE_ARTICLE(id), {
+      method: 'DELETE',
+    });
+    return response.json();
   }
 
   static async searchArticle(searchText) {

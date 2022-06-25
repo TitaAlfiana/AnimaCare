@@ -14,14 +14,12 @@ import logoTroli from '../../../../public/images/logo-troli.png';
 import logoToko from '../../../../public/images/logo-toko.png';
 import logoTas from '../../../../public/images/logo-tas.png';
 import './belanja.css';
+import { NavbarAndFooterDisplayBlock } from '../../../utils/navbarAndFooterDisplay-Initiator';
 
 const Belanja = {
 
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'flex';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'block';
+    NavbarAndFooterDisplayBlock();
 
     return `
   <div class="container">
