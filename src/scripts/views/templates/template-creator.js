@@ -123,7 +123,7 @@ const creatArticleItemTemplateInFavorite = (article) => `
 </a>`;
 
 const creatArticleItemTemplateInAdmin = (article) => `
-<a href="${`#/artikel-admin/${article.id}`}" id="anc">
+<a href="${`#/artikel-admin/${article._id}`}" id="anc">
 <div class="card">
 <picture class="card-img-top">
 <source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
@@ -170,10 +170,12 @@ const creatArticleDetailTemplate = (DetailArticle) => `
     </div>`;
 
 const creatArticleDetailTemplateinAdmin = (DetailArticle) => `
-<div class="artikel-detail">
+      <div class="artikel-detail">
         <div class="button-crud d-flex justify-content-end pr-5">
-        <button class="button-edit"> <img data-src="./icons/iconedit.png" alt="Icon edit" class="lazyload"></button>
-        <button class="button-hapus"> <img data-src="./icons/iconsampah.png" alt="Icon edit" class="lazyload"></button></div>
+        <div class="btn-edt">
+        <button type="submit" class="button-edit mb-4"><a href="${`#/edit-artikel/${DetailArticle._id}`}" id="anc">Edit<img data-src="./icons/iconedit.png" alt="Icon edit" class="lazyload img-fluid"></a></button>
+        </div>
+        <div class="btn-hps"><button class="button-hapus">Hapus<img data-src="./icons/iconsampah.png" alt="Icon edit" class="lazyload img-fluid"></button></div></div>
         <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
         <div class="img-artcl mt-5">
         <picture class="img-fluid">
@@ -198,6 +200,47 @@ const creatArticleDetailTemplateinAdmin = (DetailArticle) => `
                     <p class="paragraf">${DetailArticle.descriptSubSecondTitle}</p>
         </div>
     </div>`;
+
+const creatformEditArticle = (article) => `
+<form id="formPost-edit">
+            <div class="form-group">
+                <label style="font-weight: bold;" for="exampleFormControlInput1">Judul Artikel</label>
+                <input type="text" class="form-control" id="inputJudulArtikel" value="${article.title}">
+            </div>
+
+            <div class="form-group mt-3">
+                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskrispi Artikel</label>
+                <textarea class="form-control" id="inputDeskripsiArtikel" rows="3">${article.descript}</textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label style="font-weight: bold;" for="exampleFormControlInput1">Sub Judul Pertama Artikel</label>
+                <input type="text" class="form-control" id="inputJudulPertamaArtikel" value="${article.subFirstTitle}">
+            </div>
+
+            <div class="form-group mt-3">
+                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Pertama</label>
+                <textarea class="form-control" id="inputDeskripiBahasanPertama" rows="3" >${article.descriptSubFirstTitle}</textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label style="font-weight: bold;" for="exampleFormControlInput1">Sub Judul Kedua Artikel</label>
+                <input type="text" class="form-control" id="inputSubJudulKeduaArtikel" value="${article.subSecondTitle}">
+            </div>
+
+            <div class="form-group mt-3">
+                <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Kedua</label>
+                <textarea class="form-control" id="inputDeskripiBahasanKedua" rows="3">${article.descriptSubSecondTitle}</textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label style="font-weight: bold;" for="exampleFormControlFile1">Unggah Gambar Artikel</label>
+                <input type="file" class="form-control-file" id="inputUnggahGambarArtikel" value="${article.image}">
+            </div>
+            <div class="button-unggah d-flex justify-content-end">
+            <button type="submit" class="button2" id="unggah">Perbarui</button></div>
+            </form>
+`;
 
 const createLikeButtonTemplate = () => `
 <div class= "button-fav">
@@ -239,4 +282,5 @@ export {
   createCardProductTemplate,
   creatArticleItemTemplateInAdmin,
   creatArticleDetailTemplateinAdmin,
+  creatformEditArticle,
 };

@@ -24,7 +24,6 @@ const CRUDDetailArticle = {
 
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const detailArticle = await AnimaCareDbSource.detailArticle(url.id);
-    console.log(detailArticle);
     const articleDetailContainer = document.querySelector('#detailArtikelAdmin');
     articleDetailContainer.innerHTML = creatArticleDetailTemplateinAdmin(detailArticle);
   },

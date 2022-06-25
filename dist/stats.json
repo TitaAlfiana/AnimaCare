@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "cbd0c5f2ffb7cb717e54",
-  "time": 55442,
-  "builtAt": 1656123497798,
+  "hash": "e8126a681de419c892a9",
+  "time": 56344,
+  "builtAt": 1656140689913,
   "publicPath": "",
   "outputPath": "C:\\Users\\ASUS\\AnimaCare\\dist",
   "assetsByChunkName": {
@@ -640,7 +640,7 @@
     },
     {
       "name": "bundle.js",
-      "size": 2079085,
+      "size": 2090437,
       "chunks": [
         "main"
       ],
@@ -740,6 +740,25 @@
     {
       "name": "e3d1ff2f93f58381574b7c3f84aab438.webp",
       "size": 1702,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "ee43c8d24b1966c6654c831fc0ff255f.png",
+      "size": 247774,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/public/images/kelinci.png"
+      },
+      "emitted": true
+    },
+    {
+      "name": "ee43c8d24b1966c6654c831fc0ff255f.webp",
+      "size": 20442,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -1582,6 +1601,25 @@
       "emitted": true
     },
     {
+      "name": "images/kelinci.png",
+      "size": 247774,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true,
+        "sourceFilename": "src/public/images/kelinci.png"
+      },
+      "emitted": true
+    },
+    {
+      "name": "images/kelinci.webp",
+      "size": 20442,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
       "name": "images/logo-tas.png",
       "size": 4937,
       "chunks": [],
@@ -1746,7 +1784,7 @@
     },
     {
       "name": "sw.js",
-      "size": 38300,
+      "size": 38372,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -1879,14 +1917,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1771861,
+      "size": 1778031,
       "names": [
         "main"
       ],
       "files": [
         "bundle.js"
       ],
-      "hash": "6938aba935a4544e73fd",
+      "hash": "5d30156759aecd63d47d",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -1897,7 +1935,7 @@
           "identifier": "multi C:\\Users\\ASUS\\AnimaCare\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:8080 C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
           "name": "multi (webpack)-dev-server/client?http://localhost:8080 ./src/scripts/index.js",
           "index": 0,
-          "index2": 157,
+          "index2": 161,
           "size": 40,
           "built": false,
           "optional": false,
@@ -5604,7 +5642,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/CRUDDetailArticle.css",
           "index": 153,
           "index2": 147,
-          "size": 247,
+          "size": 489,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -5655,6 +5693,69 @@
               "type": "cjs require",
               "userRequest": "!!../../../../../../node_modules/css-loader/dist/cjs.js!./CRUDDetailArticle.css",
               "loc": "2:26-116"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 6
+        },
+        {
+          "id": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "index": 156,
+          "index2": 150,
+          "size": 404,
+          "cacheable": true,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "issuerId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "issuerName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "issuerPath": [
+            {
+              "id": "./src/scripts/index.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+              "name": "./src/scripts/index.js"
+            },
+            {
+              "id": "./src/scripts/views/app.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+              "name": "./src/scripts/views/app.js"
+            },
+            {
+              "id": "./src/scripts/routes/routes.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "name": "./src/scripts/routes/routes.js"
+            },
+            {
+              "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js"
+            },
+            {
+              "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+              "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "type": "cjs require",
+              "userRequest": "!!../../../../../../../node_modules/css-loader/dist/cjs.js!./editArticle.css",
+              "loc": "2:26-113"
             }
           ],
           "providedExports": null,
@@ -5730,7 +5831,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/postArticle/postArticle.css",
           "index": 149,
           "index2": 143,
-          "size": 901,
+          "size": 772,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6431,6 +6532,15 @@
               "type": "cjs require",
               "userRequest": "../../../../../../node_modules/css-loader/dist/runtime/api.js",
               "loc": "2:34-106"
+            },
+            {
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "type": "cjs require",
+              "userRequest": "../../../../../../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "2:34-109"
             },
             {
               "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/login/login.css",
@@ -7626,8 +7736,8 @@
           "id": "./node_modules/lazysizes/lazysizes.js",
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\lazysizes\\lazysizes.js",
           "name": "./node_modules/lazysizes/lazysizes.js",
-          "index": 154,
-          "index2": 152,
+          "index": 158,
+          "index2": 156,
           "size": 19987,
           "cacheable": true,
           "built": false,
@@ -7687,8 +7797,8 @@
           "id": "./node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js",
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\lazysizes\\plugins\\parent-fit\\ls.parent-fit.js",
           "name": "./node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js",
-          "index": 155,
-          "index2": 153,
+          "index": 159,
+          "index2": 157,
           "size": 4692,
           "cacheable": true,
           "built": false,
@@ -8118,8 +8228,8 @@
           "id": "./node_modules/serviceworker-webpack-plugin/lib/runtime.js",
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\serviceworker-webpack-plugin\\lib\\runtime.js",
           "name": "./node_modules/serviceworker-webpack-plugin/lib/runtime.js",
-          "index": 157,
-          "index2": 154,
+          "index": 161,
+          "index2": 158,
           "size": 566,
           "cacheable": true,
           "built": false,
@@ -8316,6 +8426,15 @@
               "type": "cjs require",
               "userRequest": "!../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
               "loc": "1:10-106"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+              "type": "cjs require",
+              "userRequest": "!../../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
+              "loc": "1:10-109"
             },
             {
               "moduleId": "./src/scripts/views/pages/admin/login/login.css",
@@ -11172,7 +11291,7 @@
               "moduleName": "./src/scripts/views/templates/template-creator.js",
               "type": "harmony import specifier",
               "userRequest": "../../../public/icons/like.png",
-              "loc": "206:14-22"
+              "loc": "249:14-22"
             }
           ],
           "providedExports": [
@@ -11248,7 +11367,7 @@
               "moduleName": "./src/scripts/views/templates/template-creator.js",
               "type": "harmony import specifier",
               "userRequest": "../../../public/icons/liked.png",
-              "loc": "215:14-23"
+              "loc": "258:14-23"
             }
           ],
           "providedExports": [
@@ -11622,6 +11741,77 @@
               "type": "harmony import specifier",
               "userRequest": "../../../../public/images/image5.png",
               "loc": "39:50-56"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 5
+        },
+        {
+          "id": "./src/public/images/kelinci.png",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\file-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\public\\images\\kelinci.png",
+          "name": "./src/public/images/kelinci.png",
+          "index": 157,
+          "index2": 152,
+          "size": 80,
+          "cacheable": true,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "issuerId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "issuerName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "issuerPath": [
+            {
+              "id": "./src/scripts/index.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+              "name": "./src/scripts/index.js"
+            },
+            {
+              "id": "./src/scripts/views/app.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+              "name": "./src/scripts/views/app.js"
+            },
+            {
+              "id": "./src/scripts/routes/routes.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "name": "./src/scripts/routes/routes.js"
+            },
+            {
+              "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+            "ee43c8d24b1966c6654c831fc0ff255f.png"
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../../../public/images/kelinci.png",
+              "loc": "7:0-66"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../../../public/images/kelinci.png",
+              "loc": "28:62-69"
             }
           ],
           "providedExports": [
@@ -12235,6 +12425,24 @@
           ],
           "reasons": [
             {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../../../public/vector/Vector2.png",
+              "loc": "2:0-66"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../../../public/vector/Vector2.png",
+              "loc": "23:68-75"
+            },
+            {
               "moduleId": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
               "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
               "module": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
@@ -12332,6 +12540,24 @@
             "927941f60c9032991972ea03a48a20e8.png"
           ],
           "reasons": [
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../../../public/vector/Vector3.png",
+              "loc": "3:0-66"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../../../public/vector/Vector3.png",
+              "loc": "22:68-75"
+            },
             {
               "moduleId": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
               "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
@@ -12501,6 +12727,24 @@
             "4e87dc030e385f0a2f859e7cc6e2a22b.png"
           ],
           "reasons": [
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../../../public/vector/Vector5.png",
+              "loc": "4:0-66"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../../../public/vector/Vector5.png",
+              "loc": "21:68-75"
+            },
             {
               "moduleId": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
               "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
@@ -12973,6 +13217,24 @@
               "type": "harmony import specifier",
               "userRequest": "../../../../data/animaCaredb-source",
               "loc": "26:32-49"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../../data/animaCaredb-source",
+              "loc": "6:0-71"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../../data/animaCaredb-source",
+              "loc": "42:32-49"
             },
             {
               "moduleId": "./src/scripts/views/pages/artikel/artikel.js",
@@ -13993,24 +14255,6 @@
               "moduleName": "./src/scripts/views/templates/template-creator.js",
               "type": "harmony import specifier",
               "userRequest": "../../globals/config",
-              "loc": "180:53-59"
-            },
-            {
-              "moduleId": "./src/scripts/views/templates/template-creator.js",
-              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-              "module": "./src/scripts/views/templates/template-creator.js",
-              "moduleName": "./src/scripts/views/templates/template-creator.js",
-              "type": "harmony import specifier",
-              "userRequest": "../../globals/config",
-              "loc": "181:53-59"
-            },
-            {
-              "moduleId": "./src/scripts/views/templates/template-creator.js",
-              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-              "module": "./src/scripts/views/templates/template-creator.js",
-              "moduleName": "./src/scripts/views/templates/template-creator.js",
-              "type": "harmony import specifier",
-              "userRequest": "../../globals/config",
               "loc": "182:53-59"
             },
             {
@@ -14047,7 +14291,7 @@
               "moduleName": "./src/scripts/views/templates/template-creator.js",
               "type": "harmony import specifier",
               "userRequest": "../../globals/config",
-              "loc": "186:25-31"
+              "loc": "186:53-59"
             },
             {
               "moduleId": "./src/scripts/views/templates/template-creator.js",
@@ -14056,7 +14300,25 @@
               "moduleName": "./src/scripts/views/templates/template-creator.js",
               "type": "harmony import specifier",
               "userRequest": "../../globals/config",
-              "loc": "223:16-22"
+              "loc": "187:53-59"
+            },
+            {
+              "moduleId": "./src/scripts/views/templates/template-creator.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
+              "module": "./src/scripts/views/templates/template-creator.js",
+              "moduleName": "./src/scripts/views/templates/template-creator.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../globals/config",
+              "loc": "188:25-31"
+            },
+            {
+              "moduleId": "./src/scripts/views/templates/template-creator.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
+              "module": "./src/scripts/views/templates/template-creator.js",
+              "moduleName": "./src/scripts/views/templates/template-creator.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../globals/config",
+              "loc": "266:16-22"
             }
           ],
           "providedExports": [
@@ -14070,7 +14332,7 @@
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
           "name": "./src/scripts/index.js",
           "index": 33,
-          "index2": 156,
+          "index2": 160,
           "size": 1545,
           "cacheable": true,
           "built": false,
@@ -14116,8 +14378,8 @@
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
           "name": "./src/scripts/routes/routes.js",
           "index": 61,
-          "index2": 150,
-          "size": 1535,
+          "index2": 154,
+          "size": 1659,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -14293,6 +14555,24 @@
               "type": "harmony import specifier",
               "userRequest": "../../../../routes/url-parser",
               "loc": "25:16-25"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../../routes/url-parser",
+              "loc": "5:0-57"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../../routes/url-parser",
+              "loc": "41:16-25"
             },
             {
               "moduleId": "./src/scripts/views/pages/artikel/artikel.js",
@@ -14721,8 +15001,8 @@
           "id": "./src/scripts/utils/sw-register.js",
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\sw-register.js",
           "name": "./src/scripts/utils/sw-register.js",
-          "index": 156,
-          "index2": 155,
+          "index": 160,
+          "index2": 159,
           "size": 287,
           "cacheable": true,
           "built": false,
@@ -14776,7 +15056,7 @@
           "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
           "name": "./src/scripts/views/app.js",
           "index": 58,
-          "index2": 151,
+          "index2": 155,
           "size": 901,
           "cacheable": true,
           "built": false,
@@ -14938,7 +15218,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/admin/dashboard",
-              "loc": "17:12-26"
+              "loc": "18:12-26"
             }
           ],
           "providedExports": [
@@ -15011,7 +15291,7 @@
           "name": "./src/scripts/views/pages/admin/detailArticle/CRUDDetailArticle.js",
           "index": 151,
           "index2": 149,
-          "size": 1146,
+          "size": 1113,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -15060,7 +15340,129 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/admin/detailArticle/CRUDDetailArticle",
-              "loc": "21:24-41"
+              "loc": "23:24-41"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 4
+        },
+        {
+          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "index": 155,
+          "index2": 151,
+          "size": 561,
+          "cacheable": true,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "issuerId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "issuerName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "issuerPath": [
+            {
+              "id": "./src/scripts/index.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+              "name": "./src/scripts/index.js"
+            },
+            {
+              "id": "./src/scripts/views/app.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+              "name": "./src/scripts/views/app.js"
+            },
+            {
+              "id": "./src/scripts/routes/routes.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "name": "./src/scripts/routes/routes.js"
+            },
+            {
+              "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./editArticle.css",
+              "loc": "1:0-27"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 5
+        },
+        {
+          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "index": 154,
+          "index2": 153,
+          "size": 2074,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "issuerId": "./src/scripts/routes/routes.js",
+          "issuerName": "./src/scripts/routes/routes.js",
+          "issuerPath": [
+            {
+              "id": "./src/scripts/index.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+              "name": "./src/scripts/index.js"
+            },
+            {
+              "id": "./src/scripts/views/app.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+              "name": "./src/scripts/views/app.js"
+            },
+            {
+              "id": "./src/scripts/routes/routes.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "name": "./src/scripts/routes/routes.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/scripts/routes/routes.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "module": "./src/scripts/routes/routes.js",
+              "moduleName": "./src/scripts/routes/routes.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../views/pages/admin/detailArticle/editArticle/editArticle",
+              "loc": "13:0-85"
+            },
+            {
+              "moduleId": "./src/scripts/routes/routes.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "module": "./src/scripts/routes/routes.js",
+              "moduleName": "./src/scripts/routes/routes.js",
+              "type": "harmony import specifier",
+              "userRequest": "../views/pages/admin/detailArticle/editArticle/editArticle",
+              "loc": "20:23-34"
             }
           ],
           "providedExports": [
@@ -15182,7 +15584,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/admin/login/login",
-              "loc": "16:12-17"
+              "loc": "17:12-17"
             }
           ],
           "providedExports": [
@@ -15255,7 +15657,7 @@
           "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
           "index": 147,
           "index2": 146,
-          "size": 3869,
+          "size": 4157,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -15304,7 +15706,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/admin/postArticle/postArtikel",
-              "loc": "18:19-30"
+              "loc": "19:19-30"
             }
           ],
           "providedExports": [
@@ -15426,7 +15828,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/artikel/artikel",
-              "loc": "19:14-21"
+              "loc": "21:14-21"
             }
           ],
           "providedExports": [
@@ -15501,7 +15903,7 @@
           "index2": 137,
           "size": 1212,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -15548,7 +15950,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/artikel/detail artikel/detailArtikel",
-              "loc": "20:18-31"
+              "loc": "22:18-31"
             }
           ],
           "providedExports": [
@@ -15670,7 +16072,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/belanja",
-              "loc": "25:14-21"
+              "loc": "27:14-21"
             }
           ],
           "providedExports": [
@@ -15792,7 +16194,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "26:21-35"
+              "loc": "28:21-35"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15801,7 +16203,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "27:21-35"
+              "loc": "29:21-35"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15810,7 +16212,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "28:13-27"
+              "loc": "30:13-27"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15819,7 +16221,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "29:14-28"
+              "loc": "31:14-28"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15828,7 +16230,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "30:14-28"
+              "loc": "32:14-28"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15837,7 +16239,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "31:11-25"
+              "loc": "33:11-25"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15846,25 +16248,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "32:11-25"
-            },
-            {
-              "moduleId": "./src/scripts/routes/routes.js",
-              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
-              "module": "./src/scripts/routes/routes.js",
-              "moduleName": "./src/scripts/routes/routes.js",
-              "type": "harmony import specifier",
-              "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "33:16-30"
-            },
-            {
-              "moduleId": "./src/scripts/routes/routes.js",
-              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
-              "module": "./src/scripts/routes/routes.js",
-              "moduleName": "./src/scripts/routes/routes.js",
-              "type": "harmony import specifier",
-              "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-              "loc": "34:12-26"
+              "loc": "34:11-25"
             },
             {
               "moduleId": "./src/scripts/routes/routes.js",
@@ -15892,6 +16276,24 @@
               "type": "harmony import specifier",
               "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
               "loc": "37:16-30"
+            },
+            {
+              "moduleId": "./src/scripts/routes/routes.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "module": "./src/scripts/routes/routes.js",
+              "moduleName": "./src/scripts/routes/routes.js",
+              "type": "harmony import specifier",
+              "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
+              "loc": "38:12-26"
+            },
+            {
+              "moduleId": "./src/scripts/routes/routes.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+              "module": "./src/scripts/routes/routes.js",
+              "moduleName": "./src/scripts/routes/routes.js",
+              "type": "harmony import specifier",
+              "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
+              "loc": "39:16-30"
             }
           ],
           "providedExports": [
@@ -16013,7 +16415,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/beranda/beranda",
-              "loc": "15:7-14"
+              "loc": "16:7-14"
             }
           ],
           "providedExports": [
@@ -16135,7 +16537,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/forum/Post Forum/postForum",
-              "loc": "24:17-26"
+              "loc": "26:17-26"
             }
           ],
           "providedExports": [
@@ -16257,7 +16659,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/forum/detail forum/detailForum",
-              "loc": "23:16-27"
+              "loc": "25:16-27"
             }
           ],
           "providedExports": [
@@ -16379,7 +16781,7 @@
               "moduleName": "./src/scripts/routes/routes.js",
               "type": "harmony import specifier",
               "userRequest": "../views/pages/forum/forum",
-              "loc": "22:12-17"
+              "loc": "24:12-17"
             }
           ],
           "providedExports": [
@@ -16394,7 +16796,7 @@
           "name": "./src/scripts/views/templates/template-creator.js",
           "index": 82,
           "index2": 80,
-          "size": 13206,
+          "size": 15765,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -16502,7 +16904,25 @@
               "moduleName": "./src/scripts/views/pages/admin/detailArticle/CRUDDetailArticle.js",
               "type": "harmony import specifier",
               "userRequest": "../../../templates/template-creator",
-              "loc": "29:39-72"
+              "loc": "28:39-72"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../../../templates/template-creator",
+              "loc": "8:0-78"
+            },
+            {
+              "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+              "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../../../templates/template-creator",
+              "loc": "44:41-61"
             },
             {
               "moduleId": "./src/scripts/views/pages/artikel/artikel.js",
@@ -16868,7 +17288,8 @@
             "creatArticleItemTemplateInFavorite",
             "createCardProductTemplate",
             "creatArticleItemTemplateInAdmin",
-            "creatArticleDetailTemplateinAdmin"
+            "creatArticleDetailTemplateinAdmin",
+            "creatformEditArticle"
           ],
           "optimizationBailout": [],
           "depth": 5
@@ -16936,7 +17357,7 @@
       "identifier": "multi C:\\Users\\ASUS\\AnimaCare\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:8080 C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
       "name": "multi (webpack)-dev-server/client?http://localhost:8080 ./src/scripts/index.js",
       "index": 0,
-      "index2": 157,
+      "index2": 161,
       "size": 40,
       "built": false,
       "optional": false,
@@ -20643,7 +21064,7 @@
       "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/CRUDDetailArticle.css",
       "index": 153,
       "index2": 147,
-      "size": 247,
+      "size": 489,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -20694,6 +21115,69 @@
           "type": "cjs require",
           "userRequest": "!!../../../../../../node_modules/css-loader/dist/cjs.js!./CRUDDetailArticle.css",
           "loc": "2:26-116"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 6
+    },
+    {
+      "id": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+      "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+      "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+      "index": 156,
+      "index2": 150,
+      "size": 404,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+      "issuerId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+      "issuerName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+      "issuerPath": [
+        {
+          "id": "./src/scripts/index.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+          "name": "./src/scripts/index.js"
+        },
+        {
+          "id": "./src/scripts/views/app.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+          "name": "./src/scripts/views/app.js"
+        },
+        {
+          "id": "./src/scripts/routes/routes.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "name": "./src/scripts/routes/routes.js"
+        },
+        {
+          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js"
+        },
+        {
+          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "type": "cjs require",
+          "userRequest": "!!../../../../../../../node_modules/css-loader/dist/cjs.js!./editArticle.css",
+          "loc": "2:26-113"
         }
       ],
       "providedExports": null,
@@ -20769,7 +21253,7 @@
       "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/postArticle/postArticle.css",
       "index": 149,
       "index2": 143,
-      "size": 901,
+      "size": 772,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -21470,6 +21954,15 @@
           "type": "cjs require",
           "userRequest": "../../../../../../node_modules/css-loader/dist/runtime/api.js",
           "loc": "2:34-106"
+        },
+        {
+          "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "module": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "type": "cjs require",
+          "userRequest": "../../../../../../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "2:34-109"
         },
         {
           "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/login/login.css",
@@ -22665,8 +23158,8 @@
       "id": "./node_modules/lazysizes/lazysizes.js",
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\lazysizes\\lazysizes.js",
       "name": "./node_modules/lazysizes/lazysizes.js",
-      "index": 154,
-      "index2": 152,
+      "index": 158,
+      "index2": 156,
       "size": 19987,
       "cacheable": true,
       "built": false,
@@ -22726,8 +23219,8 @@
       "id": "./node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js",
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\lazysizes\\plugins\\parent-fit\\ls.parent-fit.js",
       "name": "./node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js",
-      "index": 155,
-      "index2": 153,
+      "index": 159,
+      "index2": 157,
       "size": 4692,
       "cacheable": true,
       "built": false,
@@ -23157,8 +23650,8 @@
       "id": "./node_modules/serviceworker-webpack-plugin/lib/runtime.js",
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\serviceworker-webpack-plugin\\lib\\runtime.js",
       "name": "./node_modules/serviceworker-webpack-plugin/lib/runtime.js",
-      "index": 157,
-      "index2": 154,
+      "index": 161,
+      "index2": 158,
       "size": 566,
       "cacheable": true,
       "built": false,
@@ -23355,6 +23848,15 @@
           "type": "cjs require",
           "userRequest": "!../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
           "loc": "1:10-106"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+          "type": "cjs require",
+          "userRequest": "!../../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
+          "loc": "1:10-109"
         },
         {
           "moduleId": "./src/scripts/views/pages/admin/login/login.css",
@@ -26211,7 +26713,7 @@
           "moduleName": "./src/scripts/views/templates/template-creator.js",
           "type": "harmony import specifier",
           "userRequest": "../../../public/icons/like.png",
-          "loc": "206:14-22"
+          "loc": "249:14-22"
         }
       ],
       "providedExports": [
@@ -26287,7 +26789,7 @@
           "moduleName": "./src/scripts/views/templates/template-creator.js",
           "type": "harmony import specifier",
           "userRequest": "../../../public/icons/liked.png",
-          "loc": "215:14-23"
+          "loc": "258:14-23"
         }
       ],
       "providedExports": [
@@ -26661,6 +27163,77 @@
           "type": "harmony import specifier",
           "userRequest": "../../../../public/images/image5.png",
           "loc": "39:50-56"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 5
+    },
+    {
+      "id": "./src/public/images/kelinci.png",
+      "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\file-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\public\\images\\kelinci.png",
+      "name": "./src/public/images/kelinci.png",
+      "index": 157,
+      "index2": 152,
+      "size": 80,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+      "issuerId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+      "issuerName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+      "issuerPath": [
+        {
+          "id": "./src/scripts/index.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+          "name": "./src/scripts/index.js"
+        },
+        {
+          "id": "./src/scripts/views/app.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+          "name": "./src/scripts/views/app.js"
+        },
+        {
+          "id": "./src/scripts/routes/routes.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "name": "./src/scripts/routes/routes.js"
+        },
+        {
+          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+        "ee43c8d24b1966c6654c831fc0ff255f.png"
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../../../public/images/kelinci.png",
+          "loc": "7:0-66"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../../../public/images/kelinci.png",
+          "loc": "28:62-69"
         }
       ],
       "providedExports": [
@@ -27274,6 +27847,24 @@
       ],
       "reasons": [
         {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../../../public/vector/Vector2.png",
+          "loc": "2:0-66"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../../../public/vector/Vector2.png",
+          "loc": "23:68-75"
+        },
+        {
           "moduleId": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
           "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
           "module": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
@@ -27371,6 +27962,24 @@
         "927941f60c9032991972ea03a48a20e8.png"
       ],
       "reasons": [
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../../../public/vector/Vector3.png",
+          "loc": "3:0-66"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../../../public/vector/Vector3.png",
+          "loc": "22:68-75"
+        },
         {
           "moduleId": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
           "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
@@ -27540,6 +28149,24 @@
         "4e87dc030e385f0a2f859e7cc6e2a22b.png"
       ],
       "reasons": [
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../../../public/vector/Vector5.png",
+          "loc": "4:0-66"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../../../public/vector/Vector5.png",
+          "loc": "21:68-75"
+        },
         {
           "moduleId": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
           "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
@@ -28012,6 +28639,24 @@
           "type": "harmony import specifier",
           "userRequest": "../../../../data/animaCaredb-source",
           "loc": "26:32-49"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../../data/animaCaredb-source",
+          "loc": "6:0-71"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../../data/animaCaredb-source",
+          "loc": "42:32-49"
         },
         {
           "moduleId": "./src/scripts/views/pages/artikel/artikel.js",
@@ -29032,24 +29677,6 @@
           "moduleName": "./src/scripts/views/templates/template-creator.js",
           "type": "harmony import specifier",
           "userRequest": "../../globals/config",
-          "loc": "180:53-59"
-        },
-        {
-          "moduleId": "./src/scripts/views/templates/template-creator.js",
-          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-          "module": "./src/scripts/views/templates/template-creator.js",
-          "moduleName": "./src/scripts/views/templates/template-creator.js",
-          "type": "harmony import specifier",
-          "userRequest": "../../globals/config",
-          "loc": "181:53-59"
-        },
-        {
-          "moduleId": "./src/scripts/views/templates/template-creator.js",
-          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-          "module": "./src/scripts/views/templates/template-creator.js",
-          "moduleName": "./src/scripts/views/templates/template-creator.js",
-          "type": "harmony import specifier",
-          "userRequest": "../../globals/config",
           "loc": "182:53-59"
         },
         {
@@ -29086,7 +29713,7 @@
           "moduleName": "./src/scripts/views/templates/template-creator.js",
           "type": "harmony import specifier",
           "userRequest": "../../globals/config",
-          "loc": "186:25-31"
+          "loc": "186:53-59"
         },
         {
           "moduleId": "./src/scripts/views/templates/template-creator.js",
@@ -29095,7 +29722,25 @@
           "moduleName": "./src/scripts/views/templates/template-creator.js",
           "type": "harmony import specifier",
           "userRequest": "../../globals/config",
-          "loc": "223:16-22"
+          "loc": "187:53-59"
+        },
+        {
+          "moduleId": "./src/scripts/views/templates/template-creator.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
+          "module": "./src/scripts/views/templates/template-creator.js",
+          "moduleName": "./src/scripts/views/templates/template-creator.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../globals/config",
+          "loc": "188:25-31"
+        },
+        {
+          "moduleId": "./src/scripts/views/templates/template-creator.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
+          "module": "./src/scripts/views/templates/template-creator.js",
+          "moduleName": "./src/scripts/views/templates/template-creator.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../globals/config",
+          "loc": "266:16-22"
         }
       ],
       "providedExports": [
@@ -29109,7 +29754,7 @@
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
       "name": "./src/scripts/index.js",
       "index": 33,
-      "index2": 156,
+      "index2": 160,
       "size": 1545,
       "cacheable": true,
       "built": false,
@@ -29155,8 +29800,8 @@
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
       "name": "./src/scripts/routes/routes.js",
       "index": 61,
-      "index2": 150,
-      "size": 1535,
+      "index2": 154,
+      "size": 1659,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -29332,6 +29977,24 @@
           "type": "harmony import specifier",
           "userRequest": "../../../../routes/url-parser",
           "loc": "25:16-25"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../../routes/url-parser",
+          "loc": "5:0-57"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../../routes/url-parser",
+          "loc": "41:16-25"
         },
         {
           "moduleId": "./src/scripts/views/pages/artikel/artikel.js",
@@ -29760,8 +30423,8 @@
       "id": "./src/scripts/utils/sw-register.js",
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\sw-register.js",
       "name": "./src/scripts/utils/sw-register.js",
-      "index": 156,
-      "index2": 155,
+      "index": 160,
+      "index2": 159,
       "size": 287,
       "cacheable": true,
       "built": false,
@@ -29815,7 +30478,7 @@
       "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
       "name": "./src/scripts/views/app.js",
       "index": 58,
-      "index2": 151,
+      "index2": 155,
       "size": 901,
       "cacheable": true,
       "built": false,
@@ -29977,7 +30640,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/admin/dashboard",
-          "loc": "17:12-26"
+          "loc": "18:12-26"
         }
       ],
       "providedExports": [
@@ -30050,7 +30713,7 @@
       "name": "./src/scripts/views/pages/admin/detailArticle/CRUDDetailArticle.js",
       "index": 151,
       "index2": 149,
-      "size": 1146,
+      "size": 1113,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -30099,7 +30762,129 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/admin/detailArticle/CRUDDetailArticle",
-          "loc": "21:24-41"
+          "loc": "23:24-41"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 4
+    },
+    {
+      "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+      "identifier": "C:\\Users\\ASUS\\AnimaCare\\node_modules\\style-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.css",
+      "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.css",
+      "index": 155,
+      "index2": 151,
+      "size": 561,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+      "issuerId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+      "issuerName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+      "issuerPath": [
+        {
+          "id": "./src/scripts/index.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+          "name": "./src/scripts/index.js"
+        },
+        {
+          "id": "./src/scripts/views/app.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+          "name": "./src/scripts/views/app.js"
+        },
+        {
+          "id": "./src/scripts/routes/routes.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "name": "./src/scripts/routes/routes.js"
+        },
+        {
+          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./editArticle.css",
+          "loc": "1:0-27"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 5
+    },
+    {
+      "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+      "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+      "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+      "index": 154,
+      "index2": 153,
+      "size": 2074,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+      "issuerId": "./src/scripts/routes/routes.js",
+      "issuerName": "./src/scripts/routes/routes.js",
+      "issuerPath": [
+        {
+          "id": "./src/scripts/index.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\index.js",
+          "name": "./src/scripts/index.js"
+        },
+        {
+          "id": "./src/scripts/views/app.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\app.js",
+          "name": "./src/scripts/views/app.js"
+        },
+        {
+          "id": "./src/scripts/routes/routes.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "name": "./src/scripts/routes/routes.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "./src/scripts/routes/routes.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "module": "./src/scripts/routes/routes.js",
+          "moduleName": "./src/scripts/routes/routes.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../views/pages/admin/detailArticle/editArticle/editArticle",
+          "loc": "13:0-85"
+        },
+        {
+          "moduleId": "./src/scripts/routes/routes.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "module": "./src/scripts/routes/routes.js",
+          "moduleName": "./src/scripts/routes/routes.js",
+          "type": "harmony import specifier",
+          "userRequest": "../views/pages/admin/detailArticle/editArticle/editArticle",
+          "loc": "20:23-34"
         }
       ],
       "providedExports": [
@@ -30221,7 +31006,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/admin/login/login",
-          "loc": "16:12-17"
+          "loc": "17:12-17"
         }
       ],
       "providedExports": [
@@ -30294,7 +31079,7 @@
       "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
       "index": 147,
       "index2": 146,
-      "size": 3869,
+      "size": 4157,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -30343,7 +31128,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/admin/postArticle/postArtikel",
-          "loc": "18:19-30"
+          "loc": "19:19-30"
         }
       ],
       "providedExports": [
@@ -30465,7 +31250,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/artikel/artikel",
-          "loc": "19:14-21"
+          "loc": "21:14-21"
         }
       ],
       "providedExports": [
@@ -30540,7 +31325,7 @@
       "index2": 137,
       "size": 1212,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -30587,7 +31372,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/artikel/detail artikel/detailArtikel",
-          "loc": "20:18-31"
+          "loc": "22:18-31"
         }
       ],
       "providedExports": [
@@ -30709,7 +31494,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/belanja",
-          "loc": "25:14-21"
+          "loc": "27:14-21"
         }
       ],
       "providedExports": [
@@ -30831,7 +31616,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "26:21-35"
+          "loc": "28:21-35"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30840,7 +31625,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "27:21-35"
+          "loc": "29:21-35"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30849,7 +31634,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "28:13-27"
+          "loc": "30:13-27"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30858,7 +31643,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "29:14-28"
+          "loc": "31:14-28"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30867,7 +31652,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "30:14-28"
+          "loc": "32:14-28"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30876,7 +31661,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "31:11-25"
+          "loc": "33:11-25"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30885,25 +31670,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "32:11-25"
-        },
-        {
-          "moduleId": "./src/scripts/routes/routes.js",
-          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
-          "module": "./src/scripts/routes/routes.js",
-          "moduleName": "./src/scripts/routes/routes.js",
-          "type": "harmony import specifier",
-          "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "33:16-30"
-        },
-        {
-          "moduleId": "./src/scripts/routes/routes.js",
-          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
-          "module": "./src/scripts/routes/routes.js",
-          "moduleName": "./src/scripts/routes/routes.js",
-          "type": "harmony import specifier",
-          "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
-          "loc": "34:12-26"
+          "loc": "34:11-25"
         },
         {
           "moduleId": "./src/scripts/routes/routes.js",
@@ -30931,6 +31698,24 @@
           "type": "harmony import specifier",
           "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
           "loc": "37:16-30"
+        },
+        {
+          "moduleId": "./src/scripts/routes/routes.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "module": "./src/scripts/routes/routes.js",
+          "moduleName": "./src/scripts/routes/routes.js",
+          "type": "harmony import specifier",
+          "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
+          "loc": "38:12-26"
+        },
+        {
+          "moduleId": "./src/scripts/routes/routes.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\routes\\routes.js",
+          "module": "./src/scripts/routes/routes.js",
+          "moduleName": "./src/scripts/routes/routes.js",
+          "type": "harmony import specifier",
+          "userRequest": "../views/pages/belanja/detail kategori/detailKategori",
+          "loc": "39:16-30"
         }
       ],
       "providedExports": [
@@ -31052,7 +31837,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/beranda/beranda",
-          "loc": "15:7-14"
+          "loc": "16:7-14"
         }
       ],
       "providedExports": [
@@ -31174,7 +31959,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/forum/Post Forum/postForum",
-          "loc": "24:17-26"
+          "loc": "26:17-26"
         }
       ],
       "providedExports": [
@@ -31296,7 +32081,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/forum/detail forum/detailForum",
-          "loc": "23:16-27"
+          "loc": "25:16-27"
         }
       ],
       "providedExports": [
@@ -31418,7 +32203,7 @@
           "moduleName": "./src/scripts/routes/routes.js",
           "type": "harmony import specifier",
           "userRequest": "../views/pages/forum/forum",
-          "loc": "22:12-17"
+          "loc": "24:12-17"
         }
       ],
       "providedExports": [
@@ -31433,7 +32218,7 @@
       "name": "./src/scripts/views/templates/template-creator.js",
       "index": 82,
       "index2": 80,
-      "size": 13206,
+      "size": 15765,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -31541,7 +32326,25 @@
           "moduleName": "./src/scripts/views/pages/admin/detailArticle/CRUDDetailArticle.js",
           "type": "harmony import specifier",
           "userRequest": "../../../templates/template-creator",
-          "loc": "29:39-72"
+          "loc": "28:39-72"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../../../../templates/template-creator",
+          "loc": "8:0-78"
+        },
+        {
+          "moduleId": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleIdentifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
+          "module": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "moduleName": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
+          "type": "harmony import specifier",
+          "userRequest": "../../../../templates/template-creator",
+          "loc": "44:41-61"
         },
         {
           "moduleId": "./src/scripts/views/pages/artikel/artikel.js",
@@ -31907,7 +32710,8 @@
         "creatArticleItemTemplateInFavorite",
         "createCardProductTemplate",
         "creatArticleItemTemplateInAdmin",
-        "creatArticleDetailTemplateinAdmin"
+        "creatArticleDetailTemplateinAdmin",
+        "creatformEditArticle"
       ],
       "optimizationBailout": [],
       "depth": 5
@@ -32336,6 +33140,14 @@
         {
           "type": "log",
           "message": "determined that 'C:/Users/ASUS/AnimaCare/src/public/images/img0.png' should write to 'images\\img0.png'"
+        },
+        {
+          "type": "log",
+          "message": "'to' option 'C:\\Users\\ASUS\\AnimaCare\\dist' determinated as 'dir'"
+        },
+        {
+          "type": "log",
+          "message": "determined that 'C:/Users/ASUS/AnimaCare/src/public/images/kelinci.png' should write to 'images\\kelinci.png'"
         },
         {
           "type": "log",
@@ -32807,6 +33619,14 @@
         },
         {
           "type": "log",
+          "message": "writing 'images/kelinci.png' from 'C:\\Users\\ASUS\\AnimaCare\\src\\public\\images\\kelinci.png' to compilation assets..."
+        },
+        {
+          "type": "log",
+          "message": "written 'images/kelinci.png' from 'C:\\Users\\ASUS\\AnimaCare\\src\\public\\images\\kelinci.png' to compilation assets"
+        },
+        {
+          "type": "log",
           "message": "writing 'images/logo-tas.png' from 'C:\\Users\\ASUS\\AnimaCare\\src\\public\\images\\logo-tas.png' to compilation assets..."
         },
         {
@@ -32914,7 +33734,7 @@
           "message": "finished to adding additional assets"
         }
       ],
-      "filteredEntries": 235,
+      "filteredEntries": 239,
       "debug": false
     }
   },

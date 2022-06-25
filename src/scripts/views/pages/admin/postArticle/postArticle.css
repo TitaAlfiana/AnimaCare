@@ -1,10 +1,3 @@
-.button-back {
-    border: none;
-    background-color: white;
-    font-weight: bold;
-    color: #699BF7;
-}
-
 .form-postArtikel {
     display: flex;
     justify-content: center;
@@ -17,9 +10,9 @@
 
 .vector5-artikel {
     position: absolute;
-    width: 500px;
-    top: 70px;
-    left: 400px;
+    width: 200px;
+    top: 80px;
+    left: 100px;
     z-index: -1;
 }
 

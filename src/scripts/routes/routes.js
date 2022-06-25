@@ -10,12 +10,14 @@ import DetailArticle from '../views/pages/artikel/detail artikel/detailArtikel';
 import DetailKategori from '../views/pages/belanja/detail kategori/detailKategori';
 import PostArticle from '../views/pages/admin/postArticle/postArtikel';
 import CRUDDetailArticle from '../views/pages/admin/detailArticle/CRUDDetailArticle';
+import EditArticle from '../views/pages/admin/detailArticle/editArticle/editArticle';
 
 const routes = {
   '/': Beranda,
   '/login': Login,
   '/admin': AdminDashboard,
   '/post-artikel': PostArticle,
+  '/edit-artikel/:id': EditArticle,
   '/artikel': Artikel,
   '/artikel/:id': DetailArticle,
   '/artikel-admin/:id': CRUDDetailArticle,

@@ -1,0 +1,14 @@
+.button-edit,
+.button-hapus {
+    border: none;
+    background-color: #ffff;
+    width: 36px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.btn-edt {
+    padding-right: 35px;
+}
