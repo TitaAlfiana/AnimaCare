@@ -3,7 +3,7 @@ import { getAnalytics } from 'firebase/analytics';
 // eslint-disable-next-line no-unused-vars
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import AnimaCareDbSource from '../../../data/animaCaredb-source';
-import { creatArticleItemTemplate } from '../../templates/template-creator';
+import { creatArticleItemTemplateInAdmin } from '../../templates/template-creator';
 import UrlParser from '../../../routes/url-parser';
 import logoDashboard from '../../../../public/logo/logo-transparan.png';
 import iconSearch from '../../../../public/icons/iconSearch.png';
@@ -83,7 +83,7 @@ const Login = {
     const listArtikel = await AnimaCareDbSource.listArticle(url.id);
     const listArtikelContainer = document.querySelector('.list-article-adminPage');
     listArtikel.reverse().forEach((article) => {
-      listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
+      listArtikelContainer.innerHTML += creatArticleItemTemplateInAdmin(article);
     });
 
     // search article
@@ -98,7 +98,7 @@ const Login = {
         listArtikelContainer.innerHTML = `<h1 class="text-center mt-5" style="font-size:20px; color:#699BF7;">Tidak ada hasil pencarian "<span class="font-weight-bold">${searchText}</span>"</h1>`;
       } else {
         listArticleSearch.forEach((article) => {
-          listArtikelContainer.innerHTML += creatArticleItemTemplate(article);
+          listArtikelContainer.innerHTML += creatArticleItemTemplateInAdmin(article);
         });
       }
       searchInput.value = '';

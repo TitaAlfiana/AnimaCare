@@ -9,6 +9,7 @@ import DetailForum from '../views/pages/forum/detail forum/detailForum';
 import DetailArticle from '../views/pages/artikel/detail artikel/detailArtikel';
 import DetailKategori from '../views/pages/belanja/detail kategori/detailKategori';
 import PostArticle from '../views/pages/admin/postArticle/postArtikel';
+import CRUDDetailArticle from '../views/pages/admin/detailArticle/CRUDDetailArticle';
 
 const routes = {
   '/': Beranda,
@@ -17,6 +18,7 @@ const routes = {
   '/post-artikel': PostArticle,
   '/artikel': Artikel,
   '/artikel/:id': DetailArticle,
+  '/artikel-admin/:id': CRUDDetailArticle,
   '/forum': Forum,
   '/forum/:id': DetailForum,
   '/post-forum': PostForum,

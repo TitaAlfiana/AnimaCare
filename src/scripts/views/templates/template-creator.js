@@ -122,8 +122,58 @@ const creatArticleItemTemplateInFavorite = (article) => `
 </div>
 </a>`;
 
+const creatArticleItemTemplateInAdmin = (article) => `
+<a href="${`#/artikel-admin/${article.id}`}" id="anc">
+<div class="card">
+<picture class="card-img-top">
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (max-width: 300px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (max-width: 300px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/webp" media="all and (min-width: 901px)" />        
+<source class="card-img-top lazyload" srcset="${CONFIG.BASE_IMAGE_URL + article.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+<img data-src="${CONFIG.BASE_IMAGE_URL + article.image}" class="card-img-top" alt="image artikel">
+</picture>
+  
+  <div class="card-body">
+    <h1 class="card-title" style="font-weight:bold; font-size:25px;">${article.title}</h1>
+    <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
+  </div>
+</div>
+</a>`;
+
 const creatArticleDetailTemplate = (DetailArticle) => `
 <div class="artikel-detail">
+        <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
+        <div class="img-artcl mt-5">
+        <picture class="img-fluid">
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (max-width: 300px)" />        
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (max-width: 300px)" />
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/webp" media="all and (min-width: 901px)" />        
+        <source class="img-fluid lazyload" srcset="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" type="image/jpeg" media="all and (min-width: 901px)" />
+        <img data-src="${CONFIG.BASE_IMAGE_URL + DetailArticle.image}" class="img-fluid" alt="image of article">
+        </picture>
+        
+        </div>
+        <div class="deskripsi">
+            <p class="paragraf">${DetailArticle.descript}</p>
+        </div>
+        
+        <div class="deskrip-child">
+            <h2 class="title-artcle-subjudul mb-3" style="font-weight:bold; font-size: 20px">${DetailArticle.subFirstTitle}</h2>
+                <p class="paragraf">${DetailArticle.descriptSubFirstTitle}</p>
+                <h2 class="title-artcle-subjudul mb-3 mt-5" style="font-weight:bold; font-size: 20px">${DetailArticle.subSecondTitle}</h2>
+                    <p class="paragraf">${DetailArticle.descriptSubSecondTitle}</p>
+        </div>
+    </div>`;
+
+const creatArticleDetailTemplateinAdmin = (DetailArticle) => `
+<div class="artikel-detail">
+        <div class="button-crud d-flex justify-content-end pr-5">
+        <button class="button-edit"> <img data-src="./icons/iconedit.png" alt="Icon edit" class="lazyload"></button>
+        <button class="button-hapus"> <img data-src="./icons/iconsampah.png" alt="Icon edit" class="lazyload"></button></div>
         <h1 class="title-artcle" style="font-weight:bold; font-size: 30px" >${DetailArticle.title}</h1>
         <div class="img-artcl mt-5">
         <picture class="img-fluid">
@@ -187,4 +237,6 @@ export {
   creatArticleDetailTemplate,
   creatArticleItemTemplateInFavorite,
   createCardProductTemplate,
+  creatArticleItemTemplateInAdmin,
+  creatArticleDetailTemplateinAdmin,
 };

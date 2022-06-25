@@ -18,6 +18,7 @@ const DetailArticle = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const detailArticle = await AnimaCareDbSource.detailArticle(url.id);
+    console.log(detailArticle);
     const articleDetailContainer = document.querySelector('#detail-article');
     articleDetailContainer.innerHTML = creatArticleDetailTemplate(detailArticle);
 
