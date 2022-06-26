@@ -39,16 +39,16 @@ const Beranda = {
         
       </div>
       <div class="hero-right">
-        <h1 style="font-weight: bold;" class="h1-beranda"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h1>
-        <p style="font-size: 17px;">Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya ! Konsultasikan kesehatan hewan secara gratis hanya disini</p>
-        <button class="button1"><a href="#content-2">Lebih lengkap</a></button>
+        <h1 style="font-weight: bold;" class="h1-beranda" tabindex="0"><span style="color: #699BF7;">Solusi</span> Kesehatan <span style="color: #699BF7;">Hewan</span> Tersayang</h1>
+        <p style="font-size: 17px;" tabindex="0">Hadir untuk membantu animal lovers berkonsultasi dengan dokter hewan terpercaya ! Konsultasikan kesehatan hewan secara gratis hanya disini</p>
+        <a href="#content-2" class="button1" tabindex="0">Lebih lengkap</a>
       </div>
     </div>
   </section>
 
   <section id="content-2" class="content-2">
     <div class="container mt-5">
-      <div class="row">
+      <div class="row" tabindex="0">
         <div class="col-md-6">
           <figure class="figure" data-aos="fade-up" data-aos-duration="1000">
           <picture class="figure-img img-fluid rounded">
@@ -60,7 +60,7 @@ const Beranda = {
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
           <h1 class=" font-weight-bold mb-4 h1-beranda">Apa sih AnimaCare?</h1>
-          <p class="container">AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan Anda. Mulai dari konsultasi kesehatan hewan peliharaan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman para pencinta hewan peliharaan tentang hewan peliharaannya, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda.</p>
+          <p class="container">AnimaCare adalah Layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan. Mulai dari konsultasi kesehatan hewan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman tentang hewan peliharaannya, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda</p>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@ const Beranda = {
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 ">
-          <h1 class=" font-weight-bold mb-4 h1-beranda" >Dalami Pengetahuanmu Seputar Dunia Hewan Peliharaan</h1>
+          <h1 class=" font-weight-bold mb-4 h1-beranda" tabindex="0">Tambah Pengetahuan Seputar Hewan Peliharaan</h1>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
           <a href="#/artikel" class="" style="font-size: 20px;">Lebih banyak</a>
@@ -90,7 +90,7 @@ const Beranda = {
 
   <section id="content-4" class="content-4">
     <div class="container mt-5">
-      <h1 class=" font-weight-bold h1-beranda" style = "margin-bottom:30px;">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h1>
+      <h1 class=" font-weight-bold h1-beranda" style = "margin-bottom:30px;" tabindex="0">Belanja Keperluan <span style="color: #699BF7;">Hewan Kesayangan </span></h1>
         <div class="">
         <div class="list-icon-belanja mx-auto">
           <button aria-label="Makanan Kucing" class="icon-belanja btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50" id="iconMakananKucing">

@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 import UrlParser from '../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import { createForumDetailTemplate } from '../../../templates/template-creator';
@@ -47,8 +48,6 @@ const DetailForum = {
     submitReview.addEventListener('click', (event) => {
       event.preventDefault();
       if (inputName.value === '' || inputComment.value === '') {
-        // eslint-disable-next-line no-alert
-        // eslint-disable-next-line no-undef
         Swal.fire({
           icon: 'error',
           title: 'Oops...',

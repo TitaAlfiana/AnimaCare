@@ -91,21 +91,24 @@
     font-weight: bold;
 }
 
-.button1 a,
+.button1,
 .button2 a {
     text-decoration: none !important;
     color: #fff;
 }
 
-.button1 a:hover,
+.button1:hover,
 .button2 a:hover {
     color: #fff;
 }
 
-.button1,
 .button2:focus {
     outline: none;
     border: none;
+}
+
+.button1 {
+    padding: 14px;
 }
 
 .button1,

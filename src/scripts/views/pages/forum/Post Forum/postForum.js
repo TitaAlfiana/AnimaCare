@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 import PostForum from '../../../../utils/postForum-initiator';
 import image2 from '../../../../../public/images/image2.png';
 import './postForum.css';
@@ -42,8 +43,6 @@ const Forum = {
     submitForum.addEventListener('click', (e) => {
       e.preventDefault();
       if (inputNamaPostForum.value === '' || inputJudul.value === '' || inputDeskripsiForum.value === '') {
-        // eslint-disable-next-line no-alert
-        // eslint-disable-next-line no-undef
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
@@ -54,16 +53,16 @@ const Forum = {
         inputDeskripsiForum.value = '';
       } else {
         PostForum();
-        // eslint-disable-next-line no-undef
         Swal.fire(
           'Good job!',
           'Pengalaman Berhasil Diunggah!',
           'success',
-        );
+        ).then(() => {
+          window.location.href = '#/forum';
+        });
         inputNamaPostForum.value = '';
         inputJudul.value = '';
         inputDeskripsiForum.value = '';
-        window.location.href = '#/forum';
       }
     });
   },

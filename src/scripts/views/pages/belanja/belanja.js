@@ -23,7 +23,7 @@ const Belanja = {
 
     return `
   <div class="container">
-      <h1 class="title__header-belanja mt-5 font-weight-bold">Temukan produk yang dibutuhkan untuk <span style="color: #699BF7">Hewan Kesayanganmu!</span></h1>
+      <h1 class="title__header-belanja mt-5 font-weight-bold">Temukan produk yang dibutuhkan <span style="color: #699BF7">Hewan Kesayangan Anda!</span></h1>
       <section id="content-1" class="content-1 my-5">
         <div class="container">
           <div class="row">

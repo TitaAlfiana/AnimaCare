@@ -1,4 +1,5 @@
 import './postArticle.css';
+import Swal from 'sweetalert2';
 import vector2 from '../../../../../public/vector/Vector2.png';
 import vector3 from '../../../../../public/vector/Vector3.png';
 import vector5 from '../../../../../public/vector/Vector5.png';
@@ -95,8 +96,6 @@ const PostArticle = {
       || inputSubjudul2.value === ''
       || inputBahasan2.value === ''
       || inputImg.value === null) {
-        // eslint-disable-next-line no-alert
-        // eslint-disable-next-line no-undef
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
@@ -111,12 +110,13 @@ const PostArticle = {
         inputImg.value = null;
       } else {
         PostArticles();
-        // eslint-disable-next-line no-undef
         Swal.fire(
           'Good job!',
           'Artikel Berhasil Diunggah!',
           'success',
-        );
+        ).then(() => {
+          window.location.href = '#/admin';
+        });
         inputJudul.value = '';
         inputDeskrip.value = '';
         inputSubjudul1.value = '';
@@ -124,7 +124,6 @@ const PostArticle = {
         inputSubjudul2.value = '';
         inputBahasan2.value = '';
         inputImg.value = null;
-        window.location.href = '#/admin';
       }
     });
     // Button back

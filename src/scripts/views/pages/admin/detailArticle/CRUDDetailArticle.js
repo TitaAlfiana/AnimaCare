@@ -1,4 +1,5 @@
 import './CRUDDetailArticle.css';
+import Swal from 'sweetalert2';
 import UrlParser from '../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import { creatArticleDetailTemplateinAdmin } from '../../../templates/template-creator';
@@ -41,7 +42,6 @@ const CRUDDetailArticle = {
     buttonDelete.addEventListener('click', async () => {
       const response = await AnimaCareDbSource.deleteArticle(url.id);
       if (response.status === 'success') {
-        // eslint-disable-next-line no-undef
         Swal.fire({
           title: 'Yakin Ingin Menghapus Artikel?',
           text: 'Artikel yang telah dihapus tidak dapat dibatalkan!',
@@ -52,17 +52,16 @@ const CRUDDetailArticle = {
           confirmButtonText: 'Hapus',
         }).then((result) => {
           if (result.isConfirmed) {
-            // eslint-disable-next-line no-undef
             Swal.fire(
               'Dihapus!',
               'Artikel berhasil dihapus.',
               'success',
-            );
+            ).then(() => {
+              window.location.href = '#/admin';
+            });
           }
         });
-        window.location.href = '#/admin';
       } else {
-        // eslint-disable-next-line no-undef
         Swal.fire({
           icon: 'error',
           title: 'Oops...',

@@ -2,6 +2,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
+import Swal from 'sweetalert2';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBjO2ot5P_nK3AIvFZOAcDQ0YdqhxM2NMM',
@@ -27,7 +28,11 @@ const LoginForm = () => {
       window.location.href = '#/admin';
       loginForm.reset();
     }).catch(() => {
-      alert('Email atau Kata Sandi salah!');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Email atau Katasandi Anda Salah!',
+      });
     });
 };
 

@@ -35,7 +35,7 @@ const Login = {
         </div>
 
         <div class="daftar-artikel-admin d-flex justify-content-between">
-          <h2 style="font-size:25px; font-weight: bold;">Daftar Artikel</h2>
+          <h2 style="font-size:25px; font-weight: bold;" tabindex="0">Daftar Artikel</h2>
           <form class="d-flex search-bar-forum">
               <input class="form-control mr-sm-2" type="search" placeholder="Cari artikel . . ." aria-label="Search" id="search-input-article">
               <button class="btn my-2 my-sm-0" type="submit" id="search-button-article"><img src="${iconSearch}" alt="icon search" width="30px"> </button>

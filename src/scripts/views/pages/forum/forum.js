@@ -12,11 +12,11 @@ const Forum = {
     <div class="container  my-4">
       <div class="row">
         <div class="col">
-          <a aria-label="Bagikan pengalamanmu" class="navbar-brand" href="#/post-forum" style="font-weight: bold;"> + <span style="color: #000;">Bagikan pengalamanmu!</span></a>
+          <a aria-label="Bagikan pengalaman Anda" class="navbar-brand" href="#/post-forum" style="font-weight: bold;"> + <span style="color: #000;">Bagikan Pengalaman Anda!</span></a>
         </div>
         <div class="col">
           <form class="d-flex search-bar-forum">
-            <input class="form-control mr-sm-2" type="search" placeholder="Cari judul topik..." aria-label="Search" id="search-input">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari pengalaman..." aria-label="Search" id="search-input">
             <button class="btn my-2 my-sm-0" type="submit" id="search-button"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
           </form>
         </div>

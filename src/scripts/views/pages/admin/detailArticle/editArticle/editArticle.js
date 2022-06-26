@@ -1,4 +1,5 @@
 import './editArticle.css';
+import Swal from 'sweetalert2';
 import vector2 from '../../../../../../public/vector/Vector2.png';
 import vector3 from '../../../../../../public/vector/Vector3.png';
 import vector5 from '../../../../../../public/vector/Vector5.png';
@@ -51,13 +52,13 @@ const EditArticle = {
     formEditArticle.addEventListener('submit', async (e) => {
       e.preventDefault();
       EditArticles();
-      // eslint-disable-next-line no-undef
       Swal.fire(
         'Good job!',
         'Artikel Berhasil Diperbarui!',
         'success',
-      );
-      window.location.href = `#/artikel-admin/${url.id}`;
+      ).then(() => {
+        window.location.href = `#/artikel-admin/${url.id}`;
+      });
     });
     // Button back
     const buttonBack = document.querySelector('.button-bck');
