@@ -1,15 +1,11 @@
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import image2 from '../../../../../public/images/image2.png';
 import './login.css';
+import { LoginForm } from '../../../../utils/firebase-initiator';
+import { NavbarAndFooterDisplayNone } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const Login = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'none';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'none';
+    NavbarAndFooterDisplayNone();
     return `
   <div class="container-login">
     <div class="login border shadow rounded">
@@ -40,33 +36,10 @@ const Login = {
   async afterRender() {
     window.$crisp.push(['do', 'chat:hide']);
 
-    const firebaseConfig = {
-      apiKey: 'AIzaSyBjO2ot5P_nK3AIvFZOAcDQ0YdqhxM2NMM',
-      authDomain: 'developer-introvert.firebaseapp.com',
-      projectId: 'developer-introvert',
-      storageBucket: 'developer-introvert.appspot.com',
-      messagingSenderId: '274558345593',
-      appId: '1:274558345593:web:9a0984032cb7984d6e0fa8',
-      measurementId: 'G-29K1W180JQ',
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    getAnalytics(app);
-
     const loginForm = document.getElementById('login-form');
     loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const email = loginForm['login-email'].value;
-      const password = loginForm['login-pass'].value;
-      const auth = getAuth();
-      signInWithEmailAndPassword(auth, email, password)
-        .then(() => {
-          window.location.href = '#/admin';
-          loginForm.reset();
-        }).catch(() => {
-          alert('Email atau Kata Sandi salah!');
-        });
+      LoginForm();
     });
   },
 };

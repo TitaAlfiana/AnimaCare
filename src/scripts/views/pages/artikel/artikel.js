@@ -6,14 +6,11 @@ import AnimaCareDbSource from '../../../data/animaCaredb-source';
 import FavoriteArticleIdb from '../../../data/animaCare-favArticleIDB';
 import { creatArticleItemTemplate, creatArticleItemTemplateInFavorite } from '../../templates/template-creator';
 import UrlParser from '../../../routes/url-parser';
+import { NavbarAndFooterDisplayBlock } from '../../../utils/navbarAndFooterDisplay-Initiator';
 
 const Artikel = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'flex';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'block';
-
+    NavbarAndFooterDisplayBlock();
     return `
     <article>
         <div class="slideshow-container">

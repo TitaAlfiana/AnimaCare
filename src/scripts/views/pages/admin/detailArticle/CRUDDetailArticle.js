@@ -2,19 +2,20 @@ import './CRUDDetailArticle.css';
 import UrlParser from '../../../../routes/url-parser';
 import AnimaCareDbSource from '../../../../data/animaCaredb-source';
 import { creatArticleDetailTemplateinAdmin } from '../../../templates/template-creator';
+import { PrivateRoutes } from '../../../../utils/firebase-initiator';
+import { NavbarAndFooterDisplayNone } from '../../../../utils/navbarAndFooterDisplay-Initiator';
 
 const CRUDDetailArticle = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'none';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'none';
     const border = document.querySelector('.border');
     border.style.display = 'none';
+    NavbarAndFooterDisplayNone();
+    PrivateRoutes();
+
     return `
     
-    <div class="detailArtikelAdmin" id="detailArtikelAdmin">
-    </div>
+      <div class="detailArtikelAdmin" id="detailArtikelAdmin">
+      </div>
     
     
     `;
@@ -26,6 +27,23 @@ const CRUDDetailArticle = {
     const detailArticle = await AnimaCareDbSource.detailArticle(url.id);
     const articleDetailContainer = document.querySelector('#detailArtikelAdmin');
     articleDetailContainer.innerHTML = creatArticleDetailTemplateinAdmin(detailArticle);
+
+    // UPDATE ARTICLE
+    const buttonEdit = document.querySelector('.button-edit');
+    buttonEdit.addEventListener('click', () => {
+      window.location.href = `#/edit-artikel/${url.id}`;
+    });
+
+    // DELETE ARTICLE
+    const buttonDelete = document.querySelector('.button-hapus');
+    buttonDelete.addEventListener('click', async () => {
+      const response = await AnimaCareDbSource.deleteArticle(url.id);
+      if (response.status === 'success') {
+        window.location.href = '#/admin';
+      } else {
+        alert('Gagal menghapus artikel');
+      }
+    });
   },
 };
 

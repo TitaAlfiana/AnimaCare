@@ -6,8 +6,16 @@
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    border: none;
+    text-decoration: none;
+    outline-style: none;
 }
 
+.button-edit:focus,
+.button-hapus:focus {
+    outline: none;
+    border: none;
+}
 
 .btn-edt {
     padding-right: 35px;

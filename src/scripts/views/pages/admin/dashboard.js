@@ -1,47 +1,19 @@
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-// eslint-disable-next-line no-unused-vars
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import AnimaCareDbSource from '../../../data/animaCaredb-source';
 import { creatArticleItemTemplateInAdmin } from '../../templates/template-creator';
 import UrlParser from '../../../routes/url-parser';
 import logoDashboard from '../../../../public/logo/logo-transparan.png';
 import iconSearch from '../../../../public/icons/iconSearch.png';
+import { Logout, PrivateRoutes } from '../../../utils/firebase-initiator';
 import './dasboard.css';
-
-const firebaseConfig = {
-  apiKey: 'AIzaSyBjO2ot5P_nK3AIvFZOAcDQ0YdqhxM2NMM',
-  authDomain: 'developer-introvert.firebaseapp.com',
-  projectId: 'developer-introvert',
-  storageBucket: 'developer-introvert.appspot.com',
-  messagingSenderId: '274558345593',
-  appId: '1:274558345593:web:9a0984032cb7984d6e0fa8',
-  measurementId: 'G-29K1W180JQ',
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+import { NavbarAndFooterDisplayNone } from '../../../utils/navbarAndFooterDisplay-Initiator';
 
 const Login = {
   async render() {
-    const nav = document.getElementById('nav');
-    nav.style.display = 'none';
-    const footer = document.querySelector('.footer');
-    footer.style.display = 'none';
     const border = document.querySelector('.border');
     border.style.display = 'none';
+    NavbarAndFooterDisplayNone();
+    PrivateRoutes();
 
-    const auth = getAuth();
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        if (user.emailVerified) {
-          window.location.href = '#/admin';
-        }
-      } else {
-        window.location.href = '#/login';
-      }
-    });
     return `
     <div class="header-admin">
       <div class="left-header d-flex">
@@ -49,7 +21,7 @@ const Login = {
         <img style="margin-top:7px;" src="${logoDashboard}" class="img-fluid img-dashboard" alt="icon Animacare" width="170px"></div>
 
       <div class="right-header">
-        <button class="btn btn-light button-logout" type="submit" title='Login' id="logout">Logout</button></div>
+        <button class="btn btn-light button-logout" type="submit" title='Logout' id="logout">Logout</button></div>
     </div>
 
 
@@ -108,11 +80,7 @@ const Login = {
     const logout = document.getElementById('logout');
     logout.addEventListener('click', (e) => {
       e.preventDefault();
-      const auth = getAuth();
-      auth.signOut()
-        .then(() => {
-          window.location.href = '#/login';
-        });
+      Logout();
     });
   },
 };

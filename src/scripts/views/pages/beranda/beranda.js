@@ -18,9 +18,12 @@ import AnimaCareDbSource from '../../../data/animaCaredb-source';
 import { creatArticleItemTemplate } from '../../templates/template-creator';
 import './beranda.css';
 import UrlParser from '../../../routes/url-parser';
+import { NavbarAndFooterDisplayBlock } from '../../../utils/navbarAndFooterDisplay-Initiator';
 
 const Beranda = {
   async render() {
+    NavbarAndFooterDisplayBlock();
+    
     return `
   <section id="content-1" class="content-1">
     <img class="vector1 img-fluid lazyload" data-src="${vector1}" alt="vector">
@@ -30,12 +33,8 @@ const Beranda = {
     <div class="container mt-5 container-hero">
       <div class="hero-left">
       <picture class="hero-image" data-aos="fade-up" data-aos-duration="3000">
-      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (max-width: 300px)" />        
-      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (max-width: 300px)" />
-      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (min-width: 901px)" />        
-      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (min-width: 901px)" />
+      <source class="hero-image lazyload" srcset="./images/image5.webp" type="image/webp" media="all and (min-width: 300px)" />        
+      <source class="hero-image lazyload" srcset="./images/image5.jpg" type="image/jpeg" media="all and (min-width: 300px)" />
       <img class="hero-image lazyload" data-src=${image5} alt='hero image'/>
       </picture>
         
@@ -54,12 +53,8 @@ const Beranda = {
         <div class="col-md-6">
           <figure class="figure" data-aos="fade-up" data-aos-duration="1000">
           <picture class="figure-img img-fluid rounded">
-          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (max-width: 300px)" />        
-          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (max-width: 300px)" />
-          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (min-width: 700px) and (max-width: 900px)" />    
-          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (min-width: 700px) and (max-width: 900px)" />
-          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (min-width: 901px)" />        
-          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (min-width: 901px)" />
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.webp" type="image/webp" media="all and (min-width: 300px)" />        
+          <source class="figure-img img-fluid rounded lazyload" srcset="./images/image4.jpg" type="image/jpeg" media="all and (min-width: 300px)" />
           <img class="figure-img img-fluid rounded lazyload" data-src=${image4} alt='Ilustration AnimaCare'/>
           </picture>
           </figure>
