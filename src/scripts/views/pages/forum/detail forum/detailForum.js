@@ -48,7 +48,12 @@ const DetailForum = {
       event.preventDefault();
       if (inputName.value === '' || inputComment.value === '') {
         // eslint-disable-next-line no-alert
-        alert('Inputan tidak boleh ada yang kosong');
+        // eslint-disable-next-line no-undef
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Inputan tidak boleh ada yang kosong!',
+        });
         inputName.value = '';
         inputComment.value = '';
       } else {

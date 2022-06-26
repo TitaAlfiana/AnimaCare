@@ -43,13 +43,23 @@ const Forum = {
       e.preventDefault();
       if (inputNamaPostForum.value === '' || inputJudul.value === '' || inputDeskripsiForum.value === '') {
         // eslint-disable-next-line no-alert
-        alert('Inputan tidak boleh ada yang kosong');
+        // eslint-disable-next-line no-undef
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Inputan tidak boleh ada yang kosong!',
+        });
         inputNamaPostForum.value = '';
         inputJudul.value = '';
         inputDeskripsiForum.value = '';
       } else {
         PostForum();
-        alert('Forum berhasil diunggah');
+        // eslint-disable-next-line no-undef
+        Swal.fire(
+          'Good job!',
+          'Pengalaman Berhasil Diunggah!',
+          'success',
+        );
         inputNamaPostForum.value = '';
         inputJudul.value = '';
         inputDeskripsiForum.value = '';

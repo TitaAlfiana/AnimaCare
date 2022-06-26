@@ -51,7 +51,12 @@ const EditArticle = {
     formEditArticle.addEventListener('submit', async (e) => {
       e.preventDefault();
       EditArticles();
-      alert('Artikel berhasil diubah');
+      // eslint-disable-next-line no-undef
+      Swal.fire(
+        'Good job!',
+        'Artikel Berhasil Diperbarui!',
+        'success',
+      );
       window.location.href = `#/artikel-admin/${url.id}`;
     });
     // Button back

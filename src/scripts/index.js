@@ -8,6 +8,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// eslint-disable-next-line no-unused-vars
+import Swal from 'sweetalert2';
 import App from './views/app';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';

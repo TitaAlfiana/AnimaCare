@@ -79,11 +79,53 @@ const PostArticle = {
     window.$crisp.push(['do', 'chat:hide']);
 
     const formPost = document.getElementById('formPost');
+    const inputJudul = document.getElementById('inputJudulArtikel');
+    const inputDeskrip = document.getElementById('inputDeskripsiArtikel');
+    const inputSubjudul1 = document.getElementById('inputJudulPertamaArtikel');
+    const inputBahasan1 = document.getElementById('inputDeskripiBahasanPertama');
+    const inputSubjudul2 = document.getElementById('inputSubJudulKeduaArtikel');
+    const inputBahasan2 = document.getElementById('inputDeskripiBahasanKedua');
+    const inputImg = document.getElementById('inputUnggahGambarArtikel');
     formPost.addEventListener('submit', async (e) => {
       e.preventDefault();
-      PostArticles();
-      alert('Artikel berhasil diunggah');
-      window.location.href = '#/admin';
+      if (inputJudul.value === ''
+      || inputDeskrip.value === ''
+      || inputSubjudul1.value === ''
+      || inputBahasan1.value === ''
+      || inputSubjudul2.value === ''
+      || inputBahasan2.value === ''
+      || inputImg.value === null) {
+        // eslint-disable-next-line no-alert
+        // eslint-disable-next-line no-undef
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Inputan tidak boleh ada yang kosong!',
+        });
+        inputJudul.value = '';
+        inputDeskrip.value = '';
+        inputSubjudul1.value = '';
+        inputBahasan1.value = '';
+        inputSubjudul2.value = '';
+        inputBahasan2.value = '';
+        inputImg.value = null;
+      } else {
+        PostArticles();
+        // eslint-disable-next-line no-undef
+        Swal.fire(
+          'Good job!',
+          'Artikel Berhasil Diunggah!',
+          'success',
+        );
+        inputJudul.value = '';
+        inputDeskrip.value = '';
+        inputSubjudul1.value = '';
+        inputBahasan1.value = '';
+        inputSubjudul2.value = '';
+        inputBahasan2.value = '';
+        inputImg.value = null;
+        window.location.href = '#/admin';
+      }
     });
     // Button back
     const buttonBack = document.querySelector('.button-bck');

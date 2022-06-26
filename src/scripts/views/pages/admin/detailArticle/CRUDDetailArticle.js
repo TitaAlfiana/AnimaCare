@@ -41,9 +41,33 @@ const CRUDDetailArticle = {
     buttonDelete.addEventListener('click', async () => {
       const response = await AnimaCareDbSource.deleteArticle(url.id);
       if (response.status === 'success') {
+        // eslint-disable-next-line no-undef
+        Swal.fire({
+          title: 'Yakin Ingin Menghapus Artikel?',
+          text: 'Artikel yang telah dihapus tidak dapat dibatalkan!',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Hapus',
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // eslint-disable-next-line no-undef
+            Swal.fire(
+              'Dihapus!',
+              'Artikel berhasil dihapus.',
+              'success',
+            );
+          }
+        });
         window.location.href = '#/admin';
       } else {
-        alert('Gagal menghapus artikel');
+        // eslint-disable-next-line no-undef
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Gagal menghapus Artikel!',
+        });
       }
     });
     // Button back
