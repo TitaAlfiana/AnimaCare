@@ -32,7 +32,7 @@ const PostArticle = {
 
                     <div class="form-group mt-3">
                         <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskrispi Artikel</label>
-                        <textarea class="form-control" id="inputDeskripsiArtikel" rows="3"></textarea>
+                        <textarea class="form-control " id="inputDeskripsiArtikel" rows="5"></textarea>
                     </div>
 
                     <div class="form-group mt-3">
@@ -42,7 +42,7 @@ const PostArticle = {
 
                     <div class="form-group mt-3">
                         <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Pertama</label>
-                        <textarea class="form-control" id="inputDeskripiBahasanPertama" rows="3"></textarea>
+                        <textarea class="form-control" id="inputDeskripiBahasanPertama" rows="5"></textarea>
                     </div>
 
                     <div class="form-group mt-3">
@@ -52,7 +52,7 @@ const PostArticle = {
 
                     <div class="form-group mt-3">
                         <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Kedua</label>
-                        <textarea class="form-control" id="inputDeskripiBahasanKedua" rows="3"></textarea>
+                        <textarea class="form-control" id="inputDeskripiBahasanKedua" rows="5"></textarea>
                     </div>
 
                     <div class="form-group mt-3">

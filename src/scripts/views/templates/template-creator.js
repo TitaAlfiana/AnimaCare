@@ -210,7 +210,7 @@ const creatformEditArticle = (article) => `
 
             <div class="form-group mt-3">
                 <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskrispi Artikel</label>
-                <textarea class="form-control" id="inputDeskripsiArtikel" rows="3">${article.descript}</textarea>
+                <textarea class="form-control" id="inputDeskripsiArtikel" rows="5">${article.descript}</textarea>
             </div>
 
             <div class="form-group mt-3">
@@ -220,7 +220,7 @@ const creatformEditArticle = (article) => `
 
             <div class="form-group mt-3">
                 <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Pertama</label>
-                <textarea class="form-control" id="inputDeskripiBahasanPertama" rows="3" >${article.descriptSubFirstTitle}</textarea>
+                <textarea class="form-control" id="inputDeskripiBahasanPertama" rows="5" >${article.descriptSubFirstTitle}</textarea>
             </div>
 
             <div class="form-group mt-3">
@@ -230,7 +230,7 @@ const creatformEditArticle = (article) => `
 
             <div class="form-group mt-3">
                 <label style="font-weight: bold;" for="exampleFormControlTextarea1">Deskripi Bahasan Kedua</label>
-                <textarea class="form-control" id="inputDeskripiBahasanKedua" rows="3">${article.descriptSubSecondTitle}</textarea>
+                <textarea class="form-control" id="inputDeskripiBahasanKedua" rows="5">${article.descriptSubSecondTitle}</textarea>
             </div>
 
             <div class="form-group mt-3">

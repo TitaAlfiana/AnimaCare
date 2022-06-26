@@ -17,7 +17,7 @@ const EditArticle = {
     border.style.display = 'none';
     return `
     <div class="cont-first">
-    <h1 style="font-size:28px;"> Edit <span style="color: #699BF7;"> Artikel </span></h1>
+    <h1 style="font-size:28px; padding-left:20px;"> Edit <span style="color: #699BF7;"> Artikel </span></h1>
         <img class="vector5-artikel img-fluid lazyload" data-src="${vector5}" alt="vector">
         <img class="vector6-artikel img-fluid lazyload" data-src="${vector3}" alt="vector">
         <img class="vector7-artikel img-fluid lazyload" data-src="${vector2}" alt="vector">
@@ -25,7 +25,7 @@ const EditArticle = {
         <div class="form-editArtikel" >
             <div class="cont-editArtikel">
                 <div class="cont-img d-flex justify-content-center">
-                    <img class='img-fluid text-center' src="${kelinci}" alt='ilustration hewan' width="550px" />
+                    <img class='img-fluid text-center' src="${kelinci}" alt='ilustration hewan' width="580px" />
                 </div>
                 <div id="form-editArtikel"></div>
             </div>

@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "e8126a681de419c892a9",
-  "time": 56344,
-  "builtAt": 1656140689913,
+  "hash": "63875624e0da1e015f7f",
+  "time": 57341,
+  "builtAt": 1656142899218,
   "publicPath": "",
   "outputPath": "C:\\Users\\ASUS\\AnimaCare\\dist",
   "assetsByChunkName": {
@@ -177,6 +177,25 @@
     {
       "name": "36c709320e6c91da56bfe2652b10403f.webp",
       "size": 95356,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "39a6cf648fbbb473c172c10ed246e885.png",
+      "size": 244653,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/public/images/kelinci.png"
+      },
+      "emitted": true
+    },
+    {
+      "name": "39a6cf648fbbb473c172c10ed246e885.webp",
+      "size": 20018,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -640,7 +659,7 @@
     },
     {
       "name": "bundle.js",
-      "size": 2090437,
+      "size": 2090457,
       "chunks": [
         "main"
       ],
@@ -740,25 +759,6 @@
     {
       "name": "e3d1ff2f93f58381574b7c3f84aab438.webp",
       "size": 1702,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {},
-      "emitted": true
-    },
-    {
-      "name": "ee43c8d24b1966c6654c831fc0ff255f.png",
-      "size": 247774,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "immutable": true,
-        "sourceFilename": "src/public/images/kelinci.png"
-      },
-      "emitted": true
-    },
-    {
-      "name": "ee43c8d24b1966c6654c831fc0ff255f.webp",
-      "size": 20442,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -1602,7 +1602,7 @@
     },
     {
       "name": "images/kelinci.png",
-      "size": 247774,
+      "size": 244653,
       "chunks": [],
       "chunkNames": [],
       "info": {
@@ -1613,7 +1613,7 @@
     },
     {
       "name": "images/kelinci.webp",
-      "size": 20442,
+      "size": 20018,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -1917,14 +1917,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1778031,
+      "size": 1778051,
       "names": [
         "main"
       ],
       "files": [
         "bundle.js"
       ],
-      "hash": "5d30156759aecd63d47d",
+      "hash": "bb15426d2db72e536928",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -9859,9 +9859,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-          "issuerId": "./src/scripts/views/templates/template-creator.js",
-          "issuerName": "./src/scripts/views/templates/template-creator.js",
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
+          "issuerId": "./src/scripts/utils/postForum.js",
+          "issuerName": "./src/scripts/utils/postForum.js",
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -9879,14 +9879,14 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/beranda/beranda.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
-              "name": "./src/scripts/views/pages/beranda/beranda.js"
+              "id": "./src/scripts/views/pages/forum/Post Forum/postForum.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\forum\\Post Forum\\postForum.js",
+              "name": "./src/scripts/views/pages/forum/Post Forum/postForum.js"
             },
             {
-              "id": "./src/scripts/views/templates/template-creator.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-              "name": "./src/scripts/views/templates/template-creator.js"
+              "id": "./src/scripts/utils/postForum.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
+              "name": "./src/scripts/utils/postForum.js"
             }
           ],
           "failed": false,
@@ -11792,7 +11792,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "ee43c8d24b1966c6654c831fc0ff255f.png"
+            "39a6cf648fbbb473c172c10ed246e885.png"
           ],
           "reasons": [
             {
@@ -13745,9 +13745,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-          "issuerId": "./src/scripts/views/templates/template-creator.js",
-          "issuerName": "./src/scripts/views/templates/template-creator.js",
+          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
+          "issuerId": "./src/scripts/data/animaCare-favArticleIDB.js",
+          "issuerName": "./src/scripts/data/animaCare-favArticleIDB.js",
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -13765,14 +13765,14 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/beranda/beranda.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
-              "name": "./src/scripts/views/pages/beranda/beranda.js"
+              "id": "./src/scripts/views/pages/artikel/artikel.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
+              "name": "./src/scripts/views/pages/artikel/artikel.js"
             },
             {
-              "id": "./src/scripts/views/templates/template-creator.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-              "name": "./src/scripts/views/templates/template-creator.js"
+              "id": "./src/scripts/data/animaCare-favArticleIDB.js",
+              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
+              "name": "./src/scripts/data/animaCare-favArticleIDB.js"
             }
           ],
           "failed": false,
@@ -15413,9 +15413,9 @@
           "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
           "index": 154,
           "index2": 153,
-          "size": 2074,
+          "size": 2093,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -15657,9 +15657,9 @@
           "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
           "index": 147,
           "index2": 146,
-          "size": 4157,
+          "size": 4158,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -16798,7 +16798,7 @@
           "index2": 80,
           "size": 15765,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25281,9 +25281,9 @@
       "chunks": [
         "main"
       ],
-      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-      "issuerId": "./src/scripts/views/templates/template-creator.js",
-      "issuerName": "./src/scripts/views/templates/template-creator.js",
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
+      "issuerId": "./src/scripts/utils/postForum.js",
+      "issuerName": "./src/scripts/utils/postForum.js",
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -25301,14 +25301,14 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/beranda/beranda.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
-          "name": "./src/scripts/views/pages/beranda/beranda.js"
+          "id": "./src/scripts/views/pages/forum/Post Forum/postForum.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\forum\\Post Forum\\postForum.js",
+          "name": "./src/scripts/views/pages/forum/Post Forum/postForum.js"
         },
         {
-          "id": "./src/scripts/views/templates/template-creator.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-          "name": "./src/scripts/views/templates/template-creator.js"
+          "id": "./src/scripts/utils/postForum.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
+          "name": "./src/scripts/utils/postForum.js"
         }
       ],
       "failed": false,
@@ -27214,7 +27214,7 @@
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "ee43c8d24b1966c6654c831fc0ff255f.png"
+        "39a6cf648fbbb473c172c10ed246e885.png"
       ],
       "reasons": [
         {
@@ -29167,9 +29167,9 @@
       "chunks": [
         "main"
       ],
-      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-      "issuerId": "./src/scripts/views/templates/template-creator.js",
-      "issuerName": "./src/scripts/views/templates/template-creator.js",
+      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
+      "issuerId": "./src/scripts/data/animaCare-favArticleIDB.js",
+      "issuerName": "./src/scripts/data/animaCare-favArticleIDB.js",
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -29187,14 +29187,14 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/beranda/beranda.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
-          "name": "./src/scripts/views/pages/beranda/beranda.js"
+          "id": "./src/scripts/views/pages/artikel/artikel.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
+          "name": "./src/scripts/views/pages/artikel/artikel.js"
         },
         {
-          "id": "./src/scripts/views/templates/template-creator.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
-          "name": "./src/scripts/views/templates/template-creator.js"
+          "id": "./src/scripts/data/animaCare-favArticleIDB.js",
+          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
+          "name": "./src/scripts/data/animaCare-favArticleIDB.js"
         }
       ],
       "failed": false,
@@ -30835,9 +30835,9 @@
       "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
       "index": 154,
       "index2": 153,
-      "size": 2074,
+      "size": 2093,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -31079,9 +31079,9 @@
       "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
       "index": 147,
       "index2": 146,
-      "size": 4157,
+      "size": 4158,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -32220,7 +32220,7 @@
       "index2": 80,
       "size": 15765,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
