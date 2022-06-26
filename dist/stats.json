@@ -659,11 +659,7 @@
     },
     {
       "name": "bundle.js",
-<<<<<<< HEAD
-      "size": 2090457,
-=======
       "size": 2094231,
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "chunks": [
         "main"
       ],
@@ -1921,22 +1917,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-<<<<<<< HEAD
-      "size": 1778051,
-=======
       "size": 1776841,
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "names": [
         "main"
       ],
       "files": [
         "bundle.js"
       ],
-<<<<<<< HEAD
-      "hash": "bb15426d2db72e536928",
-=======
       "hash": "e87054630ac616820ec5",
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "siblings": [],
       "parents": [],
       "children": [],
@@ -9886,15 +9874,9 @@
           "chunks": [
             "main"
           ],
-<<<<<<< HEAD
-          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
-          "issuerId": "./src/scripts/utils/postForum.js",
-          "issuerName": "./src/scripts/utils/postForum.js",
-=======
           "issuer": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
           "issuerId": "./src/scripts/views/templates/template-creator.js",
           "issuerName": "./src/scripts/views/templates/template-creator.js",
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -9912,16 +9894,6 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-<<<<<<< HEAD
-              "id": "./src/scripts/views/pages/forum/Post Forum/postForum.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\forum\\Post Forum\\postForum.js",
-              "name": "./src/scripts/views/pages/forum/Post Forum/postForum.js"
-            },
-            {
-              "id": "./src/scripts/utils/postForum.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
-              "name": "./src/scripts/utils/postForum.js"
-=======
               "id": "./src/scripts/views/pages/beranda/beranda.js",
               "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
               "name": "./src/scripts/views/pages/beranda/beranda.js"
@@ -9930,7 +9902,6 @@
               "id": "./src/scripts/views/templates/template-creator.js",
               "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
               "name": "./src/scripts/views/templates/template-creator.js"
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
             }
           ],
           "failed": false,
@@ -13825,15 +13796,9 @@
           "chunks": [
             "main"
           ],
-<<<<<<< HEAD
-          "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
-          "issuerId": "./src/scripts/data/animaCare-favArticleIDB.js",
-          "issuerName": "./src/scripts/data/animaCare-favArticleIDB.js",
-=======
           "issuer": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
           "issuerId": "./src/scripts/views/templates/template-creator.js",
           "issuerName": "./src/scripts/views/templates/template-creator.js",
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -13851,16 +13816,6 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-<<<<<<< HEAD
-              "id": "./src/scripts/views/pages/artikel/artikel.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
-              "name": "./src/scripts/views/pages/artikel/artikel.js"
-            },
-            {
-              "id": "./src/scripts/data/animaCare-favArticleIDB.js",
-              "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
-              "name": "./src/scripts/data/animaCare-favArticleIDB.js"
-=======
               "id": "./src/scripts/views/pages/beranda/beranda.js",
               "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
               "name": "./src/scripts/views/pages/beranda/beranda.js"
@@ -13869,7 +13824,6 @@
               "id": "./src/scripts/views/templates/template-creator.js",
               "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
               "name": "./src/scripts/views/templates/template-creator.js"
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
             }
           ],
           "failed": false,
@@ -15615,21 +15569,12 @@
           "depth": 5
         },
         {
-<<<<<<< HEAD
-          "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
-          "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
-          "index": 154,
-          "index2": 153,
-          "size": 2093,
-=======
           "id": "./src/scripts/views/pages/admin/dashboard.js",
           "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\admin\\dashboard.js",
           "name": "./src/scripts/views/pages/admin/dashboard.js",
           "index": 108,
           "index2": 108,
           "size": 3806,
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -15868,21 +15813,12 @@
           "depth": 5
         },
         {
-<<<<<<< HEAD
-          "id": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
-          "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
-          "index": 147,
-          "index2": 146,
-          "size": 4158,
-=======
           "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
           "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
           "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
           "index": 156,
           "index2": 156,
           "size": 2500,
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -25756,15 +25692,9 @@
       "chunks": [
         "main"
       ],
-<<<<<<< HEAD
-      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
-      "issuerId": "./src/scripts/utils/postForum.js",
-      "issuerName": "./src/scripts/utils/postForum.js",
-=======
       "issuer": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
       "issuerId": "./src/scripts/views/templates/template-creator.js",
       "issuerName": "./src/scripts/views/templates/template-creator.js",
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -25782,16 +25712,6 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-<<<<<<< HEAD
-          "id": "./src/scripts/views/pages/forum/Post Forum/postForum.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\forum\\Post Forum\\postForum.js",
-          "name": "./src/scripts/views/pages/forum/Post Forum/postForum.js"
-        },
-        {
-          "id": "./src/scripts/utils/postForum.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\postForum.js",
-          "name": "./src/scripts/utils/postForum.js"
-=======
           "id": "./src/scripts/views/pages/beranda/beranda.js",
           "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
           "name": "./src/scripts/views/pages/beranda/beranda.js"
@@ -25800,7 +25720,6 @@
           "id": "./src/scripts/views/templates/template-creator.js",
           "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
           "name": "./src/scripts/views/templates/template-creator.js"
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
         }
       ],
       "failed": false,
@@ -29695,15 +29614,9 @@
       "chunks": [
         "main"
       ],
-<<<<<<< HEAD
-      "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
-      "issuerId": "./src/scripts/data/animaCare-favArticleIDB.js",
-      "issuerName": "./src/scripts/data/animaCare-favArticleIDB.js",
-=======
       "issuer": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
       "issuerId": "./src/scripts/views/templates/template-creator.js",
       "issuerName": "./src/scripts/views/templates/template-creator.js",
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -29721,16 +29634,6 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-<<<<<<< HEAD
-          "id": "./src/scripts/views/pages/artikel/artikel.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\views\\pages\\artikel\\artikel.js",
-          "name": "./src/scripts/views/pages/artikel/artikel.js"
-        },
-        {
-          "id": "./src/scripts/data/animaCare-favArticleIDB.js",
-          "identifier": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\data\\animaCare-favArticleIDB.js",
-          "name": "./src/scripts/data/animaCare-favArticleIDB.js"
-=======
           "id": "./src/scripts/views/pages/beranda/beranda.js",
           "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\beranda\\beranda.js",
           "name": "./src/scripts/views/pages/beranda/beranda.js"
@@ -29739,7 +29642,6 @@
           "id": "./src/scripts/views/templates/template-creator.js",
           "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\templates\\template-creator.js",
           "name": "./src/scripts/views/templates/template-creator.js"
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
         }
       ],
       "failed": false,
@@ -31732,15 +31634,9 @@
       "id": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
       "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\admin\\detailArticle\\editArticle\\editArticle.js",
       "name": "./src/scripts/views/pages/admin/detailArticle/editArticle/editArticle.js",
-<<<<<<< HEAD
-      "index": 154,
-      "index2": 153,
-      "size": 2093,
-=======
       "index": 156,
       "index2": 156,
       "size": 2500,
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -31982,15 +31878,9 @@
       "id": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
       "identifier": "C:\\Users\\Ibnu Choldun\\Desktop\\AnimaCare\\src\\scripts\\views\\pages\\admin\\postArticle\\postArtikel.js",
       "name": "./src/scripts/views/pages/admin/postArticle/postArtikel.js",
-<<<<<<< HEAD
-      "index": 147,
-      "index2": 146,
-      "size": 4158,
-=======
       "index": 149,
       "index2": 148,
       "size": 4159,
->>>>>>> 33e9809d960833f0f95a724b94c2a93ee9c87d21
       "cacheable": true,
       "built": true,
       "optional": false,
