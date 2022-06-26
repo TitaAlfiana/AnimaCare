@@ -13,7 +13,9 @@ const CRUDDetailArticle = {
     PrivateRoutes();
 
     return `
-    
+    <div class="header-admin-back">
+    <button class="button-bck"> <img data-src="./icons/back.png" alt="Icon arrow" class="lazyload" width="36px"></button>
+    </div>
       <div class="detailArtikelAdmin" id="detailArtikelAdmin">
       </div>
     
@@ -43,6 +45,11 @@ const CRUDDetailArticle = {
       } else {
         alert('Gagal menghapus artikel');
       }
+    });
+    // Button back
+    const buttonBack = document.querySelector('.button-bck');
+    buttonBack.addEventListener('click', () => {
+      window.location.href = '#/admin';
     });
   },
 };

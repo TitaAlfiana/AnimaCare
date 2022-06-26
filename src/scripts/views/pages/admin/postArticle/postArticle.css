@@ -8,10 +8,22 @@
     width: 80%;
 }
 
+.header-admin-back {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+}
+
+.button-bck {
+    border: none;
+    background-color: #000000;
+    outline: none;
+}
+
 .vector5-artikel {
     position: absolute;
-    width: 200px;
-    top: 80px;
+    width: 80px;
+    top: 160px;
     left: 100px;
     z-index: -1;
 }

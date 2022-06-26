@@ -23,7 +23,6 @@ import { NavbarAndFooterDisplayBlock } from '../../../utils/navbarAndFooterDispl
 const Beranda = {
   async render() {
     NavbarAndFooterDisplayBlock();
-    
     return `
   <section id="content-1" class="content-1">
     <img class="vector1 img-fluid lazyload" data-src="${vector1}" alt="vector">

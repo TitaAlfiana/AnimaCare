@@ -18,6 +18,9 @@ const EditArticle = {
     PrivateRoutes();
 
     return `
+    <div class="header-admin-back">
+    <button class="button-bck"> <img data-src="./icons/back.png" alt="Icon arrow" class="lazyload" width="36px"></button>
+    </div>
     <div class="cont-first">
     <h1 style="font-size:28px; padding-left:20px;"> Edit <span style="color: #699BF7;"> Artikel </span></h1>
         <img class="vector5-artikel img-fluid lazyload" data-src="${vector5}" alt="vector">
@@ -27,7 +30,7 @@ const EditArticle = {
         <div class="form-editArtikel" >
             <div class="cont-editArtikel">
                 <div class="cont-img d-flex justify-content-center">
-                    <img class='img-fluid text-center' src="${kelinci}" alt='ilustration hewan' width="580px" />
+                    <img class='img-fluid text-center lazyload' data-src="${kelinci}" alt='ilustration hewan' width="580px" />
                 </div>
                 <div id="form-editArtikel"></div>
             </div>
@@ -49,6 +52,11 @@ const EditArticle = {
       e.preventDefault();
       EditArticles();
       alert('Artikel berhasil diubah');
+      window.location.href = `#/artikel-admin/${url.id}`;
+    });
+    // Button back
+    const buttonBack = document.querySelector('.button-bck');
+    buttonBack.addEventListener('click', () => {
       window.location.href = `#/artikel-admin/${url.id}`;
     });
   },

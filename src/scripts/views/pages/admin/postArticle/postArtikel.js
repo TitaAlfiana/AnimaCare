@@ -14,6 +14,9 @@ const PostArticle = {
     PrivateRoutes();
 
     return `
+    <div class="header-admin-back">
+    <button class="button-bck"> <img data-src="./icons/back.png" alt="Icon arrow" class="lazyload" width="36px"></button>
+    </div>
     <div class="cont-first">
         <h1 style="font-size:28px;"> Unggah <span style="color: #699BF7;"> Artikel </span></h1>
         <img class="vector5-artikel img-fluid lazyload" data-src="${vector5}" alt="vector">
@@ -24,7 +27,7 @@ const PostArticle = {
 
             <div class="cont-postArtikel">
                 <div class="cont-img d-flex justify-content-center">
-                <img class='img-fluid text-center' src="./images/ucinganjing.png" alt='ilustration hewan' width="550px" /></div>
+                <img class='img-fluid text-center lazyload' data-src="./images/ucinganjing.png" alt='ilustration hewan' width="550px" /></div>
                 <form id="formPost">
                     <div class="form-group">
                         <label style="font-weight: bold;" for="exampleFormControlInput1">Judul Artikel</label>
@@ -80,6 +83,11 @@ const PostArticle = {
       e.preventDefault();
       PostArticles();
       alert('Artikel berhasil diunggah');
+      window.location.href = '#/admin';
+    });
+    // Button back
+    const buttonBack = document.querySelector('.button-bck');
+    buttonBack.addEventListener('click', () => {
       window.location.href = '#/admin';
     });
   },

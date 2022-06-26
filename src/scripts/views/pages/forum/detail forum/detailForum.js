@@ -42,9 +42,20 @@ const DetailForum = {
 
     // post comment
     const submitReview = document.getElementById('submit-komentar');
+    const inputName = document.getElementById('inputName');
+    const inputComment = document.getElementById('inputKomentar');
     submitReview.addEventListener('click', (event) => {
       event.preventDefault();
-      PostComment();
+      if (inputName.value === '' || inputComment.value === '') {
+        // eslint-disable-next-line no-alert
+        alert('Inputan tidak boleh ada yang kosong');
+        inputName.value = '';
+        inputComment.value = '';
+      } else {
+        PostComment();
+        inputName.value = '';
+        inputComment.value = '';
+      }
     });
   },
 };
