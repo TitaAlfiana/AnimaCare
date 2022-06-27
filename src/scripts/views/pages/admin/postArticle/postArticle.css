@@ -9,14 +9,12 @@
 }
 
 .header-admin-back {
-    background-color: #000000;
     padding: 10px;
     display: flex;
 }
 
 .button-bck {
     border: none;
-    background-color: #000000;
     outline: none;
 }
 

@@ -2,26 +2,36 @@
     position: absolute;
     width: 440px;
     top: 95px;
-    right: 70px;
+    left: 0;
     z-index: -1;
 
 }
 
 .form-sharing {
-    width: 60%;
+    width: 50%;
+    position: absolute;
+    right: 50px;
 }
 
 .sharing {
     margin-bottom: 140px;
 }
 
+@media (min-width: 1200px) {
+    .image2 {
+        left: 50px;
+    }
+    .form-sharing {
+        width: 40%;
+        right: 300px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .image2 {
         width: 50%;
         right: 20px;
-
     }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -32,5 +42,7 @@
 
     .form-sharing {
         width: 100%;
+        position: relative;
+        right: 0;
     }
 }

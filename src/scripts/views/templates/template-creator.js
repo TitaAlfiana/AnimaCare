@@ -47,7 +47,7 @@ const createPostKomentarTemplate = (komentar) => {
           <p class="date-komentar">${date}</p>
       </div>
       <div class="body-komentar">
-          <p class="content-forum">${komentar.comment}</p>
+          <p class="content-komentar">${komentar.comment}</p>
       </div>
   </div>
     `;

@@ -14,8 +14,8 @@ const CRUDDetailArticle = {
     PrivateRoutes();
 
     return `
-    <div class="header-admin-back">
-    <button class="button-bck"> <img data-src="./icons/back.png" alt="Icon arrow" class="lazyload" width="36px"></button>
+    <div class="header-admin-back bg-dark">
+    <button class="button-bck bg-dark"> <img data-src="./icons/back.png" alt="Icon arrow" class="lazyload" width="36px"></button>
     </div>
       <div class="detailArtikelAdmin" id="detailArtikelAdmin">
       </div>

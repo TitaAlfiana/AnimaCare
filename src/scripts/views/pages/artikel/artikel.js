@@ -77,7 +77,7 @@ const Artikel = {
             <div class="list-article-inArtikel "></div>
         </div>
         <div data-tab-content  id="favorite-article">
-            <div class="artcl-fav"><h1>Artikel favorite</h1></div>
+            <div class="artcl-fav"><h1>Artikel favorit</h1></div>
             <div class="list-article-fav"></div>
         </div>
     </div>
@@ -101,7 +101,7 @@ const Artikel = {
       myIndex++;
       if (myIndex > x.length) { myIndex = 1; }
       x[myIndex - 1].style.display = '';
-      setTimeout(carousel, 3000); // Change image every 3 seconds
+      setTimeout(carousel, 5000); // Change image every 3 seconds
     }
 
     // get data article
@@ -151,7 +151,7 @@ const Artikel = {
     if (articles.length === 0) {
       articleFavoriteContainer.style.display = 'block';
       articleFavoriteContainer.innerHTML = `
-      <h1 class="text-center mt-5" style="font-size:20px; color:#699BF7;">Tidak ada favorite artikel yang ditampilkan</h1>
+      <h1 class="text-center mt-5" style="font-size:20px; color:#699BF7;">Tidak ada artikel favorit yang ditampilkan</h1>
       `;
     }
 

@@ -10,6 +10,9 @@ const Forum = {
     return `
     <div class="container my-5">
       <div class="sharing">
+        <div class="img-post-sharing">
+          <img class="image2 img-fluid" src="${image2}" alt="image decoration">
+        </div>
         <div class="form-post-sharing">
           <form class="form-sharing">
             <div class="mb-3">
@@ -25,9 +28,6 @@ const Forum = {
               <button id="submit-forum" type="submit" class="btn submit-komentar">Kirim</button>
             </div>
           </form>
-        </div>
-        <div class="img-post-sharing">
-        <img class="image2 img-fluid" src="${image2}" alt="image decoration">
         </div>
       </div>
     </div>

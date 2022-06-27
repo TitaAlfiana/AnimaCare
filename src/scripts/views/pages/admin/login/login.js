@@ -25,7 +25,9 @@ const Login = {
           <label for="formGroupExampleInput2" class="label">Kata Sandi</label>
           <input type="password" class="form-control" id="login-pass" placeholder="Masukkan Kata Sandi..." required>
         </div>
-        <button class="btn btn-light button-login mt-4 btn-lgn" type="submit" title='Login' id="login" style="font-size:15px">Login</button>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-light button-login mt-4 btn-lgn" type="submit" title='Login' id="login" style="font-size:15px; align-items: right">Login</button>
+        </div>
       </form>
       </div>
     </div>
