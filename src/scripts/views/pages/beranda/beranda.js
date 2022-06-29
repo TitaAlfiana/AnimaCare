@@ -60,7 +60,7 @@ const Beranda = {
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
           <h1 class=" font-weight-bold mb-4 h1-beranda">Apa sih itu AnimaCare?</h1>
-          <p class="container">AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan. Mulai dari konsultasi kesehatan hewan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman tentang hewan peliharaannya, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda.</p>
+          <p class="container">AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga dan merawat hewan peliharaan. Mulai dari konsultasi kesehatan hewan dengan dokter hewan handal & terpercaya, mencari artikel tentang seputar hewan peliharaan, membagikan cerita pengalaman tentang hewan peliharaan, dan juga berbelanja kebutuhan dan keperluan hewan peliharaan kesayangan Anda.</p>
         </div>
       </div>
     </div>

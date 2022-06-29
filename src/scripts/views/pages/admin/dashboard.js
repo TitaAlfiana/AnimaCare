@@ -15,17 +15,12 @@ const Login = {
     PrivateRoutes();
 
     return `
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <img style="margin-top:7px; padding-left: 20px" src="${logoDashboard}" class="img-fluid img-dashboard" alt="icon Animacare" width="170px"></div>
-      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" id="logout">Logout</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header-admin bg-dark">
+      <div class="left-header d-flex">
+        <img style="margin-top:7px;" src="${logoDashboard}" class="img-fluid img-dashboard" alt="icon Animacare" width="170px"></div>
+      <div class="right-header">
+        <button class="btn btn-light button-logout" type="submit" title='Logout' id="logout">Logout</button></div>
+    </div>
 
     <div class="container-fluid">
       <div class="row">
@@ -33,7 +28,7 @@ const Login = {
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="#/admin">
                   <span data-feather="home"></span>
                   Artikel <span class="sr-only">(current)</span>
                 </a>
@@ -42,9 +37,9 @@ const Login = {
           </div>
         </nav>
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Tambah Artikel</h1>
-            <form class="d-flex search-bar-forum">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom header2">
+            <h1 style="text-align:left; font-size:28px; font-weight:bold;">Tambah Artikel</h1>
+            <form class="d-flex search-bar-forum search-bar-admin">
               <input class="form-control mr-sm-2" type="search" placeholder="Cari artikel . . ." aria-label="Search" id="search-input-article">
               <button class="btn my-2 my-sm-0" type="submit" id="search-button-article"><img src="${iconSearch}" alt="icon search" width="30px"> </button>
             </form>

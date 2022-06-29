@@ -7,10 +7,8 @@
 
 }
 
-.form-sharing {
+.form-post-sharing {
     width: 50%;
-    position: absolute;
-    right: 50px;
 }
 
 .sharing {
@@ -21,10 +19,11 @@
     .image2 {
         left: 50px;
     }
-    .form-sharing {
+
+    /* .form-sharing {
         width: 40%;
         right: 300px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -40,9 +39,7 @@
 
     }
 
-    .form-sharing {
+    .form-post-sharing {
         width: 100%;
-        position: relative;
-        right: 0;
     }
 }

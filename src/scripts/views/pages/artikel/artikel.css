@@ -150,7 +150,15 @@ li {
     display: block;
 }
 
-
+.card-text {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 5px 0;
+}
 
 
 @media screen and (min-width: 750px) and (max-width: 800px) {

@@ -15,7 +15,6 @@
 }
 
 .header-admin {
-    background-color: #000000;
     padding: 20px;
     color: white;
     display: flex;
@@ -65,12 +64,22 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
     .header-admin,
-    .header-admin-back {
+    .header-admin-back,
+    .search-bar-admin {
 
         width: 100%;
+    }
+
+    nav ul,
+    #sidebarMenu {
+        display: none !important;
+    }
+
+    .header2 {
+        flex-direction: column;
     }
 
     .daftar-artikel-admin {

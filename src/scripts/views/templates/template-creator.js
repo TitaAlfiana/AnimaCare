@@ -93,7 +93,7 @@ const creatArticleItemTemplate = (article) => `
   
   <div class="card-body">
     <h1 class="card-title" style="font-weight:bold; font-size:20px;">${article.title}</h1>
-    <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
+    <p class="card-text">${article.descript}</p>
   </div>
 </div>
 </a>`;
@@ -109,7 +109,7 @@ const creatArticleItemTemplateInFavorite = (article) => `
   
   <div class="card-body">
     <h1 class="card-title" style="font-weight:bold; font-size:25px;">${article.title}</h1>
-    <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
+    <p class="card-text">${article.descript}</p>
   </div>
 </div>
 </a>`;
@@ -125,7 +125,7 @@ const creatArticleItemTemplateInAdmin = (article) => `
   
   <div class="card-body">
     <h1 class="card-title" style="font-weight:bold; font-size:20px;">${article.title}</h1>
-    <p class="card-text">${article.descript.slice(0, 170) + (article.descript.length > 100 ? ' . . .' : '')}</p>
+    <p class="card-text">${article.descript}</p>
   </div>
 </div>
 </a>`;

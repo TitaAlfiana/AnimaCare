@@ -40,35 +40,28 @@ const CRUDDetailArticle = {
     // DELETE ARTICLE
     const buttonDelete = document.querySelector('.button-hapus');
     buttonDelete.addEventListener('click', async () => {
-      const response = await AnimaCareDbSource.deleteArticle(url.id);
-      if (response.status === 'success') {
-        Swal.fire({
-          title: 'Yakin Ingin Menghapus Artikel?',
-          text: 'Artikel yang telah dihapus tidak dapat dibatalkan!',
-          icon: 'warning',
-          showCancelButton: true,
-          confirmButtonColor: '#3085d6',
-          cancelButtonColor: '#d33',
-          confirmButtonText: 'Hapus',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            Swal.fire(
-              'Dihapus!',
-              'Artikel berhasil dihapus.',
-              'success',
-            ).then(() => {
-              window.location.href = '#/admin';
-            });
-          }
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Gagal menghapus Artikel!',
-        });
-      }
+      Swal.fire({
+        title: 'Yakin Ingin Menghapus Artikel?',
+        text: 'Artikel yang telah dihapus tidak dapat dipulihkan!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Hapus',
+      }).then((result) => {
+        if (result.value) {
+          AnimaCareDbSource.deleteArticle(url.id);
+          Swal.fire(
+            'Dihapus!',
+            'Artikel berhasil dihapus.',
+            'success',
+          ).then(() => {
+            window.location.href = '#/admin';
+          });
+        }
+      });
     });
+
     // Button back
     const buttonBack = document.querySelector('.button-bck');
     buttonBack.addEventListener('click', () => {

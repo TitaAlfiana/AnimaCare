@@ -11,24 +11,26 @@ const Forum = {
     <div class="container my-5">
       <div class="sharing">
         <div class="img-post-sharing">
-          <img class="image2 img-fluid" src="${image2}" alt="image decoration">
+        <img class="image2 img-fluid" src="${image2}" alt="image decoration">
         </div>
-        <div class="form-post-sharing">
-          <form class="form-sharing">
-            <div class="mb-3">
-              <input name="inputNamaPostForum" placeholder="Ketikkan nama anda disini..." type="text" class="form-control" id="inputNamaPostForum">
+          <div class="d-flex justify-content-end">
+            <div class="form-post-sharing">
+              <form class="form-sharing">
+                <div class="mb-3">
+                  <input name="inputNamaPostForum" placeholder="Ketikkan nama anda disini..." type="text" class="form-control" id="inputNamaPostForum">
+                </div>
+                <div class="mb-3">
+                  <input name="inputJudul" placeholder="Ketikkan judul topik pengalaman anda disini..." type="text" class="form-control" id="inputJudul">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" id="inputDeskripsiForum" rows="7" placeholder="Ceritakan pengalamanmu disini..."></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button id="submit-forum" type="submit" class="btn submit-komentar">Kirim</button>
+                </div>
+              </form>
             </div>
-            <div class="mb-3">
-              <input name="inputJudul" placeholder="Ketikkan judul topik pengalaman anda disini..." type="text" class="form-control" id="inputJudul">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" id="inputDeskripsiForum" rows="7" placeholder="Ceritakan pengalamanmu disini..."></textarea>
-            </div>
-            <div class="d-flex justify-content-end">
-              <button id="submit-forum" type="submit" class="btn submit-komentar">Kirim</button>
-            </div>
-          </form>
-        </div>
+          </div>
       </div>
     </div>
       `;

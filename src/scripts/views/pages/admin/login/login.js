@@ -1,4 +1,4 @@
-import image2 from '../../../../../public/images/image2.png';
+import imageLogin from '../../../../../public/images/imgLogin1.png';
 import './login.css';
 import { LoginForm } from '../../../../utils/firebase-initiator';
 import { NavbarAndFooterDisplayNone } from '../../../../utils/navbarAndFooterDisplay-Initiator';
@@ -12,7 +12,7 @@ const Login = {
       <div class="login-left">
         <h1 class="title-login mt-3" style="font-size:28px">Selamat Datang Admin Animacare!</h1>
         <p class='text-center mt-2' style="font-size:16px">Untuk mengelola Website AnimaCare, Masuk menggunakan akun yang sudah terdaftar</p>
-        <img class='rounded mx-auto d-block' src=${image2} alt='ilustration hewan' />
+        <img class='rounded mx-auto d-block' src=${imageLogin} alt='ilustration hewan' />
       </div>
       <div class="login-right">
         <h1>Masuk</h1>
