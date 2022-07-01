@@ -16,6 +16,7 @@
 - [Sharing Page](#sharing-page)
 - [Belanja Page](#belanja-page)
 - [Admin Page](#admin-page)
+- [Prototype](#prototype)
 - [Credit](#credit)
 - [Link Deploy](#link-deploy)
 - [Creator](#creator)
@@ -38,7 +39,9 @@ AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga
     <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/beranda.gif">
   </p>
 - Versi Mobile
-c
+  <p align="center">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/beranda.gif" height=400>
+  </p>
   
 ## Artikel Page
 - Versi Dekstop
@@ -47,6 +50,7 @@ c
   </p>
 - Versi Mobile
   <p align="center">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/artikel.gif" height=400>
   </p>
 
 ## Sharing Page
@@ -56,6 +60,7 @@ c
   </p>
 - Versi Mobile
   <p align="center">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/sharing.gif" height=400>
   </p>
 
 ## Belanja Page
@@ -65,6 +70,7 @@ c
   </p>
 - Versi Mobile
   <p align="center">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/belanja.gif" height=400>
   </p>
 
 ## Admin page
@@ -75,6 +81,7 @@ c
     </p>
   - Versi Mobile
     <p align="center">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/login%20dashboard%20admin.gif" height=400>
     </p>
 
 - Post Artikel
@@ -84,6 +91,7 @@ c
     </p>
   - Versi Mobile
     <p align="center">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/post%20artikel.gif" height=400>
     </p>
 
 - Edit Artikel
@@ -93,6 +101,7 @@ c
     </p>
   - Versi Mobile
     <p align="center">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/edit%20artikel.gif" height=400>
     </p>
 
 - Delete Artikel
@@ -102,6 +111,7 @@ c
     </p>
   - Versi Mobile
     <p align="center">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/delete%20artikel.gif" height=400>
     </p>
 
 - Logout
@@ -111,8 +121,11 @@ c
     </p>
   - Versi Mobile
     <p align="center">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/mobile/logout.gif" height=400>
     </p>
 
+## Prototype
+- https://www.figma.com/file/iYCB4dunID08yXIP4IH8to/AnimaCare?node-id=0%3A1 
 
 ## Credit
 - <a href="https://getbootstrap.com/"> Bootstrap 4 </a> 
