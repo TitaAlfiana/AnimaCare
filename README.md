@@ -35,7 +35,7 @@ AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga
 ## Home Page
 - Versi Dekstop
   <p align="center">
-    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/beranda.gif">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/beranda.gif">
   </p>
 - Versi Mobile
 c
@@ -43,7 +43,7 @@ c
 ## Artikel Page
 - Versi Dekstop
   <p align="center">
-    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/artikel.gif">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/artikel.gif">
   </p>
 - Versi Mobile
   <p align="center">
@@ -52,7 +52,7 @@ c
 ## Sharing Page
 - Versi Dekstop
   <p align="center">
-    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/forum.gif">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/sharing.gif">
   </p>
 - Versi Mobile
   <p align="center">
@@ -61,7 +61,7 @@ c
 ## Belanja Page
 - Versi Dekstop
   <p align="center">
-    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/belanja.gif">
+    <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/belanja.gif">
   </p>
 - Versi Mobile
   <p align="center">
@@ -71,7 +71,7 @@ c
 - Login Dashboard Admin
   - Versi Dekstop
     <p align="center">
-      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/login%20dashboard%20admin.gif">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/login%20dashboard%20admin.gif">
     </p>
   - Versi Mobile
     <p align="center">
@@ -80,7 +80,7 @@ c
 - Post Artikel
   - Versi Dekstop
     <p align="center">
-      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/post%20artikel.gif">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/post%20artikel.gif">
     </p>
   - Versi Mobile
     <p align="center">
@@ -89,7 +89,7 @@ c
 - Edit Artikel
   - Versi Dekstop
     <p align="center">
-      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/edit%20artikel.gif">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/edit%20artikel.gif">
     </p>
   - Versi Mobile
     <p align="center">
@@ -98,7 +98,7 @@ c
 - Delete Artikel
   - Versi Dekstop
     <p align="center">
-      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/delete%20artikel.gif">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/delete%20artikel.gif">
     </p>
   - Versi Mobile
     <p align="center">
@@ -107,7 +107,7 @@ c
 - Logout
   - Versi Dekstop
     <p align="center">
-      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/logout.gif">
+      <img src="https://github.com/ibnucholdun/demo-animacare/blob/main/dekstop/logout.gif">
     </p>
   - Versi Mobile
     <p align="center">
