@@ -73,7 +73,7 @@
         width: 100%;
     }
 
-    nav ul,
+    #sidebarMenu ul,
     #sidebarMenu {
         display: none !important;
     }
