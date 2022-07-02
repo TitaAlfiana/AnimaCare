@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "8c7264006416bcaac6ac",
-  "time": 75012,
-  "builtAt": 1656504985145,
+  "hash": "2934456bf2eaa76fffc4",
+  "time": 84509,
+  "builtAt": 1656596429731,
   "publicPath": "",
   "outputPath": "C:\\Users\\ASUS\\AnimaCare\\dist",
   "assetsByChunkName": {
@@ -1818,7 +1818,7 @@
     },
     {
       "name": "main.bundle.js",
-      "size": 2254567,
+      "size": 2254576,
       "chunks": [
         "main"
       ],
@@ -1971,17 +1971,17 @@
   "chunks": [
     {
       "id": "main",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
-      "size": 1928885,
+      "size": 1928894,
       "names": [
         "main"
       ],
       "files": [
         "main.bundle.js"
       ],
-      "hash": "6f427d59519029a08241",
+      "hash": "60c7281840dee489cf35",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -5676,9 +5676,9 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/dasboard.css",
           "index": 113,
           "index2": 107,
-          "size": 2357,
+          "size": 2366,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -14084,7 +14084,7 @@
           "index2": 74,
           "size": 290,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21731,9 +21731,9 @@
       "name": "./node_modules/css-loader/dist/cjs.js!./src/scripts/views/pages/admin/dasboard.css",
       "index": 113,
       "index2": 107,
-      "size": 2357,
+      "size": 2366,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -30139,7 +30139,7 @@
       "index2": 74,
       "size": 290,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -35105,7 +35105,7 @@
           "name": "sw.js",
           "size": 34918,
           "chunks": [
-            0
+            1
           ],
           "chunkNames": [],
           "info": {},
@@ -35116,7 +35116,7 @@
       "entrypoints": {
         "undefined": {
           "chunks": [
-            0
+            1
           ],
           "assets": [
             "sw.js"
@@ -35128,7 +35128,7 @@
       "namedChunkGroups": {
         "undefined": {
           "chunks": [
-            0
+            1
           ],
           "assets": [
             "sw.js"
@@ -35139,7 +35139,7 @@
       },
       "chunks": [
         {
-          "id": 0,
+          "id": 1,
           "rendered": true,
           "initial": true,
           "entry": true,
@@ -35148,7 +35148,7 @@
           "files": [
             "sw.js"
           ],
-          "hash": "11a14d9d7f69ae1522db",
+          "hash": "6aa64441ecda5c30c320",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -35166,7 +35166,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
               "issuerId": "./src/scripts/sw.js",
@@ -35209,7 +35209,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
               "issuerId": "./src/scripts/sw.js",
@@ -35248,11 +35248,11 @@
               "index2": 2,
               "size": 290,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\cache-helper.js",
               "issuerId": "./src/scripts/utils/cache-helper.js",
@@ -35320,7 +35320,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": null,
               "issuerId": null,
@@ -35356,7 +35356,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
               "issuerId": "./src/scripts/sw.js",
@@ -35443,7 +35443,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
           "issuerId": "./src/scripts/sw.js",
@@ -35486,7 +35486,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
           "issuerId": "./src/scripts/sw.js",
@@ -35525,11 +35525,11 @@
           "index2": 2,
           "size": 290,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\utils\\cache-helper.js",
           "issuerId": "./src/scripts/utils/cache-helper.js",
@@ -35597,7 +35597,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": null,
           "issuerId": null,
@@ -35633,7 +35633,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "issuer": "C:\\Users\\ASUS\\AnimaCare\\src\\scripts\\sw.js",
           "issuerId": "./src/scripts/sw.js",
