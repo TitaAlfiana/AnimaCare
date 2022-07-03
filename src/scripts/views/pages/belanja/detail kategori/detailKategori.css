@@ -4,6 +4,7 @@
     background-color: #fafafa;
 }
 
+
 .form-check {
     min-height: 44px;
     min-width: 44px;
@@ -37,6 +38,13 @@
 
 #list-produk-item::-webkit-scrollbar {
     width: 0;
+}
+
+@media screen and (min-width: 900px) {
+
+    .hero1 {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px) {

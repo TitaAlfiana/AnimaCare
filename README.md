@@ -137,6 +137,7 @@ AnimaCare adalah layanan kesehatan hewan online yang membantu Anda dalam menjaga
 - <a href="https://eslint.org/"> Eslint </a> 
 - <a href="https://www.figma.com/"> Figma </a> 
 - <a href="https://sweetalert2.github.io/"> SweetAlert2 </a> 
+- <a href="https://www.tokopedia.com/"> Tokopedia </a> 
 
 ## Link Deploy
 - https://my-animacare.netlify.app/
